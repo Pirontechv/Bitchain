@@ -204,12 +204,12 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             double dPriority = 0;
             CAmount nTotalIn = 0;
             bool fMissingInputs = false;
-            uint256 txid = tx.GetHash();
             bool hasZerocoinSpends = tx.HasZerocoinSpendInputs();
             if (hasZerocoinSpends)
                 nTotalIn = tx.GetZerocoinSpent();
 
             for (const CTxIn& txin : tx.vin) {
+<<<<<<< HEAD
                 //zerocoinspend has special vin
                 if (hasZerocoinSpends) {
                     //Give a high priority to zerocoinspends to get into the next block
@@ -235,6 +235,8 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                     continue;
                 }
 
+=======
+>>>>>>> 5bd387e18d4a354a6821b80f48b0b9fdf0a18bc8
                 // Read prev transaction
                 if (!view.HaveCoins(txin.prevout.hash)) {
                     // This should never happen; all transactions in the memory
