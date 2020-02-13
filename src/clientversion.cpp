@@ -13,7 +13,7 @@
  * for both bitchaind and bitchain-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("BITCHAIN Core");
+const std::string CLIENT_NAME("Bitchain Core");
 
 /**
  * Client version number
