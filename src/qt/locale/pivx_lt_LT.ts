@@ -196,16 +196,16 @@
         <translation>Patvirtinkite piniginės užšifravimą.</translation>
     </message>
     <message>
-        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>Dabar BITCHAIN išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų PIV nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
+        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XBITs from being stolen by malware infecting your computer.</source>
+        <translation>Dabar BITCHAIN išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų XBIT nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ar tikrai norite užšifruoti savo piniginę?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO PIV&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XBIT&lt;/b&gt;!</source>
+        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO XBIT&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -499,8 +499,8 @@
         <translation>Ši etiketė taps raudona, jei gavėjas gaus sumą mažesnę už %1</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Gali skirtis +/- %1 upiv kiekvienoje įvestyje.</translation>
+        <source>Can vary +/- %1 uxbit per input.</source>
+        <translation>Gali skirtis +/- %1 uxbit kiekvienoje įvestyje.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -516,10 +516,10 @@
     </message>
 </context>
 <context>
-    <name>CoinControlPivWidget</name>
+    <name>CoinControlXBITWidget</name>
     <message>
-        <source>PIV:</source>
-        <translation>PIV:</translation>
+        <source>XBIT:</source>
+        <translation>XBIT:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -599,8 +599,8 @@
         <translation>Teksto etiketė</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zXBIT</source>
+        <translation>zXBIT</translation>
     </message>
     <message>
         <source>All</source>
@@ -1022,24 +1022,24 @@ https://www.transifex.com/bitchain-project/bitchain-project-translations</transl
         <translation>Įrašyti prievadą naudojant &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Įgalinti automatinį konvertavimą iš PIV į zPIV</translation>
+        <source>Enable automatic minting of XBIT units to zXBIT</source>
+        <translation>Įgalinti automatinį konvertavimą iš XBIT į zXBIT</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Įgalinti zPIV Automatinį nukaldinima</translation>
+        <source>Enable zXBIT Automint</source>
+        <translation>Įgalinti zXBIT Automatinį nukaldinima</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentas gauto PIV, kuris automatiškai bus konvertuotas į zPIV naudojant Zerocoin Protokolą (min: 10%)</translation>
+        <source>Percentage of incoming XBIT which get automatically converted to zXBIT via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentas gauto XBIT, kuris automatiškai bus konvertuotas į zXBIT naudojant Zerocoin Protokolą (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Automatiškai sukurtų zPIV procentas</translation>
+        <source>Percentage of autominted zXBIT</source>
+        <translation>Automatiškai sukurtų zXBIT procentas</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Pageidautinas zPIV Automatinio Nukaldinimo Nominalas</translation>
+        <source>Preferred Automint zXBIT Denomination</source>
+        <translation>Pageidautinas zXBIT Automatinio Nukaldinimo Nominalas</translation>
     </message>
     <message>
         <source>Connect to the BITCHAIN network through a SOCKS5 proxy.</source>
@@ -2052,7 +2052,7 @@ Adresas: %4
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZXBITControlDialog</name>
     <message>
         <source>Coin Control</source>
         <translation>Monetų Kontrolė</translation>

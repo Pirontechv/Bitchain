@@ -16,9 +16,9 @@
 #include "addresstablemodel.h"
 #include "coincontrol.h"
 #include "script/standard.h"
-#include "zpiv/deterministicmint.h"
+#include "zxbit/deterministicmint.h"
 #include "openuridialog.h"
-#include "zpivcontroldialog.h"
+#include "zxbitcontroldialog.h"
 
 SendWidget::SendWidget(BITCHAINGUI* parent) :
     PWidget(parent),
@@ -46,14 +46,14 @@ SendWidget::SendWidget(BITCHAINGUI* parent) :
     ui->labelTitle->setFont(fontLight);
 
     /* Button Group */
-    ui->pushLeft->setText("PIV");
+    ui->pushLeft->setText("XBIT");
     setCssProperty(ui->pushLeft, "btn-check-left");
     ui->pushLeft->setChecked(true);
-    ui->pushRight->setText("zPIV");
+    ui->pushRight->setText("zXBIT");
     setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("You can transfer public coins (PIV) or private coins (zPIV)"));
+    ui->labelSubtitle1->setText(tr("You can transfer public coins (XBIT) or private coins (zXBIT)"));
     setCssProperty(ui->labelSubtitle1, "text-subtitle");
 
     ui->labelSubtitle2->setText(tr("Select coin type to spend"));
@@ -108,7 +108,7 @@ SendWidget::SendWidget(BITCHAINGUI* parent) :
     ui->labelTitleTotalSend->setText(tr("Total to send"));
     setCssProperty(ui->labelTitleTotalSend, "text-title");
 
-    ui->labelAmountSend->setText("0.00 PIV");
+    ui->labelAmountSend->setText("0.00 XBIT");
     setCssProperty(ui->labelAmountSend, "text-body1");
 
     // Total Remaining
@@ -121,7 +121,7 @@ SendWidget::SendWidget(BITCHAINGUI* parent) :
     coinIcon->show();
     coinIcon->raise();
 
-    setCssProperty(coinIcon, "coin-icon-piv");
+    setCssProperty(coinIcon, "coin-icon-xbit");
 
     QSize BUTTON_SIZE = QSize(24, 24);
     coinIcon->setMinimumSize(BUTTON_SIZE);
@@ -135,8 +135,8 @@ SendWidget::SendWidget(BITCHAINGUI* parent) :
     addEntry();
 
     // Connect
-    connect(ui->pushLeft, &QPushButton::clicked, [this](){onPIVSelected(true);});
-    connect(ui->pushRight,  &QPushButton::clicked, [this](){onPIVSelected(false);});
+    connect(ui->pushLeft, &QPushButton::clicked, [this](){onXBITSelected(true);});
+    connect(ui->pushRight,  &QPushButton::clicked, [this](){onXBITSelected(false);});
     connect(ui->pushButtonSave, SIGNAL(clicked()), this, SLOT(onSendClicked()));
     connect(ui->pushButtonAddRecipient, SIGNAL(clicked()), this, SLOT(onAddEntryClicked()));
     connect(ui->pushButtonClear, SIGNAL(clicked()), this, SLOT(clearAll()));
@@ -145,10 +145,10 @@ SendWidget::SendWidget(BITCHAINGUI* parent) :
 void SendWidget::refreshView(){
     QString btnText;
     if(ui->pushLeft->isChecked()){
-        btnText = tr("Send PIV");
+        btnText = tr("Send XBIT");
         ui->pushButtonAddRecipient->setVisible(true);
     }else{
-        btnText = tr("Send zPIV");
+        btnText = tr("Send zXBIT");
         ui->pushButtonAddRecipient->setVisible(false);
     }
     ui->pushButtonSave->setText(btnText);
@@ -167,10 +167,10 @@ void SendWidget::refreshAmounts() {
             total += amount;
     }
 
-    bool isZpiv = ui->pushRight->isChecked();
+    bool isZxbit = ui->pushRight->isChecked();
     nDisplayUnit = walletModel->getOptionsModel()->getDisplayUnit();
 
-    ui->labelAmountSend->setText(GUIUtil::formatBalance(total, nDisplayUnit, isZpiv));
+    ui->labelAmountSend->setText(GUIUtil::formatBalance(total, nDisplayUnit, isZxbit));
 
     CAmount totalAmount = 0;
     if (CoinControlDialog::coinControl->HasSelected()){
@@ -179,14 +179,14 @@ void SendWidget::refreshAmounts() {
         ui->labelTitleTotalRemaining->setText(tr("Total remaining from the selected UTXO"));
     } else {
         // Wallet's balance
-        totalAmount = (isZpiv ? walletModel->getZerocoinBalance() : walletModel->getBalance()) - total;
+        totalAmount = (isZxbit ? walletModel->getZerocoinBalance() : walletModel->getBalance()) - total;
         ui->labelTitleTotalRemaining->setText(tr("Total remaining"));
     }
     ui->labelAmountRemaining->setText(
             GUIUtil::formatBalance(
                     totalAmount,
                     nDisplayUnit,
-                    isZpiv
+                    isZxbit
                     )
     );
 }
@@ -319,19 +319,19 @@ void SendWidget::onSendClicked(){
         return;
     }
 
-    bool sendPiv = ui->pushLeft->isChecked();
+    bool sendXBIT = ui->pushLeft->isChecked();
 
     // request unlock only if was locked or unlocked for mixing:
     // this way we let users unlock by walletpassphrase or by menu
     // and make many transactions while unlocking through this dialog
     // will call relock
-    if(!GUIUtil::requestUnlock(walletModel, sendPiv ? AskPassphraseDialog::Context::Send_PIV : AskPassphraseDialog::Context::Send_zPIV, true)){
+    if(!GUIUtil::requestUnlock(walletModel, sendXBIT ? AskPassphraseDialog::Context::Send_XBIT : AskPassphraseDialog::Context::Send_zXBIT, true)){
         // Unlock wallet was cancelled
         inform(tr("Cannot send, wallet locked"));
         return;
     }
 
-    if((sendPiv) ? send(recipients) : sendZpiv(recipients)) {
+    if((sendXBIT) ? send(recipients) : sendZxbit(recipients)) {
         updateEntryLabels(recipients);
     }
 }
@@ -391,12 +391,12 @@ bool SendWidget::send(QList<SendCoinsRecipient> recipients){
     return false;
 }
 
-bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
+bool SendWidget::sendZxbit(QList<SendCoinsRecipient> recipients){
     if (!walletModel || !walletModel->getOptionsModel())
         return false;
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        Q_EMIT message(tr("Spend Zerocoin"), tr("zPIV is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
+        Q_EMIT message(tr("Spend Zerocoin"), tr("zXBIT is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
         return false;
     }
 
@@ -407,11 +407,11 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
         outputs.push_back(std::pair<CBitcoinAddress*, CAmount>(new CBitcoinAddress(rec.address.toStdString()),rec.amount));
     }
 
-    // use mints from zPIV selector if applicable
+    // use mints from zXBIT selector if applicable
     std::vector<CMintMeta> vMintsToFetch;
     std::vector<CZerocoinMint> vMintsSelected;
-    if (!ZPivControlDialog::setSelectedMints.empty()) {
-        vMintsToFetch = ZPivControlDialog::GetSelectedMints();
+    if (!ZXBITControlDialog::setSelectedMints.empty()) {
+        vMintsToFetch = ZXBITControlDialog::GetSelectedMints();
 
         for (auto& meta : vMintsToFetch) {
             CZerocoinMint mint;
@@ -450,24 +450,24 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
         changeAddress = walletModel->getAddressTableModel()->getAddressToShow().toStdString();
     }
 
-    if (walletModel->sendZpiv(
+    if (walletModel->sendZxbit(
             vMintsSelected,
             receipt,
             outputs,
             changeAddress
     )
             ) {
-        inform(tr("zPIV transaction sent!"));
-        ZPivControlDialog::setSelectedMints.clear();
+        inform(tr("zXBIT transaction sent!"));
+        ZXBITControlDialog::setSelectedMints.clear();
         clearAll();
         return true;
     } else {
         QString body;
-        if (receipt.GetStatus() == ZPIV_SPEND_V1_SEC_LEVEL) {
-            body = tr("Version 1 zPIV require a security level of 100 to successfully spend.");
+        if (receipt.GetStatus() == ZXBIT_SPEND_V1_SEC_LEVEL) {
+            body = tr("Version 1 zXBIT require a security level of 100 to successfully spend.");
         } else {
             int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction
-            const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zPIV transaction
+            const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zXBIT transaction
             if (nNeededSpends > nMaxSpends) {
                 body = tr("Too much inputs (") + QString::number(nNeededSpends, 10) +
                        tr(") needed.\nMaximum allowed: ") + QString::number(nMaxSpends, 10);
@@ -477,7 +477,7 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
                 body = QString::fromStdString(receipt.GetStatusMessage());
             }
         }
-        Q_EMIT message("zPIV transaction failed", body, CClientUIInterface::MSG_ERROR);
+        Q_EMIT message("zXBIT transaction failed", body, CClientUIInterface::MSG_ERROR);
         return false;
     }
 }
@@ -586,7 +586,7 @@ void SendWidget::onChangeCustomFeeClicked(){
 }
 
 void SendWidget::onCoinControlClicked(){
-    if(isPIV){
+    if(isXBIT){
         if (walletModel->getBalance() > 0) {
             if (!coinControlDialog) {
                 coinControlDialog = new CoinControlDialog();
@@ -598,17 +598,17 @@ void SendWidget::onCoinControlClicked(){
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
             refreshAmounts();
         } else {
-            inform(tr("You don't have any PIV to select."));
+            inform(tr("You don't have any XBIT to select."));
         }
     }else{
         if (walletModel->getZerocoinBalance() > 0) {
-            ZPivControlDialog *zPivControl = new ZPivControlDialog(this);
-            zPivControl->setModel(walletModel);
-            zPivControl->exec();
-            ui->btnCoinControl->setActive(!ZPivControlDialog::setSelectedMints.empty());
-            zPivControl->deleteLater();
+            ZXBITControlDialog *zXBITControl = new ZXBITControlDialog(this);
+            zXBITControl->setModel(walletModel);
+            zXBITControl->exec();
+            ui->btnCoinControl->setActive(!ZXBITControlDialog::setSelectedMints.empty());
+            zXBITControl->deleteLater();
         } else {
-            inform(tr("You don't have any zPIV in your balance to select."));
+            inform(tr("You don't have any zXBIT in your balance to select."));
         }
     }
 }
@@ -617,9 +617,9 @@ void SendWidget::onValueChanged() {
     refreshAmounts();
 }
 
-void SendWidget::onPIVSelected(bool _isPIV){
-    isPIV = _isPIV;
-    setCssProperty(coinIcon, _isPIV ? "coin-icon-piv" : "coin-icon-zpiv");
+void SendWidget::onXBITSelected(bool _isXBIT){
+    isXBIT = _isXBIT;
+    setCssProperty(coinIcon, _isXBIT ? "coin-icon-xbit" : "coin-icon-zxbit");
     refreshView();
     updateStyle(coinIcon);
 }
@@ -712,8 +712,8 @@ void SendWidget::onContactMultiClicked(){
             inform(tr("Invalid address"));
             return;
         }
-        CBitcoinAddress pivAdd = CBitcoinAddress(address.toStdString());
-        if (walletModel->isMine(pivAdd)) {
+        CBitcoinAddress xbitAdd = CBitcoinAddress(address.toStdString());
+        if (walletModel->isMine(xbitAdd)) {
             inform(tr("Cannot store your own address as contact"));
             return;
         }
@@ -733,7 +733,7 @@ void SendWidget::onContactMultiClicked(){
             if (label == dialog->getLabel()) {
                 return;
             }
-            if (walletModel->updateAddressBookLabels(pivAdd.Get(), dialog->getLabel().toStdString(),
+            if (walletModel->updateAddressBookLabels(xbitAdd.Get(), dialog->getLabel().toStdString(),
                     AddressBook::AddressBookPurpose::SEND)) {
                 inform(tr("New Contact Stored"));
             } else {

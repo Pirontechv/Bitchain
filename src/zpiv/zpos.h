@@ -10,7 +10,7 @@
 #include "kernel.h"
 #include "txdb.h"
 
-class CLegacyZPivStake : public CStakeInput
+class CLegacyZXBITStake : public CStakeInput
 {
 private:
     uint32_t nChecksum;
@@ -18,8 +18,8 @@ private:
     uint256 hashSerial;
 
 public:
-    explicit CLegacyZPivStake(const libzerocoin::CoinSpend& spend);
-    bool IsZPIV() const override { return true; }
+    explicit CLegacyZXBITStake(const libzerocoin::CoinSpend& spend);
+    bool IsZXBIT() const override { return true; }
     uint32_t GetChecksum() const { return nChecksum; }
     CBlockIndex* GetIndexFrom() override;
     CAmount GetValue() const override;

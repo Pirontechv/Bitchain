@@ -62,13 +62,13 @@ class ZerocoinSpendTest(BitchainTestFramework):
         def get_zerocoin_data(coin):
             return coin["s"], coin["r"], coin["k"], coin["id"], coin["d"], coin["t"]
 
-        def check_balances(denom, zpiv_bal, piv_bal):
-            zpiv_bal -= denom
-            assert_equal(self.nodes[2].getzerocoinbalance()['Total'], zpiv_bal)
-            piv_bal += denom
+        def check_balances(denom, zxbit_bal, xbit_bal):
+            zxbit_bal -= denom
+            assert_equal(self.nodes[2].getzerocoinbalance()['Total'], zxbit_bal)
+            xbit_bal += denom
             wi = self.nodes[2].getwalletinfo()
-            assert_equal(wi['balance'] + wi['immature_balance'], piv_bal)
-            return zpiv_bal, piv_bal
+            assert_equal(wi['balance'] + wi['immature_balance'], xbit_bal)
+            return zxbit_bal, xbit_bal
 
         def stake_4_blocks(block_time):
             for peer in range(2):
@@ -84,9 +84,9 @@ class ZerocoinSpendTest(BitchainTestFramework):
         # Start with cache balances
         wi = self.nodes[2].getwalletinfo()
         balance = wi['balance'] + wi['immature_balance']
-        zpiv_balance = self.nodes[2].getzerocoinbalance()['Total']
+        zxbit_balance = self.nodes[2].getzerocoinbalance()['Total']
         assert_equal(balance, DecimalAmt(13833.92))
-        assert_equal(zpiv_balance, 6666)
+        assert_equal(zxbit_balance, 6666)
 
         # Export zerocoin data
         listmints = self.nodes[2].listmintedzerocoins(True, True)
@@ -119,7 +119,7 @@ class ZerocoinSpendTest(BitchainTestFramework):
         # stake 4 blocks - check it gets included on chain and check balances
         block_time = stake_4_blocks(block_time)
         self.check_tx_in_chain(0, txid)
-        zpiv_balance, balance = check_balances(denom_2, zpiv_balance, balance)
+        zxbit_balance, balance = check_balances(denom_2, zxbit_balance, balance)
         self.log.info("--> VALID PUBLIC COIN SPEND (v3) PASSED")
 
         # 4) Check double spends - spend v3
@@ -138,7 +138,7 @@ class ZerocoinSpendTest(BitchainTestFramework):
         # stake 4 blocks - check it gets included on chain and check balances
         block_time = stake_4_blocks(block_time)
         self.check_tx_in_chain(0, txid)
-        zpiv_balance, balance = check_balances(denom_3, zpiv_balance, balance)
+        zxbit_balance, balance = check_balances(denom_3, zxbit_balance, balance)
         self.log.info("--> VALID PUBLIC COIN SPEND (v4) PASSED")
 
         # 7) Check double spends - spend v4
@@ -148,7 +148,7 @@ class ZerocoinSpendTest(BitchainTestFramework):
 
         # 8) Try to relay old v3 spend now (serial_1)
         self.log.info("Trying to send old v3 spend now...")
-        assert_raises_rpc_error(-26, "bad-txns-invalid-zpiv",
+        assert_raises_rpc_error(-26, "bad-txns-invalid-zxbit",
                                 self.nodes[2].sendrawtransaction, old_spend_v3)
         self.log.info("GOOD: Old transaction not sent.")
 
@@ -167,7 +167,7 @@ class ZerocoinSpendTest(BitchainTestFramework):
         self.check_tx_in_chain(0, txid)
         # need to reset spent mints since this was a raw broadcast
         self.nodes[2].resetmintzerocoin()
-        _, _ = check_balances(denom_1, zpiv_balance, balance)
+        _, _ = check_balances(denom_1, zxbit_balance, balance)
         self.log.info("--> VALID PUBLIC COIN SPEND (v3) PASSED")
 
 

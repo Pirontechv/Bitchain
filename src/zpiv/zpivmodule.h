@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
-#ifndef BITCHAIN_ZPIVMODULE_H
-#define BITCHAIN_ZPIVMODULE_H
+#ifndef BITCHAIN_ZXBITMODULE_H
+#define BITCHAIN_ZXBITMODULE_H
 
 #include "libzerocoin/bignum.h"
 #include "libzerocoin/Denominations.h"
@@ -17,7 +17,7 @@
 #include "uint256.h"
 #include <streams.h>
 #include <utilstrencodings.h>
-#include "zpiv/zerocoin.h"
+#include "zxbit/zerocoin.h"
 #include "chainparams.h"
 
 static int const PUBSPEND_SCHNORR = 4;
@@ -80,7 +80,7 @@ public:
 
 class CValidationState;
 
-namespace ZPIVModule {
+namespace ZXBITModule {
     bool createInput(CTxIn &in, CZerocoinMint& mint, uint256 hashTxOut, const int spendVersion);
     PublicCoinSpend parseCoinSpend(const CTxIn &in);
     bool parseCoinSpend(const CTxIn &in, const CTransaction& tx, const CTxOut &prevOut, PublicCoinSpend& publicCoinSpend);
@@ -98,4 +98,4 @@ namespace ZPIVModule {
 };
 
 
-#endif //BITCHAIN_ZPIVMODULE_H
+#endif //BITCHAIN_ZXBITMODULE_H

@@ -108,7 +108,7 @@
              <number>0</number>
             </property>
             <item alignment="Qt::AlignTop">
-             <widget class="QLabel" name="labelAmountTopPiv">
+             <widget class="QLabel" name="labelAmountTopXBIT">
               <property name="minimumSize">
                <size>
                 <width>0</width>
@@ -119,7 +119,7 @@
                <string notr="true">padding:0px;margin:0px;</string>
               </property>
               <property name="text">
-               <string>480.0685 PIV</string>
+               <string>480.0685 XBIT</string>
               </property>
              </widget>
             </item>
@@ -180,7 +180,7 @@ border:none;</string>
              </spacer>
             </item>
             <item alignment="Qt::AlignTop">
-             <widget class="QLabel" name="labelAmountTopzPiv">
+             <widget class="QLabel" name="labelAmountTopzXBIT">
               <property name="minimumSize">
                <size>
                 <width>0</width>
@@ -188,7 +188,7 @@ border:none;</string>
                </size>
               </property>
               <property name="text">
-               <string>1,000 zPIV</string>
+               <string>1,000 zXBIT</string>
               </property>
              </widget>
             </item>
@@ -386,9 +386,9 @@ border:none;</string>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelAmountPiv">
+                <widget class="QLabel" name="labelAmountXBIT">
                  <property name="text">
-                  <string>480.0685 PIV</string>
+                  <string>480.0685 XBIT</string>
                  </property>
                 </widget>
                </item>
@@ -409,9 +409,9 @@ border:none;</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLabel" name="labelPendingPiv">
+                  <widget class="QLabel" name="labelPendingXBIT">
                    <property name="text">
-                    <string>6.943 PIV</string>
+                    <string>6.943 XBIT</string>
                    </property>
                   </widget>
                  </item>
@@ -443,9 +443,9 @@ border:none;</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLabel" name="labelImmaturePiv">
+                  <widget class="QLabel" name="labelImmatureXBIT">
                    <property name="text">
-                    <string>10 PIV</string>
+                    <string>10 XBIT</string>
                    </property>
                   </widget>
                  </item>
@@ -497,9 +497,9 @@ border:none;</string>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelAmountzPiv">
+                <widget class="QLabel" name="labelAmountzXBIT">
                  <property name="text">
-                  <string>1,000 zPIV</string>
+                  <string>1,000 zXBIT</string>
                  </property>
                 </widget>
                </item>
@@ -520,9 +520,9 @@ border:none;</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLabel" name="labelPendingzPiv">
+                  <widget class="QLabel" name="labelPendingzXBIT">
                    <property name="text">
-                    <string>60 zPIV</string>
+                    <string>60 zXBIT</string>
                    </property>
                   </widget>
                  </item>
@@ -554,9 +554,9 @@ border:none;</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLabel" name="labelImmaturezPiv">
+                  <widget class="QLabel" name="labelImmaturezXBIT">
                    <property name="text">
-                    <string>10 zPIV</string>
+                    <string>10 zXBIT</string>
                    </property>
                   </widget>
                  </item>

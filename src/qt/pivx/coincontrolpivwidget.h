@@ -2,25 +2,25 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef COINCONTROLPIVWIDGET_H
-#define COINCONTROLPIVWIDGET_H
+#ifndef COINCONTROLXBITWIDGET_H
+#define COINCONTROLXBITWIDGET_H
 
 #include <QDialog>
 
 namespace Ui {
-class CoinControlPivWidget;
+class CoinControlXBITWidget;
 }
 
-class CoinControlPivWidget : public QDialog
+class CoinControlXBITWidget : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit CoinControlPivWidget(QWidget *parent = nullptr);
-    ~CoinControlPivWidget();
+    explicit CoinControlXBITWidget(QWidget *parent = nullptr);
+    ~CoinControlXBITWidget();
 
 private:
-    Ui::CoinControlPivWidget *ui;
+    Ui::CoinControlXBITWidget *ui;
 };
 
-#endif // COINCONTROLPIVWIDGET_H
+#endif // COINCONTROLXBITWIDGET_H

@@ -465,7 +465,7 @@ for staking</source>
     </message>
     <message>
         <location line="+144"/>
-        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
+        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XBITs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -475,7 +475,7 @@ for staking</source>
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XBIT&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -609,7 +609,7 @@ for staking</source>
     </message>
     <message>
         <location line="+20"/>
-        <source>0,00 PIV</source>
+        <source>0,00 XBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -708,7 +708,7 @@ for staking</source>
         <location line="+27"/>
         <location line="+72"/>
         <location line="+357"/>
-        <source>0.00 PIV</source>
+        <source>0.00 XBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -941,7 +941,7 @@ for staking</source>
     </message>
     <message>
         <location line="+8"/>
-        <source>Can vary +/- %1 upiv per input.</source>
+        <source>Can vary +/- %1 uxbit per input.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -962,9 +962,9 @@ for staking</source>
     </message>
 </context>
 <context>
-    <name>CoinControlPivWidget</name>
+    <name>CoinControlXBITWidget</name>
     <message>
-        <location filename="../bitchain/forms/coincontrolpivwidget.ui" line="+14"/>
+        <location filename="../bitchain/forms/coincontrolxbitwidget.ui" line="+14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
@@ -980,7 +980,7 @@ for staking</source>
     </message>
     <message>
         <location line="+30"/>
-        <source>PIV:</source>
+        <source>XBIT:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1125,7 +1125,7 @@ for staking</source>
     </message>
     <message>
         <location line="+5"/>
-        <source>You can delegate your PIVs and let a hot node (24/7 online node)
+        <source>You can delegate your XBITs and let a hot node (24/7 online node)
 stake in your behalf, keeping the keys in a secure place offline.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1136,7 +1136,7 @@ stake in your behalf, keeping the keys in a secure place offline.</source>
     </message>
     <message>
         <location line="+6"/>
-        <source>Delegate or Accept PIV delegation</source>
+        <source>Delegate or Accept XBIT delegation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1237,7 +1237,7 @@ Do you wish to proceed?</source>
     </message>
     <message>
         <location line="+28"/>
-        <source>You don&apos;t have any PIV to select.</source>
+        <source>You don&apos;t have any XBIT to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1398,12 +1398,12 @@ address</source>
     </message>
     <message>
         <location line="+39"/>
-        <source>PIV</source>
+        <source>XBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+42"/>
-        <source>zPIV</source>
+        <source>zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1443,7 +1443,7 @@ address</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Amount of PIV and zPIV staked.</source>
+        <source>Amount of XBIT and zXBIT staked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1513,7 +1513,7 @@ address</source>
     </message>
     <message>
         <location line="+5"/>
-        <source>How to get PIV or zPIV</source>
+        <source>How to get XBIT or zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2075,7 +2075,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+23"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a BITCHAIN Masternode you must dedicate 10.000 PIV (the unit of BITCHAIN) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a BITCHAIN Masternode you must dedicate 10.000 XBIT (the unit of BITCHAIN) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2090,7 +2090,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node&apos;s name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 XBIT will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node&apos;s name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2357,7 +2357,7 @@ Are you sure?</source>
     </message>
     <message>
         <location line="+7"/>
-        <source>Not enough balance to create a masternode, 10,000 PIV required.</source>
+        <source>Not enough balance to create a masternode, 10,000 XBIT required.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2664,17 +2664,17 @@ https://www.transifex.com/bitchain-project/bitchain-project-translations</source
     </message>
     <message>
         <location line="-187"/>
-        <source>Enable automatic minting of PIV units to zPIV</source>
+        <source>Enable automatic minting of XBIT units to zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Enable zPIV Automint</source>
+        <source>Enable zXBIT Automint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Enable automatic zPIV minting from specific addresses</source>
+        <source>Enable automatic zXBIT minting from specific addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2684,23 +2684,23 @@ https://www.transifex.com/bitchain-project/bitchain-project-translations</source
     </message>
     <message>
         <location line="+11"/>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming XBIT which get automatically converted to zXBIT via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zPIV</source>
+        <source>Percentage of autominted zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough XBIT for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zPIV Denomination</source>
+        <source>Preferred Automint zXBIT Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3203,13 +3203,13 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>Minting zPIV anonymizes your PIV by removing any
+        <source>Minting zXBIT anonymizes your XBIT by removing any
 transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Mint new zPIV or convert back to PIV</source>
+        <source>Mint new zXBIT or convert back to XBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3224,22 +3224,22 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+87"/>
-        <source>Mint zPIV</source>
+        <source>Mint zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enter amount of PIV to mint into zPIV</source>
+        <source>Enter amount of XBIT to mint into zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Convert back to PIV</source>
+        <source>Convert back to XBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enter amount of zPIV to convert back into PIV</source>
+        <source>Enter amount of zXBIT to convert back into XBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3249,12 +3249,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+0"/>
-        <source>zPIV is currently undergoing maintenance</source>
+        <source>zXBIT is currently undergoing maintenance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+8"/>
-        <source>You need to unlock the wallet to be able to %1 zPIV</source>
+        <source>You need to unlock the wallet to be able to %1 zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3274,17 +3274,17 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+18"/>
-        <source>zPIV minted successfully</source>
+        <source>zXBIT minted successfully</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
-        <source>zPIV converted back to PIV</source>
+        <source>zXBIT converted back to XBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
-        <source>You don&apos;t have any PIV to select.</source>
+        <source>You don&apos;t have any XBIT to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3802,7 +3802,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+29"/>
-        <source>Custom zPIV Backup Path:</source>
+        <source>Custom zXBIT Backup Path:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4120,7 +4120,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Scan the QR code or copy the address to receive PIV.</source>
+        <source>Scan the QR code or copy the address to receive XBIT.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4250,7 +4250,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+71"/>
-        <source>PIV</source>
+        <source>XBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4483,7 +4483,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+12"/>
-        <source>You can transfer public coins (PIV) or private coins (zPIV)</source>
+        <source>You can transfer public coins (XBIT) or private coins (zXBIT)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4528,12 +4528,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+40"/>
-        <source>Send PIV</source>
+        <source>Send XBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Send zPIV</source>
+        <source>Send zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4602,7 +4602,7 @@ These coins will no longer be cold-staked.</source>
     </message>
     <message>
         <location line="-38"/>
-        <source>zPIV is currently undergoing maintenance.</source>
+        <source>zXBIT is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4624,12 +4624,12 @@ These coins will no longer be cold-staked.</source>
     </message>
     <message>
         <location line="+31"/>
-        <source>zPIV transaction sent!</source>
+        <source>zXBIT transaction sent!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
+        <source>Version 1 zXBIT require a security level of 100 to successfully spend.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4676,12 +4676,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+23"/>
-        <source>You don&apos;t have any PIV to select.</source>
+        <source>You don&apos;t have any XBIT to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>You don&apos;t have any zPIV in your balance to select.</source>
+        <source>You don&apos;t have any zXBIT in your balance to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5027,7 +5027,7 @@ Remember to write it down and store it safely, otherwise you might lose access t
     </message>
     <message>
         <location line="+10"/>
-        <source>Successfully added pivate key to the wallet</source>
+        <source>Successfully added xbitate key to the wallet</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5195,33 +5195,33 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+31"/>
-        <source>2) Why are my PIV unspendable?</source>
+        <source>2) Why are my XBIT unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+28"/>
-        <source>3) BITCHAIN privacy? What is Zerocoin (zPIV)?</source>
+        <source>3) BITCHAIN privacy? What is Zerocoin (zXBIT)?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+28"/>
-        <source>4) Why are my zPIV unspendable?</source>
+        <source>4) Why are my zXBIT unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
         <source>5) Why did my wallet convert the balance
-    into zPIV automatically?</source>
+    into zXBIT automatically?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>6) How do I receive PIV/zPIV?</source>
+        <source>6) How do I receive XBIT/zXBIT?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
-        <source>7) How do I stake PIV/zPIV?</source>
+        <source>7) How do I stake XBIT/zXBIT?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5257,7 +5257,7 @@ Verify that you have installed a predetermined text editor.</source>
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  BITCHAIN incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPIV) and Zerocoin staking.
+                           to implement ZeroCoin(zXBIT) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            BITCHAIN utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of BITCHAIN to participate in earning block rewards
@@ -5274,7 +5274,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>Why are my PIV unspendable?</source>
+        <source>Why are my XBIT unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5297,18 +5297,18 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>BITCHAIN privacy? What is Zerocoin (zPIV)?</source>
+        <source>BITCHAIN privacy? What is Zerocoin (zXBIT)?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zPIV is an optional privacy-centric method of coin mixing on the
+                           zXBIT is an optional privacy-centric method of coin mixing on the
                            BITCHAIN blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://BITCHAIN.org/zpiv/&apos;&gt;
-                           &quot;BITCHAIN Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://BITCHAIN.org/zxbit/&apos;&gt;
+                           &quot;BITCHAIN Zerocoin (zXBIT) Technical Paper&quot;&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation type="unfinished"></translation>
@@ -5320,14 +5320,14 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>Why are my zPIV unspendable?</source>
+        <source>Why are my zXBIT unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           After minting, zPIV will require 20 confirmations as well as 1
+                           After minting, zXBIT will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -5341,25 +5341,25 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>Why did my wallet convert the balance into zPIV automatically?</source>
+        <source>Why did my wallet convert the balance into zXBIT automatically?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           By default the BITCHAIN wallet will convert 10% of your entire PIV
-                           balance to zPIV to assist the network. If you do not wish to
-                           stake zPIV or take advantage of the privacy benefit it brings,
+                           By default the BITCHAIN wallet will convert 10% of your entire XBIT
+                           balance to zXBIT to assist the network. If you do not wish to
+                           stake zXBIT or take advantage of the privacy benefit it brings,
                            you can disable the automatic minting in your BITCHAIN wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zPIV Automint”.
+                           going to Settings-&gt;Options and deselecting “Enable zXBIT Automint”.
                            If you are not making use of the BITCHAIN-QT or GUI you can simply open
                            your bitchain.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           You can read more about zPIV in the
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://BITCHAIN.org/zpiv/&apos;&gt; &quot;BITCHAIN Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
-                           If you would like to keep and stake your zPIV, please read the &quot;How do I stake&quot;
+                           You can read more about zXBIT in the
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://BITCHAIN.org/zxbit/&apos;&gt; &quot;BITCHAIN Zerocoin (zXBIT) Technical Paper&quot;&lt;/a&gt;.
+                           If you would like to keep and stake your zXBIT, please read the &quot;How do I stake&quot;
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -5372,17 +5372,17 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>How do I receive PIV/zPIV?</source>
+        <source>How do I receive XBIT/zXBIT?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zPIV can be spent and sent to any BITCHAIN address. The receiver will
-                           receive standard BITCHAIN but the origin of the BITCHAIN is anonymized by the zPIV Protocol.
+                           zXBIT can be spent and sent to any BITCHAIN address. The receiver will
+                           receive standard BITCHAIN but the origin of the BITCHAIN is anonymized by the zXBIT Protocol.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
+                           If you want more zXBIT you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation type="unfinished"></translation>
@@ -5394,7 +5394,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>How do I stake PIV/zPIV?</source>
+        <source>How do I stake XBIT/zXBIT?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5415,12 +5415,12 @@ Verify that you have installed a predetermined text editor.</source>
                            You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &quot;Staking Enabled&quot; to indicate it is staking.  Using the command line interface (bitchain-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           To Stake zPIV:
+                           To Stake zXBIT:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zPIV balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zXBIT balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -5468,7 +5468,7 @@ Verify that you have installed a predetermined text editor.</source>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            A masternode is a computer running a full node BITCHAIN core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
+                           requirement of 10,000 XBIT secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
@@ -5500,7 +5500,7 @@ Verify that you have installed a predetermined text editor.</source>
                            Requirements:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 XBIT per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -5521,7 +5521,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+26"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 10,000 PIV collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 10,000 XBIT collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6659,13 +6659,13 @@ Are you sure?
     <message>
         <location line="+96"/>
         <location line="+279"/>
-        <source>480.0685 PIV</source>
+        <source>480.0685 XBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-210"/>
         <location line="+321"/>
-        <source>1,000 zPIV</source>
+        <source>1,000 zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6682,7 +6682,7 @@ Are you sure?
     </message>
     <message>
         <location line="-104"/>
-        <source>6.943 PIV</source>
+        <source>6.943 XBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6693,17 +6693,17 @@ Are you sure?
     </message>
     <message>
         <location line="-104"/>
-        <source>10 PIV</source>
+        <source>10 XBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+77"/>
-        <source>60 zPIV</source>
+        <source>60 zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>10 zPIV</source>
+        <source>10 zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7140,22 +7140,22 @@ Are you sure?
     </message>
     <message>
         <location line="+7"/>
-        <source>PIV Stake</source>
+        <source>XBIT Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>zPIV Stake</source>
+        <source>zXBIT Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>PIV Cold Stake</source>
+        <source>XBIT Cold Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>PIV Stake in behalf of</source>
+        <source>XBIT Stake in behalf of</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7185,27 +7185,27 @@ Are you sure?
     </message>
     <message>
         <location line="+4"/>
-        <source>Converted PIV to zPIV</source>
+        <source>Converted XBIT to zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zPIV</source>
+        <source>Spent zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received PIV from zPIV</source>
+        <source>Received XBIT from zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zPIV from zPIV Spend</source>
+        <source>Minted Change as zXBIT from zXBIT Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zPIV to PIV</source>
+        <source>Converted zXBIT to XBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7324,7 +7324,7 @@ Are you sure?
     </message>
     <message>
         <location line="+7"/>
-        <source>2 PIV</source>
+        <source>2 XBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7354,7 +7354,7 @@ Are you sure?
     </message>
     <message>
         <location line="+7"/>
-        <source>0.0001 PIV</source>
+        <source>0.0001 XBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7462,7 +7462,7 @@ Are you sure?
     </message>
     <message>
         <location line="+15"/>
-        <source>+0.000585 PIV</source>
+        <source>+0.000585 XBIT</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -7478,7 +7478,7 @@ Are you sure?
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 XBIT.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -7602,10 +7602,10 @@ BITCHAIN Core Wallet</source>
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZXBITControlDialog</name>
     <message>
-        <location filename="../forms/zpivcontroldialog.ui" line="+20"/>
-        <source>Select zPIV to Spend</source>
+        <location filename="../forms/zxbitcontroldialog.ui" line="+20"/>
+        <source>Select zXBIT to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7620,7 +7620,7 @@ BITCHAIN Core Wallet</source>
     </message>
     <message>
         <location line="+26"/>
-        <source>zPiv</source>
+        <source>zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7649,8 +7649,8 @@ BITCHAIN Core Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../zpivcontroldialog.cpp" line="+39"/>
-        <source>Select zPIV Denominations to Spend</source>
+        <location filename="../zxbitcontroldialog.cpp" line="+39"/>
+        <source>Select zXBIT Denominations to Spend</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -7728,7 +7728,7 @@ BITCHAIN Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zXBIT minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7738,12 +7738,12 @@ BITCHAIN Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for XBIT inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for zXBIT inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7788,12 +7788,12 @@ BITCHAIN Core Wallet</source>
     </message>
     <message>
         <location line="+8"/>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7948,12 +7948,12 @@ BITCHAIN Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 XBIT.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 XBIT.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8218,7 +8218,7 @@ BITCHAIN Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Enable precomputation of zPIV spends and stakes (0-1, default %u)</source>
+        <source>Enable precomputation of zXBIT spends and stakes (0-1, default %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8328,7 +8328,7 @@ BITCHAIN Core Wallet</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in XBIT/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8453,22 +8453,22 @@ BITCHAIN Core Wallet</source>
     </message>
     <message>
         <location line="+9"/>
-        <source>Recalculating PIV supply...</source>
+        <source>Recalculating XBIT supply...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Recalculating minted ZPIV...</source>
+        <source>Recalculating minted ZXBIT...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Recalculating spent ZPIV...</source>
+        <source>Recalculating spent ZXBIT...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
+        <source>Reindex the XBIT and zXBIT money supply statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8565,7 +8565,7 @@ BITCHAIN Core Wallet</source>
     </message>
     <message>
         <location line="+27"/>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <source>Specify custom backup path to add a copy of any automatic zXBIT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9110,7 +9110,7 @@ BITCHAIN Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Syncing zPIV wallet...</source>
+        <source>Syncing zXBIT wallet...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9255,7 +9255,7 @@ BITCHAIN Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
+        <source>Value is below the smallest available denomination (= 1) of zXBIT</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -47,9 +47,9 @@ TopBar::TopBar(BITCHAINGUI* _mainWindow, QWidget *parent) :
 
     // Amount information top
     ui->widgetTopAmount->setVisible(false);
-    setCssProperty({ui->labelAmountTopPiv, ui->labelAmountTopzPiv}, "amount-small-topbar");
-    setCssProperty({ui->labelAmountPiv, ui->labelAmountzPiv}, "amount-topbar");
-    setCssProperty({ui->labelPendingPiv, ui->labelPendingzPiv, ui->labelImmaturePiv, ui->labelImmaturezPiv}, "amount-small-topbar");
+    setCssProperty({ui->labelAmountTopXBIT, ui->labelAmountTopzXBIT}, "amount-small-topbar");
+    setCssProperty({ui->labelAmountXBIT, ui->labelAmountzXBIT}, "amount-topbar");
+    setCssProperty({ui->labelPendingXBIT, ui->labelPendingzXBIT, ui->labelImmatureXBIT, ui->labelImmaturezXBIT}, "amount-small-topbar");
 
     // Progress Sync
     progressBar = new QProgressBar(ui->layoutSync);
@@ -537,27 +537,27 @@ void TopBar::updateBalances(const CAmount& balance, const CAmount& unconfirmedBa
     }
     ui->labelTitle1->setText(nLockedBalance > 0 ? tr("Available (Locked included)") : tr("Available"));
 
-    // PIV Total
-    CAmount pivAvailableBalance = balance;
-    // zPIV Balance
+    // XBIT Total
+    CAmount xbitAvailableBalance = balance;
+    // zXBIT Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
 
     // Set
-    QString totalPiv = GUIUtil::formatBalance(pivAvailableBalance, nDisplayUnit);
-    QString totalzPiv = GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true);
+    QString totalXBIT = GUIUtil::formatBalance(xbitAvailableBalance, nDisplayUnit);
+    QString totalzXBIT = GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true);
     // Top
-    ui->labelAmountTopPiv->setText(totalPiv);
-    ui->labelAmountTopzPiv->setText(totalzPiv);
+    ui->labelAmountTopXBIT->setText(totalXBIT);
+    ui->labelAmountTopzXBIT->setText(totalzXBIT);
 
     // Expanded
-    ui->labelAmountPiv->setText(totalPiv);
-    ui->labelAmountzPiv->setText(totalzPiv);
+    ui->labelAmountXBIT->setText(totalXBIT);
+    ui->labelAmountzXBIT->setText(totalzXBIT);
 
-    ui->labelPendingPiv->setText(GUIUtil::formatBalance(unconfirmedBalance, nDisplayUnit));
-    ui->labelPendingzPiv->setText(GUIUtil::formatBalance(unconfirmedZerocoinBalance, nDisplayUnit, true));
+    ui->labelPendingXBIT->setText(GUIUtil::formatBalance(unconfirmedBalance, nDisplayUnit));
+    ui->labelPendingzXBIT->setText(GUIUtil::formatBalance(unconfirmedZerocoinBalance, nDisplayUnit, true));
 
-    ui->labelImmaturePiv->setText(GUIUtil::formatBalance(immatureBalance, nDisplayUnit));
-    ui->labelImmaturezPiv->setText(GUIUtil::formatBalance(immatureZerocoinBalance, nDisplayUnit, true));
+    ui->labelImmatureXBIT->setText(GUIUtil::formatBalance(immatureBalance, nDisplayUnit));
+    ui->labelImmaturezXBIT->setText(GUIUtil::formatBalance(immatureZerocoinBalance, nDisplayUnit, true));
 }
 
 void TopBar::resizeEvent(QResizeEvent *event){

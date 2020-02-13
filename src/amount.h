@@ -12,13 +12,13 @@
 #include <stdlib.h>
 #include <string>
 
-/** Amount in PIV (Can be negative) */
+/** Amount in XBIT (Can be negative) */
 typedef int64_t CAmount;
 
 static const CAmount COIN = 100000000;
 static const CAmount CENT = 1000000;
 
-/** No amount larger than this (in PIV) is valid in a single UTXO.
+/** No amount larger than this (in XBIT) is valid in a single UTXO.
  *
  * Note that this constant is *not* the total money supply, which in BITCHAIN
  * is not limited to an arbitrary hard cap, but rather a sanity check. As
@@ -31,7 +31,7 @@ static const CAmount MAX_MONEY_OUT = 21000000 * COIN;
 inline bool MoneyRange(const CAmount& nValue) { return (nValue >= 0 && nValue <= MAX_MONEY_OUT); }
 
 /**
- * Fee rate in PIV per kilobyte: CAmount / kB
+ * Fee rate in XBIT per kilobyte: CAmount / kB
  */
 class CFeeRate
 {

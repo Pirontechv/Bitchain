@@ -16,8 +16,8 @@
 #include "util.h"
 #include "utilmoneystr.h"
 #include "wallet/wallet.h"
-#include "zpiv/zpivmodule.h"
-#include "zpivchain.h"
+#include "zxbit/zxbitmodule.h"
+#include "zxbitchain.h"
 
 #include <stdint.h>
 #include <fstream>
@@ -138,12 +138,12 @@ UniValue blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool tx
 
     result.push_back(Pair("moneysupply",ValueFromAmount(blockindex->nMoneySupply)));
 
-    UniValue zpivObj(UniValue::VOBJ);
+    UniValue zxbitObj(UniValue::VOBJ);
     for (auto denom : libzerocoin::zerocoinDenomList) {
-        zpivObj.push_back(Pair(std::to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
+        zxbitObj.push_back(Pair(std::to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
-    zpivObj.push_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
-    result.push_back(Pair("zPIVsupply", zpivObj));
+    zxbitObj.push_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
+    result.push_back(Pair("zXBITsupply", zxbitObj));
 
     //////////
     ////////// Coin stake data ////////////////
@@ -503,17 +503,17 @@ UniValue getblock(const UniValue& params, bool fHelp)
             "  \"previousblockhash\" : \"hash\",  (string) The hash of the previous block\n"
             "  \"nextblockhash\" : \"hash\"       (string) The hash of the next block\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zPIVsupply\" :\n"
+            "  \"zXBITsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zPIV denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zPIV denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zPIV denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zPIV denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zPIV denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zPIV denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zPIV denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zPIV denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zPIV denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zXBIT denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zXBIT denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zXBIT denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zXBIT denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zXBIT denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zXBIT denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zXBIT denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zXBIT denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zXBIT denominations\n"
             "  },\n"
             "  \"hashProofOfStake\" : \"hash\",   (string) Proof of Stake hash\n"
             "  }\n"
@@ -1280,7 +1280,7 @@ UniValue getserials(const UniValue& params, bool fHelp) {
                         }
                         libzerocoin::ZerocoinParams *params = Params().Zerocoin_Params(false);
                         PublicCoinSpend publicSpend(params);
-                        if (!ZPIVModule::parseCoinSpend(txin, tx, prevOut, publicSpend)) {
+                        if (!ZXBITModule::parseCoinSpend(txin, tx, prevOut, publicSpend)) {
                             throw JSONRPCError(RPC_INTERNAL_ERROR, "public zerocoin spend parse failed");
                         }
                         serial_str = publicSpend.getCoinSerialNumber().ToString(16);
@@ -1354,9 +1354,9 @@ UniValue getblockindexstats(const UniValue& params, bool fHelp) {
                 "        \"denom_5\": xxxx           (numeric) number of PUBLIC spends of denom_5 occurred over the block range\n"
                 "         ...                    ... number of PUBLIC spends of other denominations: ..., 10, 50, 100, 500, 1000, 5000\n"
                 "  }\n"
-                "  \"txbytes\": xxxxx                (numeric) Sum of the size of all txes (zPIV excluded) over block range\n"
-                "  \"ttlfee\": xxxxx                 (numeric) Sum of the fee amount of all txes (zPIV mints excluded) over block range\n"
-                "  \"ttlfee_all\": xxxxx             (numeric) Sum of the fee amount of all txes (zPIV mints included) over block range\n"
+                "  \"txbytes\": xxxxx                (numeric) Sum of the size of all txes (zXBIT excluded) over block range\n"
+                "  \"ttlfee\": xxxxx                 (numeric) Sum of the fee amount of all txes (zXBIT mints excluded) over block range\n"
+                "  \"ttlfee_all\": xxxxx             (numeric) Sum of the fee amount of all txes (zXBIT mints included) over block range\n"
                 "  \"feeperkb\": xxxxx               (numeric) Average fee per kb (excluding zc txes)\n"
                 "}\n"
 

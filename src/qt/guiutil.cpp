@@ -120,8 +120,8 @@ CAmount parseValue(const QString& text, int displayUnit, bool* valid_out)
     return valid ? val : 0;
 }
 
-QString formatBalance(CAmount amount, int nDisplayUnit, bool isZpiv){
-    return (amount == 0) ? ("0.00 " + BitcoinUnits::name(nDisplayUnit, isZpiv)) : BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, amount, false, BitcoinUnits::separatorAlways, true, isZpiv);
+QString formatBalance(CAmount amount, int nDisplayUnit, bool isZxbit){
+    return (amount == 0) ? ("0.00 " + BitcoinUnits::name(nDisplayUnit, isZxbit)) : BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, amount, false, BitcoinUnits::separatorAlways, true, isZxbit);
 }
 
 bool requestUnlock(WalletModel* walletModel, AskPassphraseDialog::Context context, bool relock){
@@ -193,7 +193,7 @@ bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
             fShouldReturnFalse = false;
         } else if (i->first == "amount") {
             if (!i->second.isEmpty()) {
-                if (!BitcoinUnits::parse(BitcoinUnits::PIV, i->second, &rv.amount)) {
+                if (!BitcoinUnits::parse(BitcoinUnits::XBIT, i->second, &rv.amount)) {
                     return false;
                 }
             }
@@ -228,7 +228,7 @@ QString formatBitcoinURI(const SendCoinsRecipient& info)
     int paramCount = 0;
 
     if (info.amount) {
-        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::PIV, info.amount, false, BitcoinUnits::separatorNever));
+        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::XBIT, info.amount, false, BitcoinUnits::separatorNever));
         paramCount++;
     }
 

@@ -375,16 +375,16 @@ para 'Staking'</translation>
         <translation>Cancelar </translation>
     </message>
     <message>
-        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>BITCHAIN vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas PIVs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XBITs from being stolen by malware infecting your computer.</source>
+        <translation>BITCHAIN vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas XBITs de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Você tem certeza que deseja criptografar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS PIV&lt;b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XBIT&lt;/b&gt;!</source>
+        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS XBIT&lt;b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -542,8 +542,8 @@ para 'Staking'</translation>
         <translation>Aperte o Botão</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0.00 XBIT</source>
+        <translation>0 XBIT</translation>
     </message>
     <message>
         <source>0</source>
@@ -722,8 +722,8 @@ para 'Staking'</translation>
         <translation>Este rótulo fica vermelho se qualquer recipiente receber uma quantia menor que %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Pode variar +/- %1 upiv por entrada.</translation>
+        <source>Can vary +/- %1 uxbit per input.</source>
+        <translation>Pode variar +/- %1 uxbit por entrada.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -739,7 +739,7 @@ para 'Staking'</translation>
     </message>
 </context>
 <context>
-    <name>CoinControlPivWidget</name>
+    <name>CoinControlXBITWidget</name>
     <message>
         <source>Dialog</source>
         <translation>Diálogo</translation>
@@ -753,8 +753,8 @@ para 'Staking'</translation>
         <translation>Aperte o Botão</translation>
     </message>
     <message>
-        <source>PIV:</source>
-        <translation>PIV:</translation>
+        <source>XBIT:</source>
+        <translation>XBIT:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -890,12 +890,12 @@ para 'Staking'</translation>
         <translation>Estatísticas de Staking</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>XBIT</source>
+        <translation>XBIT</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zXBIT</source>
+        <translation>zXBIT</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -926,8 +926,8 @@ para 'Staking'</translation>
         <translation>Você pode ver o histórico da sua conta</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>Quantidade de PIV e zPIV em Staking.</translation>
+        <source>Amount of XBIT and zXBIT staked.</source>
+        <translation>Quantidade de XBIT e zXBIT em Staking.</translation>
     </message>
     <message>
         <source>All</source>
@@ -966,8 +966,8 @@ para 'Staking'</translation>
         <translation>Nenhuma transação ainda</translation>
     </message>
     <message>
-        <source>How to get PIV or zPIV</source>
-        <translation>Como obter o PIV ou zPIV</translation>
+        <source>How to get XBIT or zXBIT</source>
+        <translation>Como obter o XBIT ou zXBIT</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1416,8 +1416,8 @@ Ele será iniciado automaticamente assim que a carteira tiver confirmações suf
         <translation>Criar novo controlador de nó principal</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a BITCHAIN Masternode you must dedicate 10.000 PIV (the unit of BITCHAIN) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>Para criar um Masternode BITCHAIN, você deve dedicar 10.000 PIV (a unidade do BITCHAIN) à rede (no entanto, essas moedas ainda são suas e nunca deixarão sua posse). Você pode desativar o nó e desbloquear as moedas a qualquer momento.</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a BITCHAIN Masternode you must dedicate 10.000 XBIT (the unit of BITCHAIN) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>Para criar um Masternode BITCHAIN, você deve dedicar 10.000 XBIT (a unidade do BITCHAIN) à rede (no entanto, essas moedas ainda são suas e nunca deixarão sua posse). Você pode desativar o nó e desbloquear as moedas a qualquer momento.</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
@@ -1428,8 +1428,8 @@ Ele será iniciado automaticamente assim que a carteira tiver confirmações suf
         <translation>Definir o nome do Masternode</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>A transação de 10.000 PIV será feita com um novo endereço vazio em sua carteira. O endereço é rotulado com o nome do nó principal.</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 XBIT will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>A transação de 10.000 XBIT será feita com um novo endereço vazio em sua carteira. O endereço é rotulado com o nome do nó principal.</translation>
     </message>
     <message>
         <source>Set Master Node’s IP and port</source>
@@ -1663,8 +1663,8 @@ Você tem certeza?</translation>
         <translation>O arquivo masternode.conf não existe</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 PIV required.</source>
-        <translation>Não há saldo suficiente para criar um masternode, 10.000 PIV necessários.</translation>
+        <source>Not enough balance to create a masternode, 10,000 XBIT required.</source>
+        <translation>Não há saldo suficiente para criar um masternode, 10.000 XBIT necessários.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -2494,8 +2494,8 @@ Endereço: %4
         <translation>Quantidade</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>XBIT</source>
+        <translation>XBIT</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3548,14 +3548,14 @@ Endereço: %4
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZXBITControlDialog</name>
     <message>
         <source>PushButton</source>
         <translation>Aperte o Botão</translation>
     </message>
     <message>
-        <source>zPiv</source>
-        <translation>zPIV</translation>
+        <source>zXBIT</source>
+        <translation>zXBIT</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -3589,12 +3589,12 @@ Endereço: %4
         <translation>Executar o comando quando uma transação da carteira mudar (%s no cmd será substituído pela TxID)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Taxas (em PIV/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Taxas (em XBIT/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Taxas (em PIV/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Taxas (em XBIT/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -3613,8 +3613,8 @@ Endereço: %4
         <translation>Define o tamanho máximo de transações de alta prioridade/taxa baixa em bytes (padrão: %d)</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 PIV.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 XBIT.</source>
+        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 XBIT.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3785,8 +3785,8 @@ Endereço: %4
         <translation>Falhou em ler o bloco</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Taxa (em PIV/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
+        <source>Fee (in XBIT/kB) to add to transactions you send (default: %s)</source>
+        <translation>Taxa (em XBIT/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -4095,8 +4095,8 @@ Endereço: %4
         <translation>Nome de usuário para conexões JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>O valor está abaixo da menor denominação disponível (= 1) do zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of zXBIT</source>
+        <translation>O valor está abaixo da menor denominação disponível (= 1) do zXBIT</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

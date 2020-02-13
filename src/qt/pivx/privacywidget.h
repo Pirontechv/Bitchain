@@ -41,7 +41,7 @@ private Q_SLOTS:
     void onDenomClicked();
     void onRescanMintsClicked();
     void onResetZeroClicked();
-    void onTotalZpivClicked();
+    void onTotalZxbitClicked();
     void updateDisplayUnit();
     void showList();
     void onSendClicked();

@@ -13,8 +13,8 @@
 #include "util.h"
 #include "stakeinput.h"
 #include "utilmoneystr.h"
-#include "zpivchain.h"
-#include "zpiv/zpos.h"
+#include "zxbitchain.h"
+#include "zxbit/zpos.h"
 
 /*
  * PoS Validation
@@ -134,19 +134,19 @@ bool initStakeInput(const CBlock& block, std::unique_ptr<CStakeInput>& stake, in
         if (spend.getSpendType() != libzerocoin::SpendType::STAKE)
             return error("%s : spend is using the wrong SpendType (%d)", __func__, (int)spend.getSpendType());
 
-        stake = std::unique_ptr<CStakeInput>(new CLegacyZPivStake(spend));
+        stake = std::unique_ptr<CStakeInput>(new CLegacyZXBITStake(spend));
 
         // zPoS contextual checks
         /* Only for IBD (between Zerocoin_Block_V2_Start and Zerocoin_Block_Last_Checkpoint) */
         if (nPreviousBlockHeight < Params().Zerocoin_Block_V2_Start() ||
                 nPreviousBlockHeight > Params().Zerocoin_Block_Last_Checkpoint())
-            return error("%s : zPIV stake block: height %d outside range", __func__, (nPreviousBlockHeight+1));
-        CLegacyZPivStake* zPIV = dynamic_cast<CLegacyZPivStake*>(stake.get());
-        if (!zPIV) return error("%s : dynamic_cast of stake ptr failed", __func__);
+            return error("%s : zXBIT stake block: height %d outside range", __func__, (nPreviousBlockHeight+1));
+        CLegacyZXBITStake* zXBIT = dynamic_cast<CLegacyZXBITStake*>(stake.get());
+        if (!zXBIT) return error("%s : dynamic_cast of stake ptr failed", __func__);
         // The checkpoint needs to be from 200 blocks ago
         const int cpHeight = nPreviousBlockHeight - Params().Zerocoin_RequiredStakeDepth();
-        const libzerocoin::CoinDenomination denom = libzerocoin::AmountToZerocoinDenomination(zPIV->GetValue());
-        if (ParseAccChecksum(chainActive[cpHeight]->nAccumulatorCheckpoint, denom) != zPIV->GetChecksum())
+        const libzerocoin::CoinDenomination denom = libzerocoin::AmountToZerocoinDenomination(zXBIT->GetValue());
+        if (ParseAccChecksum(chainActive[cpHeight]->nAccumulatorCheckpoint, denom) != zXBIT->GetChecksum())
             return error("%s : accum. checksum at height %d is wrong.", __func__, (nPreviousBlockHeight+1));
 
     } else {
@@ -166,9 +166,9 @@ bool initStakeInput(const CBlock& block, std::unique_ptr<CStakeInput>& stake, in
             return error("%s : VerifyScript failed on coinstake %s %s", __func__, tx.GetHash().ToString(), strErr);
         }
 
-        CPivStake* pivInput = new CPivStake();
-        pivInput->SetInput(txPrev, txin.prevout.n);
-        stake = std::unique_ptr<CStakeInput>(pivInput);
+        CXBITStake* xbitInput = new CXBITStake();
+        xbitInput->SetInput(txPrev, txin.prevout.n);
+        stake = std::unique_ptr<CStakeInput>(xbitInput);
     }
     return true;
 }
@@ -347,7 +347,7 @@ bool GetOldStakeModifier(CStakeInput* stake, uint64_t& nStakeModifier)
     }
     CBlockIndex* pindexFrom = stake->GetIndexFrom();
     if (!pindexFrom) return error("%s : failed to get index from", __func__);
-    if (stake->IsZPIV()) {
+    if (stake->IsZXBIT()) {
         int64_t nTimeBlockFrom = pindexFrom->GetBlockTime();
         const int nHeightStop = std::min(chainActive.Height(), Params().Zerocoin_Block_Last_Checkpoint()-1);
         while (pindexFrom && pindexFrom->nHeight + 1 <= nHeightStop) {

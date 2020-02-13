@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>CoinControlPivWidget</class>
- <widget class="QWidget" name="CoinControlPivWidget">
+ <class>CoinControlXBITWidget</class>
+ <widget class="QWidget" name="CoinControlXBITWidget">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -157,7 +157,7 @@
            <item>
             <widget class="QLabel" name="labelTitleAmount">
              <property name="text">
-              <string>PIV:</string>
+              <string>XBIT:</string>
              </property>
             </widget>
            </item>

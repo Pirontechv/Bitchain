@@ -2,12 +2,12 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/bitchain/coincontrolpivwidget.h"
-#include "qt/bitchain/forms/ui_coincontrolpivwidget.h"
+#include "qt/bitchain/coincontrolxbitwidget.h"
+#include "qt/bitchain/forms/ui_coincontrolxbitwidget.h"
 
-CoinControlPivWidget::CoinControlPivWidget(QWidget *parent) :
+CoinControlXBITWidget::CoinControlXBITWidget(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::CoinControlPivWidget)
+    ui(new Ui::CoinControlXBITWidget)
 {
     ui->setupUi(this);
 
@@ -27,14 +27,14 @@ CoinControlPivWidget::CoinControlPivWidget(QWidget *parent) :
 
     // Title
 
-    ui->labelTitle->setText("Select PIV Outputs to Spend");
+    ui->labelTitle->setText("Select XBIT Outputs to Spend");
     ui->labelTitle->setProperty("cssClass", "text-title-dialog");
 
     // Label Style
 
     ui->labelTitleAfter->setProperty("cssClass", "text-main-purple");
     ui->labelTitleAmount->setProperty("cssClass", "text-main-purple");
-    ui->labelTitleAmount->setText("PIV");
+    ui->labelTitleAmount->setText("XBIT");
     ui->labelTitleBytes->setProperty("cssClass", "text-main-purple");
     ui->labelTitleBytes->setProperty("cssClass", "text-main-purple");
     ui->labelTitleChange->setProperty("cssClass", "text-main-purple");
@@ -60,12 +60,12 @@ CoinControlPivWidget::CoinControlPivWidget(QWidget *parent) :
 
     // Values
 
-    ui->labelValueAfter->setText("0.00 PIV");
+    ui->labelValueAfter->setText("0.00 XBIT");
     ui->labelValueAmount->setText("0");
     ui->labelValueBytes->setText("0");
     ui->labelValueDust->setText("No");
-    ui->labelValueChange->setText("0.00 PIV");
-    ui->labelValueFee->setText("0.00 PIV");
+    ui->labelValueChange->setText("0.00 XBIT");
+    ui->labelValueFee->setText("0.00 XBIT");
     ui->labelValueQuantity->setText("0");
 
     // Buttons
@@ -83,7 +83,7 @@ CoinControlPivWidget::CoinControlPivWidget(QWidget *parent) :
 
 }
 
-CoinControlPivWidget::~CoinControlPivWidget()
+CoinControlXBITWidget::~CoinControlXBITWidget()
 {
     delete ui;
 }

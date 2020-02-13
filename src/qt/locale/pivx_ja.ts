@@ -132,7 +132,7 @@
     <name>CoinControlDialog</name>
     </context>
 <context>
-    <name>CoinControlPivWidget</name>
+    <name>CoinControlXBITWidget</name>
     <message>
         <source>Address</source>
         <translation>アドレス</translation>
@@ -346,7 +346,7 @@
     <name>WelcomeContentWidget</name>
     </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZXBITControlDialog</name>
     </context>
 <context>
     <name>bitchain-core</name>

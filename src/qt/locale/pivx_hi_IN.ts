@@ -96,7 +96,7 @@
     </message>
     </context>
 <context>
-    <name>CoinControlPivWidget</name>
+    <name>CoinControlXBITWidget</name>
     <message>
         <source>Quantity:</source>
         <translation>मात्रा:</translation>
@@ -398,7 +398,7 @@
     <name>WelcomeContentWidget</name>
     </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZXBITControlDialog</name>
     <message>
         <source>Quantity:</source>
         <translation>मात्रा:</translation>

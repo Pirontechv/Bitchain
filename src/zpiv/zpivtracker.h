@@ -2,17 +2,17 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCHAIN_ZPIVTRACKER_H
-#define BITCHAIN_ZPIVTRACKER_H
+#ifndef BITCHAIN_ZXBITTRACKER_H
+#define BITCHAIN_ZXBITTRACKER_H
 
 #include "zerocoin.h"
 #include "sync.h"
 #include <list>
 
 class CDeterministicMint;
-class CzPIVWallet;
+class CzXBITWallet;
 
-class CzPIVTracker
+class CzXBITTracker
 {
 private:
     bool fInitialized;
@@ -21,9 +21,9 @@ private:
     std::map<uint256, uint256> mapPendingSpends; //serialhash, txid of spend
     bool UpdateStatusInternal(const std::set<uint256>& setMempool, CMintMeta& mint);
 public:
-    CzPIVTracker(std::string strWalletFile);
-    ~CzPIVTracker();
-    void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false, CzPIVWallet* zPIVWallet = NULL);
+    CzXBITTracker(std::string strWalletFile);
+    ~CzXBITTracker();
+    void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false, CzXBITWallet* zXBITWallet = NULL);
     void Add(const CZerocoinMint& mint, bool isNew = false, bool isArchived = false);
     bool Archive(CMintMeta& meta);
     bool HasPubcoin(const CBigNum& bnValue) const;
@@ -50,4 +50,4 @@ public:
     void Clear();
 };
 
-#endif //BITCHAIN_ZPIVTRACKER_H
+#endif //BITCHAIN_ZXBITTRACKER_H

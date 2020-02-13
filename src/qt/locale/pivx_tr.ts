@@ -376,15 +376,15 @@ Stake için kaldırın</translation>
         <translation>İPTAL</translation>
     </message>
     <message>
-        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>BITCHAIN şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, PIV'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XBITs from being stolen by malware infecting your computer.</source>
+        <translation>BITCHAIN şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, XBIT'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XBIT&lt;/b&gt;!</source>
         <translation>Dikkat! Eğer cüzdanınızı şifrelerseniz ve şifrenizi unutursanız &lt;b&gt;Tüm Pıvlerinizi kaybedersiniz&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -486,8 +486,8 @@ Stake için kaldırın</translation>
         <translation>Birikimler</translation>
     </message>
     <message>
-        <source>0,00 PIV</source>
-        <translation>0,00 PIV</translation>
+        <source>0,00 XBIT</source>
+        <translation>0,00 XBIT</translation>
     </message>
     <message>
         <source>address</source>
@@ -564,8 +564,8 @@ Stake için kaldırın</translation>
         <translation>Butona Basın</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>0.00 XBIT</source>
+        <translation>0.00 XBIT</translation>
     </message>
     <message>
         <source>0</source>
@@ -744,8 +744,8 @@ Stake için kaldırın</translation>
         <translation>Herhangi bir alıcı %1 'den küçük bir miktar alırsa, bu etiket kırmızıya döner.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Her giriş için +/- %1 upiv farkedebilir.</translation>
+        <source>Can vary +/- %1 uxbit per input.</source>
+        <translation>Her giriş için +/- %1 uxbit farkedebilir.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -761,7 +761,7 @@ Stake için kaldırın</translation>
     </message>
 </context>
 <context>
-    <name>CoinControlPivWidget</name>
+    <name>CoinControlXBITWidget</name>
     <message>
         <source>Dialog</source>
         <translation>Diyalog</translation>
@@ -775,8 +775,8 @@ Stake için kaldırın</translation>
         <translation>Butona Basın</translation>
     </message>
     <message>
-        <source>PIV:</source>
-        <translation>PIV:</translation>
+        <source>XBIT:</source>
+        <translation>XBIT:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -894,9 +894,9 @@ Stake için kaldırın</translation>
         <translation>Delegasyon</translation>
     </message>
     <message>
-        <source>You can delegate your PIVs and let a hot node (24/7 online node)
+        <source>You can delegate your XBITs and let a hot node (24/7 online node)
 stake in your behalf, keeping the keys in a secure place offline.</source>
-        <translation>PIV'lerinizi offline olarak güvenli bir yerde anahtarlarınızı saklarken
+        <translation>XBIT'lerinizi offline olarak güvenli bir yerde anahtarlarınızı saklarken
 (24/7 online düğüm) olan bir sıcak düğüm ile adınıza stakeletebilirsiniz.</translation>
     </message>
     <message>
@@ -904,8 +904,8 @@ stake in your behalf, keeping the keys in a secure place offline.</source>
         <translation>Sahip adresi ekle</translation>
     </message>
     <message>
-        <source>Delegate or Accept PIV delegation</source>
-        <translation>Delege et veya PIV delegasyonu kabul et</translation>
+        <source>Delegate or Accept XBIT delegation</source>
+        <translation>Delege et veya XBIT delegasyonu kabul et</translation>
     </message>
     <message>
         <source>Delegate</source>
@@ -948,8 +948,8 @@ stake in your behalf, keeping the keys in a secure place offline.</source>
         <translation>Geçersiz giriş</translation>
     </message>
     <message>
-        <source>Invalid entry, minimum delegable amount is 10 PIV</source>
-        <translation>Geçersiz giriş, delege edilebilir minimum tutar 10 PIV</translation>
+        <source>Invalid entry, minimum delegable amount is 10 XBIT</source>
+        <translation>Geçersiz giriş, delege edilebilir minimum tutar 10 XBIT</translation>
     </message>
     <message>
         <source>Owner address invalid</source>
@@ -988,8 +988,8 @@ Devam etmek istiyor musunuz?</translation>
         <translation>Koinler delege edildi</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Seçebileceğiniz PIV'iniz bulunmuyor</translation>
+        <source>You don't have any XBIT to select.</source>
+        <translation>Seçebileceğiniz XBIT'iniz bulunmuyor</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
@@ -1120,12 +1120,12 @@ kopyala</translation>
         <translation>Stake İstatistikleri</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>XBIT</source>
+        <translation>XBIT</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zXBIT</source>
+        <translation>zXBIT</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1156,8 +1156,8 @@ kopyala</translation>
         <translation>Hesap geçmişinizde görebilirsiniz</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>Stake edilmiş PIV ve zPIV miktarı</translation>
+        <source>Amount of XBIT and zXBIT staked.</source>
+        <translation>Stake edilmiş XBIT ve zXBIT miktarı</translation>
     </message>
     <message>
         <source>All</source>
@@ -1212,8 +1212,8 @@ kopyala</translation>
         <translation>İşlem bulunmuyor</translation>
     </message>
     <message>
-        <source>How to get PIV or zPIV</source>
-        <translation>PIV veya zPIV nasıl alınır</translation>
+        <source>How to get XBIT or zXBIT</source>
+        <translation>XBIT veya zXBIT nasıl alınır</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1666,8 +1666,8 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>Yeni bir Masternode Kontrolörü Yarat</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a BITCHAIN Masternode you must dedicate 10.000 PIV (the unit of BITCHAIN) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Yeni bir Masternode yaratmak için ağa 10.000 PIV (BITCHAIN birimi) ayırmanız gerekmektedir (buna rağmen koinler hala size aittir ve sahipliğini kororsunuz). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;İstediğiniz zaman devre dışı bırakabilir ve koinlerinizin kilidini kaldırabilirsiniz.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a BITCHAIN Masternode you must dedicate 10.000 XBIT (the unit of BITCHAIN) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Yeni bir Masternode yaratmak için ağa 10.000 XBIT (BITCHAIN birimi) ayırmanız gerekmektedir (buna rağmen koinler hala size aittir ve sahipliğini kororsunuz). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;İstediğiniz zaman devre dışı bırakabilir ve koinlerinizin kilidini kaldırabilirsiniz.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
@@ -1678,8 +1678,8 @@ Cüzdanınız senkronize olduktan ve harcanmamış bakiyeniz yeterli miktarda on
         <translation>Masternode'unuzun Adını Belirleyin</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10.000 PIV'lik bir transfer &lt;/p&gt;&lt;p&gt;yeni ve boş bir adrese yapılacaktır.&lt;/p&gt;&lt;p&gt;Adres Masternode'unuz ismi ile etiketlenecektir.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 XBIT will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10.000 XBIT'lik bir transfer &lt;/p&gt;&lt;p&gt;yeni ve boş bir adrese yapılacaktır.&lt;/p&gt;&lt;p&gt;Adres Masternode'unuz ismi ile etiketlenecektir.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Master Node’s IP and port</source>
@@ -1910,8 +1910,8 @@ Emin misiniz?</translation>
         <translation> masternode.conf dosyası bulunamadı</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 PIV required.</source>
-        <translation>Masternode yaratmak için yetersiz bakiye, 10,000 PIV gerekmektedir.</translation>
+        <source>Not enough balance to create a masternode, 10,000 XBIT required.</source>
+        <translation>Masternode yaratmak için yetersiz bakiye, 10,000 XBIT gerekmektedir.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -2158,36 +2158,36 @@ https://www.transifex.com/bitchain-project/bitchain-project-translations</transl
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>PIV birimlerinin zPIV'e otomatik basımını ektinleştir</translation>
+        <source>Enable automatic minting of XBIT units to zXBIT</source>
+        <translation>XBIT birimlerinin zXBIT'e otomatik basımını ektinleştir</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>zPIV Otomatik basımı etkinleştir</translation>
+        <source>Enable zXBIT Automint</source>
+        <translation>zXBIT Otomatik basımı etkinleştir</translation>
     </message>
     <message>
-        <source>Enable automatic zPIV minting from specific addresses</source>
-        <translation>Belirli bir adresten otomatik zPIV minting yapılmasını etkinleştir</translation>
+        <source>Enable automatic zXBIT minting from specific addresses</source>
+        <translation>Belirli bir adresten otomatik zXBIT minting yapılmasını etkinleştir</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint adreslerini etkinleştir</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Zerocoin Protokolü üzerinden otomatik olarak zPIV'ye dönüştürülen gelen PIV yüzdesi (dakika: 10%)</translation>
+        <source>Percentage of incoming XBIT which get automatically converted to zXBIT via Zerocoin Protocol (min: 10%)</source>
+        <translation>Zerocoin Protokolü üzerinden otomatik olarak zXBIT'ye dönüştürülen gelen XBIT yüzdesi (dakika: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Otomatikleştirilmiş zPIV yüzdesi</translation>
+        <source>Percentage of autominted zXBIT</source>
+        <translation>Otomatikleştirilmiş zXBIT yüzdesi</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Bu bölen için yeterli PIV bulunana kadar Zerocoin'e otomatik dönüştürmede kalın</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough XBIT for this denomination is available</source>
+        <translation>Bu bölen için yeterli XBIT bulunana kadar Zerocoin'e otomatik dönüştürmede kalın</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Tercih edilen Automint zPIV Nominal değeri</translation>
+        <source>Preferred Automint zXBIT Denomination</source>
+        <translation>Tercih edilen Automint zXBIT Nominal değeri</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2565,13 +2565,13 @@ Adres: %4
         <translation>Mint</translation>
     </message>
     <message>
-        <source>Minting zPIV anonymizes your PIV by removing any
+        <source>Minting zXBIT anonymizes your XBIT by removing any
 transaction history, making transactions untraceable </source>
-        <translation>zPIV mintleme işlemi PIV'lerinizin işlem geçmişini siler, işlemleri takip edilemez yapar</translation>
+        <translation>zXBIT mintleme işlemi XBIT'lerinizin işlem geçmişini siler, işlemleri takip edilemez yapar</translation>
     </message>
     <message>
-        <source>Mint new zPIV or convert back to PIV</source>
-        <translation>Yeni zPIV mintle veya PIV'e geri dönüştür</translation>
+        <source>Mint new zXBIT or convert back to XBIT</source>
+        <translation>Yeni zXBIT mintle veya XBIT'e geri dönüştür</translation>
     </message>
     <message>
         <source>Last Zerocoin Movements</source>
@@ -2582,32 +2582,32 @@ transaction history, making transactions untraceable </source>
         <translation>İşlem bulunmuyor</translation>
     </message>
     <message>
-        <source>Mint zPIV</source>
-        <translation>Mint ZPIV</translation>
+        <source>Mint zXBIT</source>
+        <translation>Mint ZXBIT</translation>
     </message>
     <message>
-        <source>Enter amount of PIV to mint into zPIV</source>
-        <translation>zPIV'e mintlenmek için dönüştürülecek PIV miktarını gir</translation>
+        <source>Enter amount of XBIT to mint into zXBIT</source>
+        <translation>zXBIT'e mintlenmek için dönüştürülecek XBIT miktarını gir</translation>
     </message>
     <message>
-        <source>Convert back to PIV</source>
-        <translation>PIV'e geri dönüştür</translation>
+        <source>Convert back to XBIT</source>
+        <translation>XBIT'e geri dönüştür</translation>
     </message>
     <message>
-        <source>Enter amount of zPIV to convert back into PIV</source>
-        <translation>PIV'e geri dönüştürülecek zPIV miktarını gir</translation>
+        <source>Enter amount of zXBIT to convert back into XBIT</source>
+        <translation>XBIT'e geri dönüştürülecek zXBIT miktarını gir</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance</source>
-        <translation>zPIV şu anda bakımdadır</translation>
+        <source>zXBIT is currently undergoing maintenance</source>
+        <translation>zXBIT şu anda bakımdadır</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zPIV</source>
-        <translation>%1 zPIV yapabilmek için cüzdanınızın kilidini kaldırmalısınız</translation>
+        <source>You need to unlock the wallet to be able to %1 zXBIT</source>
+        <translation>%1 zXBIT yapabilmek için cüzdanınızın kilidini kaldırmalısınız</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2622,16 +2622,16 @@ transaction history, making transactions untraceable </source>
         <translation>Geçersiz değer</translation>
     </message>
     <message>
-        <source>zPIV minted successfully</source>
-        <translation>zPIV minting başarılı</translation>
+        <source>zXBIT minted successfully</source>
+        <translation>zXBIT minting başarılı</translation>
     </message>
     <message>
-        <source>zPIV converted back to PIV</source>
-        <translation>zPIV PIV'e dönüştürüldü</translation>
+        <source>zXBIT converted back to XBIT</source>
+        <translation>zXBIT XBIT'e dönüştürüldü</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Seçebileceğiniz PIV'iniz bulunmuyor</translation>
+        <source>You don't have any XBIT to select.</source>
+        <translation>Seçebileceğiniz XBIT'iniz bulunmuyor</translation>
     </message>
     <message>
         <source>Rescan Mints</source>
@@ -3016,8 +3016,8 @@ transaction history, making transactions untraceable </source>
         <translation>Özel Yedekleme Yolu:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Özel zPIV Yedekleme Yolu:</translation>
+        <source>Custom zXBIT Backup Path:</source>
+        <translation>Özel zXBIT Yedekleme Yolu:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3266,7 +3266,7 @@ transaction history, making transactions untraceable </source>
         <translation>Al</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive PIV.</source>
+        <source>Scan the QR code or copy the address to receive XBIT.</source>
         <translation>BITCHAIN almak için QR kodunu okutun veya adresi kopyalayın</translation>
     </message>
     <message>
@@ -3368,8 +3368,8 @@ transaction history, making transactions untraceable </source>
         <translation>Miktar</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>XBIT</source>
+        <translation>XBIT</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3464,7 +3464,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" BITCHAIN address</source>
-        <translation>Giriş ve çıkış değerleri arasındaki kalan tutar "fark" PIV adresine gider</translation>
+        <translation>Giriş ve çıkış değerleri arasındaki kalan tutar "fark" XBIT adresine gider</translation>
     </message>
 </context>
 <context>
@@ -3556,8 +3556,8 @@ transaction history, making transactions untraceable </source>
         <translation>Gönder</translation>
     </message>
     <message>
-        <source>You can transfer public coins (PIV) or private coins (zPIV)</source>
-        <translation>Açık koin PIV veya gizli koin zPIV transfer edebilirsiniz</translation>
+        <source>You can transfer public coins (XBIT) or private coins (zXBIT)</source>
+        <translation>Açık koin XBIT veya gizli koin zXBIT transfer edebilirsiniz</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3592,12 +3592,12 @@ transaction history, making transactions untraceable </source>
         <translation>Gönderilecek toplam</translation>
     </message>
     <message>
-        <source>Send PIV</source>
-        <translation>PIV Gönder</translation>
+        <source>Send XBIT</source>
+        <translation>XBIT Gönder</translation>
     </message>
     <message>
-        <source>Send zPIV</source>
-        <translation>zPIV gönder</translation>
+        <source>Send zXBIT</source>
+        <translation>zXBIT gönder</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3652,8 +3652,8 @@ Bu koinler artık soğuk stakelenmeyecektir.</translation>
         <translation>Harca Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV halen bakım alıyor.</translation>
+        <source>zXBIT is currently undergoing maintenance.</source>
+        <translation>zXBIT halen bakım alıyor.</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3672,12 +3672,12 @@ Bu koinler artık soğuk stakelenmeyecektir.</translation>
 %2 adreslerine gönderiliyor</translation>
     </message>
     <message>
-        <source>zPIV transaction sent!</source>
-        <translation>zPIV ödemesi gönderildi</translation>
+        <source>zXBIT transaction sent!</source>
+        <translation>zXBIT ödemesi gönderildi</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>Versiyon 1 olan zPIV'lerin başarıyla harcanabilmesi için güvenlik seviyesinin 100 olması gerekiyor.</translation>
+        <source>Version 1 zXBIT require a security level of 100 to successfully spend.</source>
+        <translation>Versiyon 1 olan zXBIT'lerin başarıyla harcanabilmesi için güvenlik seviyesinin 100 olması gerekiyor.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3716,12 +3716,12 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Belirlenmiş masraf %1</translation>
     </message>
     <message>
-        <source>You don't have any PIV to select.</source>
-        <translation>Seçebileceğiniz PIV'iniz bulunmuyor</translation>
+        <source>You don't have any XBIT to select.</source>
+        <translation>Seçebileceğiniz XBIT'iniz bulunmuyor</translation>
     </message>
     <message>
-        <source>You don't have any zPIV in your balance to select.</source>
-        <translation>Bakiyenizde seçebileceğiniz zPIV'iniz bulunmuyor</translation>
+        <source>You don't have any zXBIT in your balance to select.</source>
+        <translation>Bakiyenizde seçebileceğiniz zXBIT'iniz bulunmuyor</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -3990,7 +3990,7 @@ Paranıza erişiminizi kaybetmemek için yazmayı ve güvenli bir yerde saklamay
         <translation>Cüzdana anahtar ekleme hatası</translation>
     </message>
     <message>
-        <source>Successfully added pivate key to the wallet</source>
+        <source>Successfully added xbitate key to the wallet</source>
         <translation>Özel cüzdana anahtar başarıyla eklendi</translation>
     </message>
 </context>
@@ -4125,30 +4125,30 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>1)BITCHAIN nedir?</translation>
     </message>
     <message>
-        <source>2) Why are my PIV unspendable?</source>
-        <translation>2) PIV'lerim neden harcanabilir değil?</translation>
+        <source>2) Why are my XBIT unspendable?</source>
+        <translation>2) XBIT'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
-        <source>3) BITCHAIN privacy? What is Zerocoin (zPIV)?</source>
-        <translation>3)BITCHAIN gizliliği? Zerocoin (zPIV) nedir?</translation>
+        <source>3) BITCHAIN privacy? What is Zerocoin (zXBIT)?</source>
+        <translation>3)BITCHAIN gizliliği? Zerocoin (zXBIT) nedir?</translation>
     </message>
     <message>
-        <source>4) Why are my zPIV unspendable?</source>
-        <translation>4)  zPIV'lerim neden harcanabilir değil?</translation>
+        <source>4) Why are my zXBIT unspendable?</source>
+        <translation>4)  zXBIT'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zPIV automatically?</source>
+    into zXBIT automatically?</source>
         <translation>5)Neden cüzdanım bakiyemi otomatik olarak
-zPIV'e dönüştürdü?</translation>
+zXBIT'e dönüştürdü?</translation>
     </message>
     <message>
-        <source>6) How do I receive PIV/zPIV?</source>
-        <translation>6) Nasıl PIV/zPIV alabilirim?</translation>
+        <source>6) How do I receive XBIT/zXBIT?</source>
+        <translation>6) Nasıl XBIT/zXBIT alabilirim?</translation>
     </message>
     <message>
-        <source>7) How do I stake PIV/zPIV?</source>
-        <translation>7) Nasıl PIV/zPIV staking yapabilirim?</translation>
+        <source>7) How do I stake XBIT/zXBIT?</source>
+        <translation>7) Nasıl XBIT/zXBIT staking yapabilirim?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -4177,7 +4177,7 @@ zPIV'e dönüştürdü?</translation>
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  BITCHAIN incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPIV) and Zerocoin staking.
+                           to implement ZeroCoin(zXBIT) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            BITCHAIN utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of BITCHAIN to participate in earning block rewards
@@ -4190,7 +4190,7 @@ zPIV'e dönüştürdü?</translation>
                            BITCHAIN blockchain teknolojisini kullanan bir dijital online para birimidir
                            global olarak anında ve sıfıra yakın ücretlerle transfer edilebilir
                            BITCHAIN sektördeki en ileri güvenlik ve gizliliğe sahip olmakla birlikte
-                          Zerocoin (zPIV) ve Zerocoin staking özelliklerini
+                          Zerocoin (zXBIT) ve Zerocoin staking özelliklerini
                           uygulayan ilk PoS (Proof of Stake) Kriptoparadır.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            BITCHAIN bir  Proof of Stake (PoS) konsensüs algoritma sistemi kullanmaktadır,
@@ -4205,8 +4205,8 @@ bu sayede BITCHAIN sahipleri blok ödülü kazanımına katılabilmektedir
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PIV unspendable?</source>
-        <translation>PIV'lerim neden harcanabilir değil?</translation>
+        <source>Why are my XBIT unspendable?</source>
+        <translation>XBIT'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
         <source>
@@ -4233,27 +4233,27 @@ bu sayede BITCHAIN sahipleri blok ödülü kazanımına katılabilmektedir
         <translation>3</translation>
     </message>
     <message>
-        <source>BITCHAIN privacy? What is Zerocoin (zPIV)?</source>
-        <translation>BITCHAIN gizliliği? Zerocoin (zPIV) nedir?</translation>
+        <source>BITCHAIN privacy? What is Zerocoin (zXBIT)?</source>
+        <translation>BITCHAIN gizliliği? Zerocoin (zXBIT) nedir?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV is an optional privacy-centric method of coin mixing on the
+                           zXBIT is an optional privacy-centric method of coin mixing on the
                            BITCHAIN blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zpiv/'&gt;
-                           "BITCHAIN Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt;
+                           "BITCHAIN Zerocoin (zXBIT) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV BITCHAIN blockchaini üzerinde koinleri karıştırmak için kullanılan
+                           zXBIT BITCHAIN blockchaini üzerinde koinleri karıştırmak için kullanılan
 gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
  hiçbir tarayıcı tarafından takip edilemez. Teknik detayları
  hakkında daha çok bilgi almak için
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zpiv/'&gt;
-                           "BITCHAIN Zerocoin (zPIV) Teknik Makalesi"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt;
+                           "BITCHAIN Zerocoin (zXBIT) Teknik Makalesi"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -4262,20 +4262,20 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zPIV unspendable?</source>
-        <translation>zPIV'lerim neden harcanabilir değil?</translation>
+        <source>Why are my zXBIT unspendable?</source>
+        <translation>zXBIT'lerim neden harcanabilir değil?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zPIV will require 20 confirmations as well as 1
+                           After minting, zXBIT will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Mint işlemi sonrasında, zPIV'lerin harcanabilir duruma gelmesi
+                           Mint işlemi sonrasında, zXBIT'lerin harcanabilir duruma gelmesi
  için 20 onay alması ve kendisiyle aynı
  bölüme sahip fazladan 1 mint'e ihtiyaç vardır.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4286,34 +4286,34 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zPIV automatically?</source>
-        <translation>Neden cüzdanım bakiyemi otomatik olarak zPIV'e dönüştürdü?</translation>
+        <source>Why did my wallet convert the balance into zXBIT automatically?</source>
+        <translation>Neden cüzdanım bakiyemi otomatik olarak zXBIT'e dönüştürdü?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           By default the BITCHAIN wallet will convert 10% of your entire PIV
-                           balance to zPIV to assist the network. If you do not wish to
-                           stake zPIV or take advantage of the privacy benefit it brings,
+                           By default the BITCHAIN wallet will convert 10% of your entire XBIT
+                           balance to zXBIT to assist the network. If you do not wish to
+                           stake zXBIT or take advantage of the privacy benefit it brings,
                            you can disable the automatic minting in your BITCHAIN wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zPIV Automint”.
+                           going to Settings-&gt;Options and deselecting “Enable zXBIT Automint”.
                            If you are not making use of the BITCHAIN-QT or GUI you can simply open
                            your bitchain.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           You can read more about zPIV in the
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zpiv/'&gt; "BITCHAIN Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
-                           If you would like to keep and stake your zPIV, please read the "How do I stake"
+                           You can read more about zXBIT in the
+                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt; "BITCHAIN Zerocoin (zXBIT) Technical Paper"&lt;/a&gt;.
+                           If you would like to keep and stake your zXBIT, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           BITCHAIN cüzdanınız ağa destek olmak için varsayılan olarak tüm PIV bakiyenizin 10% 'unu zPIV'e dönüştürecektir. Getirdiği gizlilik avantajını istemiyor veya zPIV stakelemek istemiyorsanız cüzdanınızın otomint özelliğini Ayarlar-&gt;Seçenekler içindeki “zPIV Otomint etkin” seçeneğini değiştirerek devredışı bırakabilirsiniz. BITCHAINQT veya GUI kullanmıyorsanız, bitchain.conf dosyası içine  &lt;i&gt;enablezeromint=0&lt;/i&gt; ifadesini tırnak işareti olmadan girerek devredışı bırakabilirsiniz. &lt;/p&gt;
+                           BITCHAIN cüzdanınız ağa destek olmak için varsayılan olarak tüm XBIT bakiyenizin 10% 'unu zXBIT'e dönüştürecektir. Getirdiği gizlilik avantajını istemiyor veya zXBIT stakelemek istemiyorsanız cüzdanınızın otomint özelliğini Ayarlar-&gt;Seçenekler içindeki “zXBIT Otomint etkin” seçeneğini değiştirerek devredışı bırakabilirsiniz. BITCHAINQT veya GUI kullanmıyorsanız, bitchain.conf dosyası içine  &lt;i&gt;enablezeromint=0&lt;/i&gt; ifadesini tırnak işareti olmadan girerek devredışı bırakabilirsiniz. &lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Teknik detayları hakkında daha çok bilgi almak için
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zpiv/'&gt; "BITCHAIN Zerocoin (zPIV) Teknik Makalesi"&lt;/a&gt;.
-                           zPIV'lerinizi tutmak ve stakelemek istiyorsanız, lütfen SSS kısmındaki "Nasıl Stake yaparım"
+                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt; "BITCHAIN Zerocoin (zXBIT) Teknik Makalesi"&lt;/a&gt;.
+                           zXBIT'lerinizi tutmak ve stakelemek istiyorsanız, lütfen SSS kısmındaki "Nasıl Stake yaparım"
 kısmını okuyunuz.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -4323,25 +4323,25 @@ kısmını okuyunuz.
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive PIV/zPIV?</source>
-        <translation>Nasıl PIV/zPIV alabilirim?</translation>
+        <source>How do I receive XBIT/zXBIT?</source>
+        <translation>Nasıl XBIT/zXBIT alabilirim?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV can be spent and sent to any BITCHAIN address. The receiver will
-                           receive standard BITCHAIN but the origin of the BITCHAIN is anonymized by the zPIV Protocol.
+                           zXBIT can be spent and sent to any BITCHAIN address. The receiver will
+                           receive standard BITCHAIN but the origin of the BITCHAIN is anonymized by the zXBIT Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
+                           If you want more zXBIT you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV herhangi bir BITCHAIN adresine gönderilerek harcanabilir.
+                           zXBIT herhangi bir BITCHAIN adresine gönderilerek harcanabilir.
                            Alıcı standart BITCHAIN alacaktır fakat BITCHAIN kaynağı
-zPIV Protokolü ile anonimleştirilmiş olacaktır.
+zXBIT Protokolü ile anonimleştirilmiş olacaktır.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Daha fazla zPIV istiyorsanız, "Gizlilik" tabından bakiyenizi mintlemeniz gerekecektir.
+                           Daha fazla zXBIT istiyorsanız, "Gizlilik" tabından bakiyenizi mintlemeniz gerekecektir.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
     </message>
@@ -4350,8 +4350,8 @@ zPIV Protokolü ile anonimleştirilmiş olacaktır.
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake PIV/zPIV?</source>
-        <translation>Nasıl PIV/zPIV staking yapabilirim?</translation>
+        <source>How do I stake XBIT/zXBIT?</source>
+        <translation>Nasıl XBIT/zXBIT staking yapabilirim?</translation>
     </message>
     <message>
         <source>
@@ -4370,12 +4370,12 @@ zPIV Protokolü ile anonimleştirilmiş olacaktır.
                            You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (bitchain-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           To Stake zPIV:
+                           To Stake zXBIT:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zPIV balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zXBIT balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -4398,7 +4398,7 @@ zPIV Protokolü ile anonimleştirilmiş olacaktır.
                            Staking durumunu kontrol etmek için fare imlecini cüzdanın sol üst kısmındaki paket ikonu üzerinde tuttuğunuzda görebilirsiniz. Yaptığını göstermek için paket ikonunun ışığı yanacak ve "Staking aktif" yazacaktır. Komut satırı arayüzünden (bitchain-cli);  &lt;i&gt;getstakingstatus&lt;/i&gt; komutunu çalıştırarak staking'in etkin olduğunu onaylayabilirsiniz.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           zPIV Staking yapabilmek için:
+                           zXBIT Staking yapabilmek için:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Cüzdanınızı tamamen senkronize olduğundan ve son versiyonu kullandığınızdan emin olun.
@@ -4453,7 +4453,7 @@ zPIV Protokolü ile anonimleştirilmiş olacaktır.
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            A masternode is a computer running a full node BITCHAIN core wallet with a
-                           requirement of 10,000 PIV secured collateral to provide extra services
+                           requirement of 10,000 XBIT secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -4485,7 +4485,7 @@ zPIV Protokolü ile anonimleştirilmiş olacaktır.
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 PIV per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 XBIT per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -4494,7 +4494,7 @@ zPIV Protokolü ile anonimleştirilmiş olacaktır.
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Tam düğüm BITCHAIN core cüzdanını çalıştıran, gereken 10,000 PIV
+                           Tam düğüm BITCHAIN core cüzdanını çalıştıran, gereken 10,000 XBIT
                            teminat bakiyesini barındırarak ağa ekstra hizmetler sunan ve
                            karşılığında da her blok ödülünden düzenli olarak pay alan bir
                            bilgisayardır.Bu hizmetler aşağıdaki gibidir:
@@ -4527,7 +4527,7 @@ işletim maliyetleri sonrası pasif bir gelir sunar.
                            Gereksinimler:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Her Masternod için ayrı 10,000 PIV
+                           &lt;li&gt;Her Masternod için ayrı 10,000 XBIT
                            &lt;li&gt;Core cüzdan içinde saklanmalıdır.&lt;/li&gt;
                            &lt;li&gt;Atanmış IP adresi gerekmektedir. &lt;/li&gt;
                            &lt;li&gt;Masternode cüzdanının online olması&lt;/li&gt;
@@ -4544,8 +4544,8 @@ işletim maliyetleri sonrası pasif bir gelir sunar.
         <translation>Masternode Kontrolörü nedir?</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 PIV collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Masternode Kontrol cüzdanı Masternode Uzaktan-Kontrol kurulumu yapırken içinde 10,000 PIV teminatını bulundurur. Bu cüzdan uzak masternode cüzdan/larını etkinleştirebilir, ayrıca masternodlarınız online iken teminatınızı bağlantı dışında tutmanıza imkan sağlar. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 XBIT collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Masternode Kontrol cüzdanı Masternode Uzaktan-Kontrol kurulumu yapırken içinde 10,000 XBIT teminatını bulundurur. Bu cüzdan uzak masternode cüzdan/larını etkinleştirebilir, ayrıca masternodlarınız online iken teminatınızı bağlantı dışında tutmanıza imkan sağlar. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Frequently Asked Questions</source>
@@ -5432,12 +5432,12 @@ Emin misiniz?
         <translation>Form</translation>
     </message>
     <message>
-        <source>480.0685 PIV</source>
-        <translation>480.0685 PIV</translation>
+        <source>480.0685 XBIT</source>
+        <translation>480.0685 XBIT</translation>
     </message>
     <message>
-        <source>1,000 zPIV</source>
-        <translation>1,000 zPIV</translation>
+        <source>1,000 zXBIT</source>
+        <translation>1,000 zXBIT</translation>
     </message>
     <message>
         <source>Available</source>
@@ -5448,24 +5448,24 @@ Emin misiniz?
         <translation>Beklemede</translation>
     </message>
     <message>
-        <source>6.943 PIV</source>
-        <translation>6.943 PIV</translation>
+        <source>6.943 XBIT</source>
+        <translation>6.943 XBIT</translation>
     </message>
     <message>
         <source>Immature</source>
         <translation>Olgunlaşmamış</translation>
     </message>
     <message>
-        <source>10 PIV</source>
-        <translation>10 PIV</translation>
+        <source>10 XBIT</source>
+        <translation>10 XBIT</translation>
     </message>
     <message>
-        <source>60 zPIV</source>
-        <translation>60 zPIV</translation>
+        <source>60 zXBIT</source>
+        <translation>60 zXBIT</translation>
     </message>
     <message>
-        <source>10 zPIV</source>
-        <translation>10 zPIV</translation>
+        <source>10 zXBIT</source>
+        <translation>10 zXBIT</translation>
     </message>
     <message>
         <source>Wallet Unlocked for staking</source>
@@ -5781,20 +5781,20 @@ Emin misiniz?
         <translation>Şaşırtma yoluyla Alınan</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>XBIT Stake</source>
+        <translation>XBIT Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>zXBIT Stake</source>
+        <translation>zXBIT Stake</translation>
     </message>
     <message>
-        <source>PIV Cold Stake</source>
-        <translation>PIV Soğuk Stake</translation>
+        <source>XBIT Cold Stake</source>
+        <translation>XBIT Soğuk Stake</translation>
     </message>
     <message>
-        <source>PIV Stake in behalf of</source>
-        <translation>Yerine PIV stake </translation>
+        <source>XBIT Stake in behalf of</source>
+        <translation>Yerine XBIT stake </translation>
     </message>
     <message>
         <source>Stake delegation</source>
@@ -5817,24 +5817,24 @@ Emin misiniz?
         <translation>Obfuscation Oluşturma Adları</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>PIV'den zPIV'e dönüştürülen</translation>
+        <source>Converted XBIT to zXBIT</source>
+        <translation>XBIT'den zXBIT'e dönüştürülen</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>zPIV Harca</translation>
+        <source>Spent zXBIT</source>
+        <translation>zXBIT Harca</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>zPIV'den PIV olarak alınan</translation>
+        <source>Received XBIT from zXBIT</source>
+        <translation>zXBIT'den XBIT olarak alınan</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>zPIV harcamasından kaynaklanan zPIV mint farkı</translation>
+        <source>Minted Change as zXBIT from zXBIT Spend</source>
+        <translation>zXBIT harcamasından kaynaklanan zXBIT mint farkı</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>zPIV'den PIV' dönüştürülen</translation>
+        <source>Converted zXBIT to XBIT</source>
+        <translation>zXBIT'den XBIT' dönüştürülen</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5928,8 +5928,8 @@ Emin misiniz?
         <translation>Toplam Tutar:</translation>
     </message>
     <message>
-        <source>2 PIV</source>
-        <translation>2 PIV</translation>
+        <source>2 XBIT</source>
+        <translation>2 XBIT</translation>
     </message>
     <message>
         <source>Coin inputs:</source>
@@ -5952,8 +5952,8 @@ Emin misiniz?
         <translation>Ücret:</translation>
     </message>
     <message>
-        <source>0.0001 PIV</source>
-        <translation>0.0001 PIV</translation>
+        <source>0.0001 XBIT</source>
+        <translation>0.0001 XBIT</translation>
     </message>
     <message>
         <source>Change address:</source>
@@ -6039,8 +6039,8 @@ Emin misiniz?
         <translation>18/05/18</translation>
     </message>
     <message>
-        <source>+0.000585 PIV</source>
-        <translation>+0.000585 PIV</translation>
+        <source>+0.000585 XBIT</source>
+        <translation>+0.000585 XBIT</translation>
     </message>
 </context>
 <context>
@@ -6050,8 +6050,8 @@ Emin misiniz?
         <translation>Koinleri göder</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 PIV ile sınırlıdır.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 XBIT.</source>
+        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 XBIT ile sınırlıdır.</translation>
     </message>
 </context>
 <context>
@@ -6155,10 +6155,10 @@ Hoşgeldiniz</translation>
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZXBITControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Harcanacak zPIV'leri seçin</translation>
+        <source>Select zXBIT to Spend</source>
+        <translation>Harcanacak zXBIT'leri seçin</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -6169,8 +6169,8 @@ Hoşgeldiniz</translation>
         <translation>Butona Basın</translation>
     </message>
     <message>
-        <source>zPiv</source>
-        <translation>zPiv</translation>
+        <source>zXBIT</source>
+        <translation>zXBIT</translation>
     </message>
     <message>
         <source>0.00 </source>
@@ -6193,8 +6193,8 @@ Hoşgeldiniz</translation>
         <translation>Seç/Çıkar Hepsini</translation>
     </message>
     <message>
-        <source>Select zPIV Denominations to Spend</source>
-        <translation>Harcanacak zPIV Bölümlerini Seçin</translation>
+        <source>Select zXBIT Denominations to Spend</source>
+        <translation>Harcanacak zXBIT Bölümlerini Seçin</translation>
     </message>
 </context>
 <context>
@@ -6253,23 +6253,23 @@ Hoşgeldiniz</translation>
     </message>
     <message>
         <source>Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)</source>
-        <translation>Belirli bir adresten otomatik zPIV minting yapılmasını etkinleştir (0-1, varsayılan: %u)</translation>
+        <translation>Belirli bir adresten otomatik zXBIT minting yapılmasını etkinleştir (0-1, varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Her zPIV mintleme sonrası otomatik cüzdan yedeklemesini aktifleştir (0-1, varsayılan:%u)</translation>
+        <source>Enable automatic wallet backups triggered after each zXBIT minting (0-1, default: %u)</source>
+        <translation>Her zXBIT mintleme sonrası otomatik cüzdan yedeklemesini aktifleştir (0-1, varsayılan:%u)</translation>
     </message>
     <message>
         <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
         <translation>Soğuk stakeleme fonksiyonunu etkinleştirin (0-1, varsayılan: %u). Staking=0 ise etkin değildir</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>PIV girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
+        <source>Enable or disable staking functionality for XBIT inputs (0-1, default: %u)</source>
+        <translation>XBIT girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>zPIV girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
+        <source>Enable or disable staking functionality for zXBIT inputs (0-1, default: %u)</source>
+        <translation>zXBIT girişleri için stake fonksiyonunu aç veya kapat (0-1, varsayılan: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -6304,12 +6304,12 @@ Hoşgeldiniz</translation>
         <translation>En iyi blok değiştirildiğinde komutu yürütün (cmd'deki %s yerine blok karması verilir)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (PIV / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (XBIT / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (PIV / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (XBIT / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -6432,12 +6432,12 @@ Hoşgeldiniz</translation>
         <translation>Bu işlem için gereken yeterli bölünmüş gizleme fonu bulunamadı.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>10000 PIV'e eşit olmayan bu işlem için gereken yeterli bölünmemiş gizleme fonu bulunamadı.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 XBIT.</source>
+        <translation>10000 XBIT'e eşit olmayan bu işlem için gereken yeterli bölünmemiş gizleme fonu bulunamadı.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>10000 PIV'e eşit olmayan bu işlem için yeterli bakiye tespit edilemedi</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 XBIT.</source>
+        <translation>10000 XBIT'e eşit olmayan bu işlem için yeterli bakiye tespit edilemedi</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -6645,11 +6645,11 @@ Hoşgeldiniz</translation>
     </message>
     <message>
         <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
-        <translation>zPIV minting yapılmasını etkinleştir (0-1, varsayılan: %u)</translation>
+        <translation>zXBIT minting yapılmasını etkinleştir (0-1, varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Enable precomputation of zPIV spends and stakes (0-1, default %u)</source>
-        <translation>zPIV harcamalarının ve stakelerinin önhesaplamasını etkinleştir (0-1, varsayılan %u)</translation>
+        <source>Enable precomputation of zXBIT spends and stakes (0-1, default %u)</source>
+        <translation>zXBIT harcamalarının ve stakelerinin önhesaplamasını etkinleştir (0-1, varsayılan %u)</translation>
     </message>
     <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
@@ -6736,8 +6736,8 @@ Hoşgeldiniz</translation>
         <translation>Blok okuma hatası</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gönderdiğiniz transfere (PIV/kb cinsinden) bir masraf ekleyin (varsayılan: %s) </translation>
+        <source>Fee (in XBIT/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gönderdiğiniz transfere (XBIT/kb cinsinden) bir masraf ekleyin (varsayılan: %s) </translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -6836,20 +6836,20 @@ Hoşgeldiniz</translation>
         <translation>Otomatik olarak mint edilen Zerocoin yüzdesi (1-100, varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
-        <translation>PIV tedariği tekrar hesaplanıyor...</translation>
+        <source>Recalculating XBIT supply...</source>
+        <translation>XBIT tedariği tekrar hesaplanıyor...</translation>
     </message>
     <message>
-        <source>Recalculating minted ZPIV...</source>
-        <translation>Mint edilmiş zPIV'ler tekrar hesaplanıyor...</translation>
+        <source>Recalculating minted ZXBIT...</source>
+        <translation>Mint edilmiş zXBIT'ler tekrar hesaplanıyor...</translation>
     </message>
     <message>
-        <source>Recalculating spent ZPIV...</source>
-        <translation>Harcanmış zPIV'ler tekrar hesaplanıyor...</translation>
+        <source>Recalculating spent ZXBIT...</source>
+        <translation>Harcanmış zXBIT'ler tekrar hesaplanıyor...</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>PIV ve zPIV para tedarik istatistiklerini tekrar endeksle</translation>
+        <source>Reindex the XBIT and zXBIT money supply statistics</source>
+        <translation>XBIT ve zXBIT para tedarik istatistiklerini tekrar endeksle</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6928,8 +6928,8 @@ Hoşgeldiniz</translation>
         <translation>Otomatik mint edilmiş Zerocoin için tercih edilen bölümler (1/5/10/50/100/500/1000/5000), tercih yoksa 0. varsayılan: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Otomatik bir zPIV yedek kopyası eklemek için bir yedekleme özel yolu belirleyin. Eğer dizin olarak belirlerseniz her yedek zaman damgası adı ile dosyalanır. Dosya olarak belirlerseniz, her yedeklemede üstüne yazar. Eğer yedek yolu da belirlenmişse, 4 yedek oluşur.</translation>
+        <source>Specify custom backup path to add a copy of any automatic zXBIT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Otomatik bir zXBIT yedek kopyası eklemek için bir yedekleme özel yolu belirleyin. Eğer dizin olarak belirlerseniz her yedek zaman damgası adı ile dosyalanır. Dosya olarak belirlerseniz, her yedeklemede üstüne yazar. Eğer yedek yolu da belirlenmişse, 4 yedek oluşur.</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -7364,8 +7364,8 @@ Hoşgeldiniz</translation>
         <translation>Sporklar eşzamanlanıyor..</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>zPIV cüzdanı eşzamanlanıyor..</translation>
+        <source>Syncing zXBIT wallet...</source>
+        <translation>zXBIT cüzdanı eşzamanlanıyor..</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -7480,8 +7480,8 @@ Hoşgeldiniz</translation>
         <translation>JSON-RPC bağlantısı için kullanıcı adı</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Aşağıdaki değer zPIV'in mümkün olan en küçük bölüm değeridir (=1)</translation>
+        <source>Value is below the smallest available denomination (= 1) of zXBIT</source>
+        <translation>Aşağıdaki değer zXBIT'in mümkün olan en küçük bölüm değeridir (=1)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

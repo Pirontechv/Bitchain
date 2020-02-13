@@ -14,7 +14,7 @@
 #include "qt/bitchain/sendcustomfeedialog.h"
 #include "walletmodel.h"
 #include "coincontroldialog.h"
-#include "zpivcontroldialog.h"
+#include "zxbitcontroldialog.h"
 #include "qt/bitchain/tooltipmenu.h"
 
 static const int MAX_SEND_POPUP_ENTRIES = 8;
@@ -59,7 +59,7 @@ protected:
     void resizeEvent(QResizeEvent *event) override;
 
 private Q_SLOTS:
-    void onPIVSelected(bool _isPIV);
+    void onXBITSelected(bool _isXBIT);
     void onSendClicked();
     void onContactsClicked(SendMultiRow* entry);
     void onMenuClicked(SendMultiRow* entry);
@@ -87,12 +87,12 @@ private:
     // Current focus entry
     SendMultiRow* focusedEntry = nullptr;
 
-    bool isPIV = true;
+    bool isXBIT = true;
     void resizeMenu();
     QString recipientsToString(QList<SendCoinsRecipient> recipients);
     SendMultiRow* createEntry();
     bool send(QList<SendCoinsRecipient> recipients);
-    bool sendZpiv(QList<SendCoinsRecipient> recipients);
+    bool sendZxbit(QList<SendCoinsRecipient> recipients);
     void updateEntryLabels(QList<SendCoinsRecipient> recipients);
 
 };

@@ -3,9 +3,9 @@ BITCHAIN Core integration/staging repository
 
 [![Build Status](https://travis-ci.org/BITCHAIN-Project/BITCHAIN.svg?branch=master)](https://travis-ci.org/BITCHAIN-Project/BITCHAIN) [![GitHub version](https://badge.fury.io/gh/BITCHAIN-Project%2FBITCHAIN.svg)](https://badge.fury.io/gh/BITCHAIN-Project%2FBITCHAIN)
 
-BITCHAIN is an open source crypto-currency focused on fast private transactions using the Zerocoin protocol, with low transaction fees & environmental footprint.  It utilizes the first ever anonymous proof of stake protocol, called zPoS, combined with regular PoS and masternodes for securing its network. zPoS incentivises using the privacy features available in BITCHAIN by granting a higher block reward for zPoS over regular PoS and masternodes. In practice BITCHAIN has between 4 to 10 times higher use of it's privacy features in comparison to other coins that combine public and private transactions. This is thanks to innovations like zPoS and integrating the Zerocoin protocol into light/mobile wallets, allowing for a complete and lightweight privacy protocol that can be used on the go. As well as security improvements like [deterministic generation of zPIV for easy backups.](https://www.reddit.com/r/bitchain/comments/8gbjf7/how_to_use_deterministic_zerocoin_generation/)
+BITCHAIN is an open source crypto-currency focused on fast private transactions using the Zerocoin protocol, with low transaction fees & environmental footprint.  It utilizes the first ever anonymous proof of stake protocol, called zPoS, combined with regular PoS and masternodes for securing its network. zPoS incentivises using the privacy features available in BITCHAIN by granting a higher block reward for zPoS over regular PoS and masternodes. In practice BITCHAIN has between 4 to 10 times higher use of it's privacy features in comparison to other coins that combine public and private transactions. This is thanks to innovations like zPoS and integrating the Zerocoin protocol into light/mobile wallets, allowing for a complete and lightweight privacy protocol that can be used on the go. As well as security improvements like [deterministic generation of zXBIT for easy backups.](https://www.reddit.com/r/bitchain/comments/8gbjf7/how_to_use_deterministic_zerocoin_generation/)
 The goal of BITCHAIN is to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community intelligence.
-- Anonymized transactions & consensus using the [_Zerocoin Protocol_](http://www.bitchainproject.com/zpiv) and [zPoS](https://bitchainproject.com/zpos/).
+- Anonymized transactions & consensus using the [_Zerocoin Protocol_](http://www.bitchainproject.com/zxbit) and [zPoS](https://bitchainproject.com/zpos/).
 - light/mobile wallet privacy using the [Zerocoin Light Node Protocol](https://bitchainproject.com/wp-content/uploads/2018/11/Zerocoin_Light_Node_Protocol.pdf)
 - Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
 - Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
@@ -17,43 +17,43 @@ More information at [bitchainproject.com](http://www.bitchainproject.com) Visit 
 <tr><td>Algo</td><td>Quark</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Max Coin Supply (PoW Phase)</td><td>43,199,500 PIV</td></tr>
+<tr><td>Max Coin Supply (PoW Phase)</td><td>43,199,500 XBIT</td></tr>
 <tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
-<tr><td>Premine</td><td>60,000 PIV*</td></tr>
+<tr><td>Premine</td><td>60,000 XBIT*</td></tr>
 </table>
 
-*60,000 PIV Premine was burned in block [279917](http://www.presstab.pw/phpexplorer/BITCHAIN/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0)
+*60,000 XBIT Premine was burned in block [279917](http://www.presstab.pw/phpexplorer/BITCHAIN/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0)
 
 ### Reward Distribution
 
 <table>
 <th colspan=4>Genesis Block</th>
 <tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
-<tr><td>1</td><td>60,000 PIV</td><td>Initial Pre-mine, burnt in block <a href="http://www.presstab.pw/phpexplorer/BITCHAIN/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0">279917</a></td></tr>
+<tr><td>1</td><td>60,000 XBIT</td><td>Initial Pre-mine, burnt in block <a href="http://www.presstab.pw/phpexplorer/BITCHAIN/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0">279917</a></td></tr>
 </table>
 
 ### PoW Rewards Breakdown
 
 <table>
 <th>Block Height</th><th>Masternodes</th><th>Miner</th><th>Budget</th>
-<tr><td>2-43200</td><td>20% (50 PIV)</td><td>80% (200 PIV)</td><td>N/A</td></tr>
-<tr><td>43201-151200</td><td>20% (50 PIV)</td><td>70% (200 PIV)</td><td>10% (25 PIV)</td></tr>
-<tr><td>151201-259200</td><td>45% (22.5 PIV)</td><td>45% (22.5 PIV)</td><td>10% (5 PIV)</td></tr>
+<tr><td>2-43200</td><td>20% (50 XBIT)</td><td>80% (200 XBIT)</td><td>N/A</td></tr>
+<tr><td>43201-151200</td><td>20% (50 XBIT)</td><td>70% (200 XBIT)</td><td>10% (25 XBIT)</td></tr>
+<tr><td>151201-259200</td><td>45% (22.5 XBIT)</td><td>45% (22.5 XBIT)</td><td>10% (5 XBIT)</td></tr>
 </table>
 
 ### PoS Rewards Breakdown
 
 <table>
 <th>Phase</th><th>Block Height</th><th>Reward</th><th>Masternodes & Stakers</th><th>Budget</th>
-<tr><td>Phase 0</td><td>259201-302399</td><td>50 PIV</td><td>90% (45 PIV)</td><td>10% (5 PIV)</td></tr>
-<tr><td>Phase 1</td><td>302400-345599</td><td>45 PIV</td><td>90% (40.5 PIV)</td><td>10% (4.5 PIV)</td></tr>
-<tr><td>Phase 2</td><td>345600-388799</td><td>40 PIV</td><td>90% (36 PIV)</td><td>10% (4 PIV)</td></tr>
-<tr><td>Phase 3</td><td>388800-431999</td><td>35 PIV</td><td>90% (31.5 PIV)</td><td>10% (3.5 PIV)</td></tr>
-<tr><td>Phase 4</td><td>432000-475199</td><td>30 PIV</td><td>90% (27 PIV)</td><td>10% (3 PIV)</td></tr>
-<tr><td>Phase 5</td><td>475200-518399</td><td>25 PIV</td><td>90% (22.5 PIV)</td><td>10% (2.5 PIV)</td></tr>
-<tr><td>Phase 6</td><td>518400-561599</td><td>20 PIV</td><td>90% (18 PIV)</td><td>10% (2 PIV)</td></tr>
-<tr><td>Phase 7</td><td>561600-604799</td><td>15 PIV</td><td>90% (13.5 PIV)</td><td>10% (1.5 PIV)</td></tr>
-<tr><td>Phase 8</td><td>604800-647999</td><td>10 PIV</td><td>90% (9 PIV)</td><td>10% (1 PIV)</td></tr>
-<tr><td>Phase 9</td><td>648000-1154203</td><td>5 PIV</td><td>90% (4.5 PIV)</td><td>10% (0.5 PIV)</td></tr>
-<tr><td>Phase X</td><td>1154203-∞</td><td>6 PIV</td><td>84% (5 PIV/zPIV)</td><td>16% (1 PIV)</td></tr>
+<tr><td>Phase 0</td><td>259201-302399</td><td>50 XBIT</td><td>90% (45 XBIT)</td><td>10% (5 XBIT)</td></tr>
+<tr><td>Phase 1</td><td>302400-345599</td><td>45 XBIT</td><td>90% (40.5 XBIT)</td><td>10% (4.5 XBIT)</td></tr>
+<tr><td>Phase 2</td><td>345600-388799</td><td>40 XBIT</td><td>90% (36 XBIT)</td><td>10% (4 XBIT)</td></tr>
+<tr><td>Phase 3</td><td>388800-431999</td><td>35 XBIT</td><td>90% (31.5 XBIT)</td><td>10% (3.5 XBIT)</td></tr>
+<tr><td>Phase 4</td><td>432000-475199</td><td>30 XBIT</td><td>90% (27 XBIT)</td><td>10% (3 XBIT)</td></tr>
+<tr><td>Phase 5</td><td>475200-518399</td><td>25 XBIT</td><td>90% (22.5 XBIT)</td><td>10% (2.5 XBIT)</td></tr>
+<tr><td>Phase 6</td><td>518400-561599</td><td>20 XBIT</td><td>90% (18 XBIT)</td><td>10% (2 XBIT)</td></tr>
+<tr><td>Phase 7</td><td>561600-604799</td><td>15 XBIT</td><td>90% (13.5 XBIT)</td><td>10% (1.5 XBIT)</td></tr>
+<tr><td>Phase 8</td><td>604800-647999</td><td>10 XBIT</td><td>90% (9 XBIT)</td><td>10% (1 XBIT)</td></tr>
+<tr><td>Phase 9</td><td>648000-1154203</td><td>5 XBIT</td><td>90% (4.5 XBIT)</td><td>10% (0.5 XBIT)</td></tr>
+<tr><td>Phase X</td><td>1154203-∞</td><td>6 XBIT</td><td>84% (5 XBIT/zXBIT)</td><td>16% (1 XBIT)</td></tr>
 </table>

@@ -196,16 +196,16 @@
         <translation>Potvrdi šifriranje novčanika</translation>
     </message>
     <message>
-        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>BITCHAIN se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše PIV od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XBITs from being stolen by malware infecting your computer.</source>
+        <translation>BITCHAIN se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše XBIT od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše PIVove 1 !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XBIT&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite zaporku, 1 izgubit ćete sve Vaše XBITove 1 !</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -507,8 +507,8 @@
         <translation>Ova oznaka postaje crvena ako neki primatelj prima iznos manji od %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Može varirati +/- %1 upiv po unosu.</translation>
+        <source>Can vary +/- %1 uxbit per input.</source>
+        <translation>Može varirati +/- %1 uxbit po unosu.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -524,7 +524,7 @@
     </message>
 </context>
 <context>
-    <name>CoinControlPivWidget</name>
+    <name>CoinControlXBITWidget</name>
     <message>
         <source>TextLabel</source>
         <translation>TextLabel</translation>
@@ -607,8 +607,8 @@
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zXBIT</source>
+        <translation>zXBIT</translation>
     </message>
     <message>
         <source>All</source>
@@ -1095,28 +1095,28 @@ https://www.transifex.com/bitchain-project/bitchain-project-translations</transl
 </translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Omogućite automint PIV jedinica na zPIV</translation>
+        <source>Enable automatic minting of XBIT units to zXBIT</source>
+        <translation>Omogućite automint XBIT jedinica na zXBIT</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Omogući zPIV Automint</translation>
+        <source>Enable zXBIT Automint</source>
+        <translation>Omogući zXBIT Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Postotak dolaznih PIV koji se automatski pretvara u zPIV putem protokola Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming XBIT which get automatically converted to zXBIT via Zerocoin Protocol (min: 10%)</source>
+        <translation>Postotak dolaznih XBIT koji se automatski pretvara u zXBIT putem protokola Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Postotak automatiziranog zPIV</translation>
+        <source>Percentage of autominted zXBIT</source>
+        <translation>Postotak automatiziranog zXBIT</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno PIV za apoen</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough XBIT for this denomination is available</source>
+        <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno XBIT za apoen</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Preferirana Automint zPIV denominacijad</translation>
+        <source>Preferred Automint zXBIT Denomination</source>
+        <translation>Preferirana Automint zXBIT denominacijad</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -1287,7 +1287,7 @@ https://www.transifex.com/bitchain-project/bitchain-project-translations</transl
     </message>
     <message>
         <source>BITCHAIN Core client</source>
-        <translation>PIVIX Core Klijent</translation>
+        <translation>XBITIX Core Klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1712,8 +1712,8 @@ Adresa: %4
         <translation>Put prilagođenog sigurnosnog kopiranja:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Prilagođeni put zPIV sigurnosne kopije:</translation>
+        <source>Custom zXBIT Backup Path:</source>
+        <translation>Prilagođeni put zXBIT sigurnosne kopije:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -1996,12 +1996,12 @@ Adresa: %4
         <translation>Potroši Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>Radovi u tijeku na zPIV.</translation>
+        <source>zXBIT is currently undergoing maintenance.</source>
+        <translation>Radovi u tijeku na zXBIT.</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zPIV zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
+        <source>Version 1 zXBIT require a security level of 100 to successfully spend.</source>
+        <translation>Verzija 1 zXBIT zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -2749,12 +2749,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Zaprimljeno preko Zametanja</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>XBIT Stake</source>
+        <translation>XBIT Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>zXBIT Stake</source>
+        <translation>zXBIT Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -2773,24 +2773,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Prikrivanje Stvara Denominacije</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>Pretvoreni PIV u zPIV</translation>
+        <source>Converted XBIT to zXBIT</source>
+        <translation>Pretvoreni XBIT u zXBIT</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Utrošeni zPIV</translation>
+        <source>Spent zXBIT</source>
+        <translation>Utrošeni zXBIT</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Primljeni PIV od zPIV</translation>
+        <source>Received XBIT from zXBIT</source>
+        <translation>Primljeni XBIT od zXBIT</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Mintana razlika zPIV od zPIV Utroška</translation>
+        <source>Minted Change as zXBIT from zXBIT Spend</source>
+        <translation>Mintana razlika zXBIT od zXBIT Utroška</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>Pretvoreni zPIV u PIV</translation>
+        <source>Converted zXBIT to XBIT</source>
+        <translation>Pretvoreni zXBIT u XBIT</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -2886,8 +2886,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Salji novac</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 PIV.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 XBIT.</source>
+        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 XBIT.</translation>
     </message>
 </context>
 <context>
@@ -2909,18 +2909,18 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZXBITControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Odabrani zPIV za utrošiti</translation>
+        <source>Select zXBIT to Spend</source>
+        <translation>Odabrani zXBIT za utrošiti</translation>
     </message>
     <message>
         <source>Coin Control</source>
         <translation>Upravljanje novčićem</translation>
     </message>
     <message>
-        <source>zPiv</source>
-        <translation>zPiv</translation>
+        <source>zXBIT</source>
+        <translation>zXBIT</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -2994,16 +2994,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Distribuirano pod MIT softverskom licencom, pogledajte priloženu datoteku COPYING ili &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zPIV mintanja (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zXBIT minting (0-1, default: %u)</source>
+        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zXBIT mintanja (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za PIV unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for XBIT inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za XBIT unose (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za zPIV unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zXBIT inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za zXBIT unose (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3038,12 +3038,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Izvrši naredbu kada se promijeni najbolji blok (%s u cmd zamjenjuje se blokovskim raspršivanjem)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Naknade (u PIV / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Naknade (u XBIT / Kb) manje od toga smatraju se nulom naknadom za prosljeđivanje (zadano: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Naknade (u PIV / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Naknade (u XBIT / Kb) manje od toga smatraju se nulom naknadom za izradu transakcija (zadano: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3146,12 +3146,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Nije moguće locirati dovoljno sredstava s domenom Prikrivanja za tu transakciju.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 10000 PIV.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 XBIT.</source>
+        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 10000 XBIT.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 10000 PIV.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 XBIT.</source>
+        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 10000 XBIT.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3423,8 +3423,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Greška čitanja bloka</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Naknada (u PIV / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
+        <source>Fee (in XBIT/kB) to add to transactions you send (default: %s)</source>
+        <translation>Naknada (u XBIT / kB) za dodavanje transakcija koje šaljete (zadano: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -3523,8 +3523,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Postotak automatskog kovanog Zerocoina (1-100, zadano: %u)</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Ponovno indeksirati statistiku PIV i zPIV ponude novca</translation>
+        <source>Reindex the XBIT and zXBIT money supply statistics</source>
+        <translation>Ponovno indeksirati statistiku XBIT i zXBIT ponude novca</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -3598,8 +3598,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Preferirana denominacija za automatski ovjereni Zerocoin (1/5/10/50/100/500/1000/5000), 0 bez preferencije. zadana vrijednost: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zPIV sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
+        <source>Specify custom backup path to add a copy of any automatic zXBIT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zXBIT sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4002,8 +4002,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Sinkronizacija sporka...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Sinkronizacija zPIV novčanika...</translation>
+        <source>Syncing zXBIT wallet...</source>
+        <translation>Sinkronizacija zXBIT novčanika...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4110,8 +4110,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Korisničko ime za JSON-RPC veze</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zPIV-a</translation>
+        <source>Value is below the smallest available denomination (= 1) of zXBIT</source>
+        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zXBIT-a</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

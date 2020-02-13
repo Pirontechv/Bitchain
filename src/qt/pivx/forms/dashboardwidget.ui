@@ -565,7 +565,7 @@
            <number>0</number>
           </property>
           <item>
-           <widget class="QLabel" name="labelAmountPiv">
+           <widget class="QLabel" name="labelAmountXBIT">
             <property name="text">
              <string>TextLabel</string>
             </property>
@@ -575,7 +575,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="labelAmountZpiv">
+           <widget class="QLabel" name="labelAmountZxbit">
             <property name="text">
              <string>TextLabel</string>
             </property>
@@ -673,7 +673,7 @@
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QLabel" name="labelSquarePiv">
+                 <widget class="QLabel" name="labelSquareXBIT">
                   <property name="minimumSize">
                    <size>
                     <width>14</width>
@@ -692,9 +692,9 @@
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="labelPiv">
+                 <widget class="QLabel" name="labelXBIT">
                   <property name="text">
-                   <string>PIV</string>
+                   <string>XBIT</string>
                   </property>
                  </widget>
                 </item>
@@ -715,7 +715,7 @@
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QLabel" name="labelSquarezPiv">
+                 <widget class="QLabel" name="labelSquarezXBIT">
                   <property name="minimumSize">
                    <size>
                     <width>14</width>
@@ -734,9 +734,9 @@
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="labelZpiv">
+                 <widget class="QLabel" name="labelZxbit">
                   <property name="text">
-                   <string>zPIV</string>
+                   <string>zXBIT</string>
                   </property>
                  </widget>
                 </item>

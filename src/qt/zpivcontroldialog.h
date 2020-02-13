@@ -2,37 +2,37 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZPIVCONTROLDIALOG_H
-#define ZPIVCONTROLDIALOG_H
+#ifndef ZXBITCONTROLDIALOG_H
+#define ZXBITCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
-#include "zpiv/zerocoin.h"
+#include "zxbit/zerocoin.h"
 
 class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZPivControlDialog;
+class ZXBITControlDialog;
 }
 
-class CZPivControlWidgetItem : public QTreeWidgetItem
+class CZXBITControlWidgetItem : public QTreeWidgetItem
 {
 public:
-    explicit CZPivControlWidgetItem(QTreeWidget *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
-    explicit CZPivControlWidgetItem(int type = Type) : QTreeWidgetItem(type) {}
-    explicit CZPivControlWidgetItem(QTreeWidgetItem *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+    explicit CZXBITControlWidgetItem(QTreeWidget *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+    explicit CZXBITControlWidgetItem(int type = Type) : QTreeWidgetItem(type) {}
+    explicit CZXBITControlWidgetItem(QTreeWidgetItem *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
 
     bool operator<(const QTreeWidgetItem &other) const;
 };
 
-class ZPivControlDialog : public QDialog
+class ZXBITControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZPivControlDialog(QWidget *parent);
-    ~ZPivControlDialog();
+    explicit ZXBITControlDialog(QWidget *parent);
+    ~ZXBITControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -41,7 +41,7 @@ public:
     static std::vector<CMintMeta> GetSelectedMints();
 
 private:
-    Ui::ZPivControlDialog *ui;
+    Ui::ZXBITControlDialog *ui;
     WalletModel* model;
 
     void updateList();
@@ -55,11 +55,11 @@ private:
         COLUMN_CONFIRMATIONS,
         COLUMN_ISSPENDABLE
     };
-    friend class CZPivControlWidgetItem;
+    friend class CZXBITControlWidgetItem;
 
 private Q_SLOTS:
     void updateSelection(QTreeWidgetItem* item, int column);
     void ButtonAllClicked();
 };
 
-#endif // ZPIVCONTROLDIALOG_H
+#endif // ZXBITCONTROLDIALOG_H

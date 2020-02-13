@@ -374,16 +374,16 @@ for staking</source>
         <translation>cancel</translation>
     </message>
     <message>
-        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>BITCHAIN kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina PIVs från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XBITs from being stolen by malware infecting your computer.</source>
+        <translation>BITCHAIN kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina XBITs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Är du säker på att du vill kryptera din plånbok?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA PIV&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XBIT&lt;/b&gt;!</source>
+        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA XBIT&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -545,8 +545,8 @@ for staking</source>
         <translation>Tryck på knappen</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>0.00 XBIT</source>
+        <translation>0.00 XBIT</translation>
     </message>
     <message>
         <source>0</source>
@@ -725,8 +725,8 @@ for staking</source>
         <translation>Den här etiketten blir röd, ifall någon mottagare får en mängd som är mindre än %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Kan variera med +/- %1 upiv per inmatning.</translation>
+        <source>Can vary +/- %1 uxbit per input.</source>
+        <translation>Kan variera med +/- %1 uxbit per inmatning.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -742,7 +742,7 @@ for staking</source>
     </message>
 </context>
 <context>
-    <name>CoinControlPivWidget</name>
+    <name>CoinControlXBITWidget</name>
     <message>
         <source>Dialog</source>
         <translation>Dialog</translation>
@@ -756,8 +756,8 @@ for staking</source>
         <translation>Tryck på knappen</translation>
     </message>
     <message>
-        <source>PIV:</source>
-        <translation>PIV:</translation>
+        <source>XBIT:</source>
+        <translation>XBIT:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -901,12 +901,12 @@ for staking</source>
         <translation>Staking statistik</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>XBIT</source>
+        <translation>XBIT</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zXBIT</source>
+        <translation>zXBIT</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -937,8 +937,8 @@ for staking</source>
         <translation>Du kan se ditt kontos historik</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>Mängden PIV och zPIV som präglats.</translation>
+        <source>Amount of XBIT and zXBIT staked.</source>
+        <translation>Mängden XBIT och zXBIT som präglats.</translation>
     </message>
     <message>
         <source>All</source>
@@ -977,8 +977,8 @@ for staking</source>
         <translation>Inga transaktioner ännu.</translation>
     </message>
     <message>
-        <source>How to get PIV or zPIV</source>
-        <translation>Hur man får PIV eller zPIV.</translation>
+        <source>How to get XBIT or zXBIT</source>
+        <translation>Hur man får XBIT eller zXBIT.</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1423,8 +1423,8 @@ Den startar automatiskt så snart plånboken har tillräckligt många bekräftel
         <translation>Skapa ny masternode kontrollör</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a BITCHAIN Masternode you must dedicate 10.000 PIV (the unit of BITCHAIN) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>För att skapa en BITCHAIN Masternode måste du avsätta 10.000 PIV (enheten till BITCHAIN) till nätverket (dessa mynt är dock fortfarande dina och kommer aldrig att lämna ditt innehav). Du kan stänga av noden och låsa upp mynt när som helst.</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a BITCHAIN Masternode you must dedicate 10.000 XBIT (the unit of BITCHAIN) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>För att skapa en BITCHAIN Masternode måste du avsätta 10.000 XBIT (enheten till BITCHAIN) till nätverket (dessa mynt är dock fortfarande dina och kommer aldrig att lämna ditt innehav). Du kan stänga av noden och låsa upp mynt när som helst.</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
@@ -1435,8 +1435,8 @@ Den startar automatiskt så snart plånboken har tillräckligt många bekräftel
         <translation>Ställ in Masternode namn</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>En transaktion på 10 000 PIV kommer göras till en ny tom adress i din plånbok. Adressen är märkt under huvudnodens namn.</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 XBIT will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>En transaktion på 10 000 XBIT kommer göras till en ny tom adress i din plånbok. Adressen är märkt under huvudnodens namn.</translation>
     </message>
     <message>
         <source>Set Master Node’s IP and port</source>
@@ -1701,8 +1701,8 @@ Are you sure?</source>
         <translation>Masternode conf file existerar inte</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 PIV required.</source>
-        <translation>Inte nog på saldot för att skapa en Masternode, 10000 PIV behövs.</translation>
+        <source>Not enough balance to create a masternode, 10,000 XBIT required.</source>
+        <translation>Inte nog på saldot för att skapa en Masternode, 10000 XBIT behövs.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -1929,36 +1929,36 @@ https://www.transifex.com/bitchain-project/bitchain-project-translations</transl
         <translation>Kartlägg port med &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Tillåt automatisk prägling med PIV enheter till zPIV</translation>
+        <source>Enable automatic minting of XBIT units to zXBIT</source>
+        <translation>Tillåt automatisk prägling med XBIT enheter till zXBIT</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Tillåt zPIV Autoprägling</translation>
+        <source>Enable zXBIT Automint</source>
+        <translation>Tillåt zXBIT Autoprägling</translation>
     </message>
     <message>
-        <source>Enable automatic zPIV minting from specific addresses</source>
-        <translation>Aktivera automatisk zPIV prägling från specifika adresser</translation>
+        <source>Enable automatic zXBIT minting from specific addresses</source>
+        <translation>Aktivera automatisk zXBIT prägling från specifika adresser</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Aktivera autopräglingsadresser</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procent av inkommande PIV som automatiskt konverteras till zPIV via Zerocoin Protokollet (min: 10%)</translation>
+        <source>Percentage of incoming XBIT which get automatically converted to zXBIT via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procent av inkommande XBIT som automatiskt konverteras till zXBIT via Zerocoin Protokollet (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Procent av autopräglade zPIV</translation>
+        <source>Percentage of autominted zXBIT</source>
+        <translation>Procent av autopräglade zXBIT</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många PIV för denna valör är tillgängliga</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough XBIT for this denomination is available</source>
+        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många XBIT för denna valör är tillgängliga</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Preferens på zPIV valör i autoprägling</translation>
+        <source>Preferred Automint zXBIT Denomination</source>
+        <translation>Preferens på zXBIT valör i autoprägling</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2336,14 +2336,14 @@ Adress: %4
         <translation>Prägla</translation>
     </message>
     <message>
-        <source>Minting zPIV anonymizes your PIV by removing any
+        <source>Minting zXBIT anonymizes your XBIT by removing any
 transaction history, making transactions untraceable </source>
-        <translation>Prägling av zPIV anonymiserar dina PIV genom att ta bort
+        <translation>Prägling av zXBIT anonymiserar dina XBIT genom att ta bort
 transaktionshistorik, vilket gör transaktioner ospårbara</translation>
     </message>
     <message>
-        <source>Mint new zPIV or convert back to PIV</source>
-        <translation>Prägla nya zPIV eller konvertera tillbaka till PIV</translation>
+        <source>Mint new zXBIT or convert back to XBIT</source>
+        <translation>Prägla nya zXBIT eller konvertera tillbaka till XBIT</translation>
     </message>
     <message>
         <source>Last Zerocoin Movements</source>
@@ -2354,28 +2354,28 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Inga transaktioner ännu.</translation>
     </message>
     <message>
-        <source>Mint zPIV</source>
-        <translation>Prägla zPIV</translation>
+        <source>Mint zXBIT</source>
+        <translation>Prägla zXBIT</translation>
     </message>
     <message>
-        <source>Enter amount of PIV to mint into zPIV</source>
-        <translation>Ange PIV beloppet att prägla till zPIV</translation>
+        <source>Enter amount of XBIT to mint into zXBIT</source>
+        <translation>Ange XBIT beloppet att prägla till zXBIT</translation>
     </message>
     <message>
-        <source>Convert back to PIV</source>
-        <translation>Konvertera tillbaka till PIV</translation>
+        <source>Convert back to XBIT</source>
+        <translation>Konvertera tillbaka till XBIT</translation>
     </message>
     <message>
-        <source>Enter amount of zPIV to convert back into PIV</source>
-        <translation>Ange mängden zPIV som ska konverteras tillbaka till PIV</translation>
+        <source>Enter amount of zXBIT to convert back into XBIT</source>
+        <translation>Ange mängden zXBIT som ska konverteras tillbaka till XBIT</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance</source>
-        <translation>zPIV genomgår underhåll</translation>
+        <source>zXBIT is currently undergoing maintenance</source>
+        <translation>zXBIT genomgår underhåll</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2727,8 +2727,8 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Vanlig Backup Sökväg:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Vanlig zPIV Backup Sökväg:</translation>
+        <source>Custom zXBIT Backup Path:</source>
+        <translation>Vanlig zXBIT Backup Sökväg:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3007,8 +3007,8 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Mängd</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>XBIT</source>
+        <translation>XBIT</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3103,12 +3103,12 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Spendera Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV genomgår för tillfället underhåll.</translation>
+        <source>zXBIT is currently undergoing maintenance.</source>
+        <translation>zXBIT genomgår för tillfället underhåll.</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zPIV kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
+        <source>Version 1 zXBIT require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zXBIT kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3999,12 +3999,12 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Mottaget via Fördunkling</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV staking</translation>
+        <source>XBIT Stake</source>
+        <translation>XBIT staking</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Staking</translation>
+        <source>zXBIT Stake</source>
+        <translation>zXBIT Staking</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4023,24 +4023,24 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Obfuscation Skapa tecken</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>Konvertera PIV till zPIV</translation>
+        <source>Converted XBIT to zXBIT</source>
+        <translation>Konvertera XBIT till zXBIT</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Spendera zPIV</translation>
+        <source>Spent zXBIT</source>
+        <translation>Spendera zXBIT</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Mottog PIV från zPIV</translation>
+        <source>Received XBIT from zXBIT</source>
+        <translation>Mottog XBIT från zXBIT</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Myntad Växel som zPIV från zPIV Spendering</translation>
+        <source>Minted Change as zXBIT from zXBIT Spend</source>
+        <translation>Myntad Växel som zXBIT från zXBIT Spendering</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>Konverterad zPIV till PIV</translation>
+        <source>Converted zXBIT to XBIT</source>
+        <translation>Konverterad zXBIT till XBIT</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4156,8 +4156,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Skicka Mynt</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 PIV.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 XBIT.</source>
+        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 XBIT.</translation>
     </message>
 </context>
 <context>
@@ -4219,10 +4219,10 @@ Var vänlig kontrollera adressen och försök igen.</translation>
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZXBITControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Välj zPIV att Spendera</translation>
+        <source>Select zXBIT to Spend</source>
+        <translation>Välj zXBIT att Spendera</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -4304,16 +4304,16 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Distribuerad under MIT mjukvarulicensen, se medföljande fil COPYING eller &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Aktivera automatisk plånboksbackup efter varje zPIV minting (0-1, standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zXBIT minting (0-1, default: %u)</source>
+        <translation>Aktivera automatisk plånboksbackup efter varje zXBIT minting (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för PIV inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for XBIT inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för XBIT inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för zPIV inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for zXBIT inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för zXBIT inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4348,12 +4348,12 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Exekvera kommando när den bästa block ändras (%s i cmd är utbytt mot block hash)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Avgifter (i PIV/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Avgifter (i XBIT/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Avgifter (i PIV/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Avgifter (i XBIT/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4460,12 +4460,12 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Kan ej lokalisera tillräckligt Fördunklingsdenominationerade pengar för denna transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 10000 PIV.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 XBIT.</source>
+        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 10000 XBIT.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 10000 PIV.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 XBIT.</source>
+        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 10000 XBIT.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4744,8 +4744,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Misslyckades läsa block</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Avgift (i PIV/kB) för att lägga till transaktioner you skicka (standard: %s)</translation>
+        <source>Fee (in XBIT/kB) to add to transactions you send (default: %s)</source>
+        <translation>Avgift (i XBIT/kB) för att lägga till transaktioner you skicka (standard: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -4844,8 +4844,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Procent automatiskt mintad Zerocoin (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Indexera PIV och zPIV pengarna tillgång statistik på nytt</translation>
+        <source>Reindex the XBIT and zXBIT money supply statistics</source>
+        <translation>Indexera XBIT och zXBIT pengarna tillgång statistik på nytt</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4924,8 +4924,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Valör aatt föredra för automatiskt mintad Zerocoin (1/5/10/50/100/500/1000/5000), 0 för ingen preface. standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk zPIV backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
+        <source>Specify custom backup path to add a copy of any automatic zXBIT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk zXBIT backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5332,8 +5332,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Synkroniserar sporks...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Synkroniserar zPIV plånbok...</translation>
+        <source>Syncing zXBIT wallet...</source>
+        <translation>Synkroniserar zXBIT plånbok...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5444,8 +5444,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Användarnamn för JSON-RPC anslutningar</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Värde är under den minsta tillgängliga valören (=1) av zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of zXBIT</source>
+        <translation>Värde är under den minsta tillgängliga valören (=1) av zXBIT</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

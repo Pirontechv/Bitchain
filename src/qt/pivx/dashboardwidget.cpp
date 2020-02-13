@@ -55,12 +55,12 @@ DashboardWidget::DashboardWidget(BITCHAINGUI* parent) :
     setCssSubtitleScreen(ui->labelSubtitle);
 
     // Staking Information
-    ui->labelMessage->setText(tr("Amount of PIV and zPIV staked."));
+    ui->labelMessage->setText(tr("Amount of XBIT and zXBIT staked."));
     setCssSubtitleScreen(ui->labelMessage);
-    setCssProperty(ui->labelSquarePiv, "square-chart-piv");
-    setCssProperty(ui->labelSquarezPiv, "square-chart-zpiv");
-    setCssProperty(ui->labelPiv, "text-chart-piv");
-    setCssProperty(ui->labelZpiv, "text-chart-zpiv");
+    setCssProperty(ui->labelSquareXBIT, "square-chart-xbit");
+    setCssProperty(ui->labelSquarezXBIT, "square-chart-zxbit");
+    setCssProperty(ui->labelXBIT, "text-chart-xbit");
+    setCssProperty(ui->labelZxbit, "text-chart-zxbit");
 
     // Staking Amount
     QFont fontBold;
@@ -68,10 +68,10 @@ DashboardWidget::DashboardWidget(BITCHAINGUI* parent) :
 
     setCssProperty(ui->labelChart, "legend-chart");
 
-    ui->labelAmountZpiv->setText("0 zPIV");
-    ui->labelAmountPiv->setText("0 PIV");
-    setCssProperty(ui->labelAmountPiv, "text-stake-piv-disable");
-    setCssProperty(ui->labelAmountZpiv, "text-stake-zpiv-disable");
+    ui->labelAmountZxbit->setText("0 zXBIT");
+    ui->labelAmountXBIT->setText("0 XBIT");
+    setCssProperty(ui->labelAmountXBIT, "text-stake-xbit-disable");
+    setCssProperty(ui->labelAmountZxbit, "text-stake-zxbit-disable");
 
     setCssProperty({ui->pushButtonAll,  ui->pushButtonMonth, ui->pushButtonYear}, "btn-check-time");
     setCssProperty({ui->comboBoxMonths,  ui->comboBoxYears}, "btn-combo-chart-selected");
@@ -143,7 +143,7 @@ DashboardWidget::DashboardWidget(BITCHAINGUI* parent) :
     setCssProperty(ui->chartContainer, "container-chart");
     setCssProperty(ui->pushImgEmptyChart, "img-empty-staking-on");
 
-    ui->btnHowTo->setText(tr("How to get PIV or zPIV"));
+    ui->btnHowTo->setText(tr("How to get XBIT or zXBIT"));
     setCssBtnSecondary(ui->btnHowTo);
 
 
@@ -237,7 +237,7 @@ void DashboardWidget::loadWalletModel(){
         loadChart();
 #endif
     }
-    // update the display unit, to not use the default ("PIV")
+    // update the display unit, to not use the default ("XBIT")
     updateDisplayUnit();
 }
 
@@ -498,7 +498,7 @@ void DashboardWidget::updateStakeFilter() {
     }
 }
 
-// pair PIV, zPIV
+// pair XBIT, zXBIT
 const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy() {
     updateStakeFilter();
     const int size = stakesFilter->rowCount();
@@ -508,7 +508,7 @@ const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy() {
         QModelIndex modelIndex = stakesFilter->index(i, TransactionTableModel::ToAddress);
         qint64 amount = llabs(modelIndex.data(TransactionTableModel::AmountRole).toLongLong());
         QDate date = modelIndex.data(TransactionTableModel::DateRole).toDateTime().date();
-        bool isPiv = modelIndex.data(TransactionTableModel::TypeRole).toInt() != TransactionRecord::StakeZPIV;
+        bool isXBIT = modelIndex.data(TransactionTableModel::TypeRole).toInt() != TransactionRecord::StakeZXBIT;
 
         int time = 0;
         switch (chartShow) {
@@ -529,16 +529,16 @@ const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy() {
                 return amountBy;
         }
         if (amountBy.contains(time)) {
-            if (isPiv) {
+            if (isXBIT) {
                 amountBy[time].first += amount;
             } else
                 amountBy[time].second += amount;
         } else {
-            if (isPiv) {
+            if (isXBIT) {
                 amountBy[time] = std::make_pair(amount, 0);
             } else {
                 amountBy[time] = std::make_pair(0, amount);
-                hasZpivStakes = true;
+                hasZxbitStakes = true;
             }
         }
     }
@@ -553,7 +553,7 @@ bool DashboardWidget::loadChartData(bool withMonthNames) {
     }
 
     chartData = new ChartData();
-    chartData->amountsByCache = getAmountBy(); // pair PIV, zPIV
+    chartData->amountsByCache = getAmountBy(); // pair XBIT, zXBIT
 
     std::pair<int,int> range = getChartRange(chartData->amountsByCache);
     if (range.first == 0 && range.second == 0) {
@@ -566,22 +566,22 @@ bool DashboardWidget::loadChartData(bool withMonthNames) {
 
     for (int j = range.first; j < range.second; j++) {
         int num = (isOrderedByMonth && j > daysInMonth) ? (j % daysInMonth) : j;
-        qreal piv = 0;
-        qreal zpiv = 0;
+        qreal xbit = 0;
+        qreal zxbit = 0;
         if (chartData->amountsByCache.contains(num)) {
             std::pair <qint64, qint64> pair = chartData->amountsByCache[num];
-            piv = (pair.first != 0) ? pair.first / 100000000 : 0;
-            zpiv = (pair.second != 0) ? pair.second / 100000000 : 0;
-            chartData->totalPiv += pair.first;
-            chartData->totalZpiv += pair.second;
+            xbit = (pair.first != 0) ? pair.first / 100000000 : 0;
+            zxbit = (pair.second != 0) ? pair.second / 100000000 : 0;
+            chartData->totalXBIT += pair.first;
+            chartData->totalZxbit += pair.second;
         }
 
         chartData->xLabels << ((withMonthNames) ? monthsNames[num - 1] : QString::number(num));
 
-        chartData->valuesPiv.append(piv);
-        chartData->valueszPiv.append(zpiv);
+        chartData->valuesXBIT.append(xbit);
+        chartData->valueszXBIT.append(zxbit);
 
-        int max = std::max(piv, zpiv);
+        int max = std::max(xbit, zxbit);
         if (max > chartData->maxValue) {
             chartData->maxValue = max;
         }
@@ -634,8 +634,8 @@ void DashboardWidget::onChartRefreshed() {
         axisX->clear();
     }
     // init sets
-    set0 = new QBarSet("PIV");
-    set1 = new QBarSet("zPIV");
+    set0 = new QBarSet("XBIT");
+    set1 = new QBarSet("zXBIT");
     set0->setColor(QColor(92,75,125));
     set1->setColor(QColor(176,136,255));
 
@@ -646,24 +646,24 @@ void DashboardWidget::onChartRefreshed() {
     series->attachAxis(axisX);
     series->attachAxis(axisY);
 
-    set0->append(chartData->valuesPiv);
-    set1->append(chartData->valueszPiv);
+    set0->append(chartData->valuesXBIT);
+    set1->append(chartData->valueszXBIT);
 
     // Total
     nDisplayUnit = walletModel->getOptionsModel()->getDisplayUnit();
-    if (chartData->totalPiv > 0 || chartData->totalZpiv > 0) {
-        setCssProperty(ui->labelAmountPiv, "text-stake-piv");
-        setCssProperty(ui->labelAmountZpiv, "text-stake-zpiv");
+    if (chartData->totalXBIT > 0 || chartData->totalZxbit > 0) {
+        setCssProperty(ui->labelAmountXBIT, "text-stake-xbit");
+        setCssProperty(ui->labelAmountZxbit, "text-stake-zxbit");
     } else {
-        setCssProperty(ui->labelAmountPiv, "text-stake-piv-disable");
-        setCssProperty(ui->labelAmountZpiv, "text-stake-zpiv-disable");
+        setCssProperty(ui->labelAmountXBIT, "text-stake-xbit-disable");
+        setCssProperty(ui->labelAmountZxbit, "text-stake-zxbit-disable");
     }
-    forceUpdateStyle({ui->labelAmountPiv, ui->labelAmountZpiv});
-    ui->labelAmountPiv->setText(GUIUtil::formatBalance(chartData->totalPiv, nDisplayUnit));
-    ui->labelAmountZpiv->setText(GUIUtil::formatBalance(chartData->totalZpiv, nDisplayUnit, true));
+    forceUpdateStyle({ui->labelAmountXBIT, ui->labelAmountZxbit});
+    ui->labelAmountXBIT->setText(GUIUtil::formatBalance(chartData->totalXBIT, nDisplayUnit));
+    ui->labelAmountZxbit->setText(GUIUtil::formatBalance(chartData->totalZxbit, nDisplayUnit, true));
 
     series->append(set0);
-    if(hasZpivStakes)
+    if(hasZxbitStakes)
         series->append(set1);
 
     // bar width

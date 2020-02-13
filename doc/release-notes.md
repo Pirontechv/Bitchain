@@ -34,10 +34,10 @@ Notable Changes
 
 (Developers: add your notes here as part of your pull requests whenever possible)
 
-Automatic zPIV backup has been disabled. Thus, the following configuration options have been removed  (either as entries in the bitchain.conf file or as startup flags):
-- `autozpivbackup`
-- `backupzpiv`
-- `zpivbackuppath`
+Automatic zXBIT backup has been disabled. Thus, the following configuration options have been removed  (either as entries in the bitchain.conf file or as startup flags):
+- `autozxbitbackup`
+- `backupzxbit`
+- `zxbitbackuppath`
 
 
 

@@ -12,9 +12,9 @@ Please report bugs using the issue tracker at github:
 Recommended Update
 ==============
 
-BITCHAIN Core v3.0.2 is a recommended, semi-mandatory update for all users. This release contains transaction creation bug fixes for zPIV spends, automint calculation adjustments, and other various updates/fixes.
+BITCHAIN Core v3.0.2 is a recommended, semi-mandatory update for all users. This release contains transaction creation bug fixes for zXBIT spends, automint calculation adjustments, and other various updates/fixes.
 
-zPIV spending requires this update.
+zXBIT spending requires this update.
 
 How to Upgrade
 ==============
@@ -45,21 +45,21 @@ Notable Changes
 
 Auto Wallet Backup
 ---------------------
-In addition to the automatic wallet backup that is done at each start of the client, a new automatic backup function has been added that will, by default, create a backup of the wallet file during each zPIV mint operation (zPIV spends which re-mint their change are also included in this). This functionality is controlled by the `-backupzpiv` command-line option, which defaults to `1` (enabled, auto-backup).
+In addition to the automatic wallet backup that is done at each start of the client, a new automatic backup function has been added that will, by default, create a backup of the wallet file during each zXBIT mint operation (zXBIT spends which re-mint their change are also included in this). This functionality is controlled by the `-backupzxbit` command-line option, which defaults to `1` (enabled, auto-backup).
 
-Users that wish to prevent this behavior (not recommended) can pass `-backupzpiv=0` at the command-line when starting the client, or add `backupzpiv=0` to their `bitchain.conf` file.
+Users that wish to prevent this behavior (not recommended) can pass `-backupzxbit=0` at the command-line when starting the client, or add `backupzxbit=0` to their `bitchain.conf` file.
 
-zPIV Automint Calculations
+zXBIT Automint Calculations
 ---------------------
-A bug in the automint calculations was made apparent on mainnet when block times exceeded expectations, resulting in zPIV mint transactions that were in an unconfirmed state to still be treated as if they had never been minted. This caused automint to effectively mint more than what was intended.
+A bug in the automint calculations was made apparent on mainnet when block times exceeded expectations, resulting in zXBIT mint transactions that were in an unconfirmed state to still be treated as if they had never been minted. This caused automint to effectively mint more than what was intended.
 
-zPIV Spending Fix
+zXBIT Spending Fix
 ---------------------
-The size of zPIV spend transactions is knowingly larger than normal transactions, and while this was expected, a much stricter check against the scriptsig size is used for mainnet, causing the transactions to be rejected by the mempool, and thus not being packaged into any blocks.
+The size of zXBIT spend transactions is knowingly larger than normal transactions, and while this was expected, a much stricter check against the scriptsig size is used for mainnet, causing the transactions to be rejected by the mempool, and thus not being packaged into any blocks.
 
-zPIV Transaction Recovery
+zXBIT Transaction Recovery
 ---------------------
-Due to the aforementioned issue with zPIV spending, users may find that their attempted spends are now conflicted and zPIV balances are not represented as expected. "Recovery" of these transactions can be done using the following methods:
+Due to the aforementioned issue with zXBIT spending, users may find that their attempted spends are now conflicted and zXBIT balances are not represented as expected. "Recovery" of these transactions can be done using the following methods:
 
 1. GUI:
 
@@ -90,13 +90,13 @@ git merge commit are mentioned.
 
 ### P2P Protocol and Network Code
 - #286 `85c0f53` [Main] Change sporkDB from smart ptr to ptr. (presstab)
-- #292 `feadab4` Additional checks for double spending of zPiv serials. (presstab)
+- #292 `feadab4` Additional checks for double spending of zXBIT serials. (presstab)
 
 ### Wallet
 - #271 `5e9a086` [Wallet] Remove unused member wallet in UnlockContext inner class (Jon Spock)
-- #279 `e734010` Add -backupzpiv startup flag. (presstab)
-- #280 `fdc182d` [Wallet] Fix zPiv spending errors. (presstab)
-- #282 `310f216` [Wallet] Count pending zPiv balance for automint. (presstab)
+- #279 `e734010` Add -backupzxbit startup flag. (presstab)
+- #280 `fdc182d` [Wallet] Fix zXBIT spending errors. (presstab)
+- #282 `310f216` [Wallet] Count pending zXBIT balance for automint. (presstab)
 - #290 `004d7b6` Include both pending and mature zerocoins for automint calculations (presstab)
 
 ### GUI
@@ -105,7 +105,7 @@ git merge commit are mentioned.
 - #270 `bd2328e` [Qt] Make lock icon clickable to toggle wallet lock state (Fuzzbawls)
 - #273 `f31136e` [Qt] Fix UI tab order and shortcuts (Mrs-X)
 - #287 `74a1c3c` [Qt] Don't allow the Esc key to close the privacy tab (Fuzzbawls)
-- #291 `cb314e6` [Qt] zPiv control quantity/amount fixes (rejectedpromise)
+- #291 `cb314e6` [Qt] zXBIT control quantity/amount fixes (rejectedpromise)
 
 ### Miscellaneous
 - #266 `2d97b54` [Scripts] Fix location for aarch64 outputs in gitian-build.sh (Fuzzbawls)

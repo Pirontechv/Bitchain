@@ -45,63 +45,63 @@ PrivacyWidget::PrivacyWidget(BITCHAINGUI* parent) :
     setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("Minting zPIV anonymizes your PIV by removing any\ntransaction history, making transactions untraceable "));
+    ui->labelSubtitle1->setText(tr("Minting zXBIT anonymizes your XBIT by removing any\ntransaction history, making transactions untraceable "));
     setCssSubtitleScreen(ui->labelSubtitle1);
 
-    ui->labelSubtitle2->setText(tr("Mint new zPIV or convert back to PIV"));
+    ui->labelSubtitle2->setText(tr("Mint new zXBIT or convert back to XBIT"));
     setCssSubtitleScreen(ui->labelSubtitle2);
     ui->labelSubtitle2->setContentsMargins(0,2,0,0);
     setCssProperty(ui->labelSubtitleAmount, "text-title");
 
-    ui->lineEditAmount->setPlaceholderText("0.00 PIV ");
+    ui->lineEditAmount->setPlaceholderText("0.00 XBIT ");
     ui->lineEditAmount->setValidator(new QRegExpValidator(QRegExp("[0-9]+")));
     initCssEditLine(ui->lineEditAmount);
 
     /* Denom */
     ui->labelTitleDenom1->setText("Denom. with value 1:");
     setCssProperty(ui->labelTitleDenom1, "text-subtitle");
-    ui->labelValueDenom1->setText("0x1 = 0 zPIV");
+    ui->labelValueDenom1->setText("0x1 = 0 zXBIT");
     setCssProperty(ui->labelValueDenom1, "text-body2");
 
     ui->labelTitleDenom5->setText("Denom. with value 5:");
     setCssProperty(ui->labelTitleDenom5, "text-subtitle");
-    ui->labelValueDenom5->setText("0x5 = 0 zPIV");
+    ui->labelValueDenom5->setText("0x5 = 0 zXBIT");
     setCssProperty(ui->labelValueDenom5, "text-body2");
 
     ui->labelTitleDenom10->setText("Denom. with value 10:");
     setCssProperty(ui->labelTitleDenom10, "text-subtitle");
-    ui->labelValueDenom10->setText("0x10 = 0 zPIV");
+    ui->labelValueDenom10->setText("0x10 = 0 zXBIT");
     setCssProperty(ui->labelValueDenom10, "text-body2");
 
     ui->labelTitleDenom50->setText("Denom. with value 50:");
     setCssProperty(ui->labelTitleDenom50, "text-subtitle");
-    ui->labelValueDenom50->setText("0x50 = 0 zPIV");
+    ui->labelValueDenom50->setText("0x50 = 0 zXBIT");
     setCssProperty(ui->labelValueDenom50, "text-body2");
 
     ui->labelTitleDenom100->setText("Denom. with value 100:");
     setCssProperty(ui->labelTitleDenom100, "text-subtitle");
-    ui->labelValueDenom100->setText("0x100 = 0 zPIV");
+    ui->labelValueDenom100->setText("0x100 = 0 zXBIT");
     setCssProperty(ui->labelValueDenom100, "text-body2");
 
     ui->labelTitleDenom500->setText("Denom. with value 500:");
     setCssProperty(ui->labelTitleDenom500, "text-subtitle");
-    ui->labelValueDenom500->setText("0x500 = 0 zPIV");
+    ui->labelValueDenom500->setText("0x500 = 0 zXBIT");
     setCssProperty(ui->labelValueDenom500, "text-body2");
 
     ui->labelTitleDenom1000->setText("Denom. with value 1000:");
     setCssProperty(ui->labelTitleDenom1000, "text-subtitle");
-    ui->labelValueDenom1000->setText("0x1000 = 0 zPIV");
+    ui->labelValueDenom1000->setText("0x1000 = 0 zXBIT");
     setCssProperty(ui->labelValueDenom1000, "text-body2");
 
     ui->labelTitleDenom5000->setText("Denom. with value 5000:");
     setCssProperty(ui->labelTitleDenom5000, "text-subtitle");
-    ui->labelValueDenom5000->setText("0x5000 = 0 zPIV");
+    ui->labelValueDenom5000->setText("0x5000 = 0 zXBIT");
     setCssProperty(ui->labelValueDenom5000, "text-body2");
 
     ui->layoutDenom->setVisible(false);
 
     // List
-    ui->labelListHistory->setText(tr("Last zPIV Movements"));
+    ui->labelListHistory->setText(tr("Last zXBIT Movements"));
     setCssProperty(ui->labelListHistory, "text-title");
 
     //ui->emptyContainer->setVisible(false);
@@ -112,16 +112,16 @@ PrivacyWidget::PrivacyWidget(BITCHAINGUI* parent) :
     // Buttons
     setCssBtnPrimary(ui->pushButtonSave);
 
-    // Only Convert to PIV enabled.
+    // Only Convert to XBIT enabled.
     ui->containerViewPrivacyChecks->setVisible(false);
     onMintSelected(false);
 
-    ui->btnTotalzPIV->setTitleClassAndText("btn-title-grey", "Total 0 zPIV");
-    ui->btnTotalzPIV->setSubTitleClassAndText("text-subtitle", "Show denominations of zPIV owned.");
-    ui->btnTotalzPIV->setRightIconClass("ic-arrow");
+    ui->btnTotalzXBIT->setTitleClassAndText("btn-title-grey", "Total 0 zXBIT");
+    ui->btnTotalzXBIT->setSubTitleClassAndText("text-subtitle", "Show denominations of zXBIT owned.");
+    ui->btnTotalzXBIT->setRightIconClass("ic-arrow");
 
     ui->btnCoinControl->setTitleClassAndText("btn-title-grey", "Coin Control");
-    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select PIV outputs to mint into zPIV.");
+    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", "Select XBIT outputs to mint into zXBIT.");
 
     ui->btnDenomGeneration->setTitleClassAndText("btn-title-grey", "Denom Generation");
     ui->btnDenomGeneration->setSubTitleClassAndText("text-subtitle", "Select the denomination of the coins.");
@@ -130,10 +130,10 @@ PrivacyWidget::PrivacyWidget(BITCHAINGUI* parent) :
     ui->btnRescanMints->setTitleClassAndText("btn-title-grey", "Rescan Mints");
     ui->btnRescanMints->setSubTitleClassAndText("text-subtitle", "Find mints in the blockchain.");
 
-    ui->btnResetZerocoin->setTitleClassAndText("btn-title-grey", "Reset Spent zPIV");
+    ui->btnResetZerocoin->setTitleClassAndText("btn-title-grey", "Reset Spent zXBIT");
     ui->btnResetZerocoin->setSubTitleClassAndText("text-subtitle", "Reset zerocoin database.");
 
-    connect(ui->btnTotalzPIV, SIGNAL(clicked()), this, SLOT(onTotalZpivClicked()));
+    connect(ui->btnTotalzXBIT, SIGNAL(clicked()), this, SLOT(onTotalZxbitClicked()));
     connect(ui->btnCoinControl, SIGNAL(clicked()), this, SLOT(onCoinControlClicked()));
     connect(ui->btnDenomGeneration, SIGNAL(clicked()), this, SLOT(onDenomClicked()));
     connect(ui->btnRescanMints, SIGNAL(clicked()), this, SLOT(onRescanMintsClicked()));
@@ -196,13 +196,13 @@ void PrivacyWidget::loadWalletModel(){
 void PrivacyWidget::onMintSelected(bool isMint){
     QString btnText;
     if(isMint){
-        btnText = tr("Mint zPIV");
+        btnText = tr("Mint zXBIT");
         ui->btnCoinControl->setVisible(true);
-        ui->labelSubtitleAmount->setText(tr("Enter amount of PIV to mint into zPIV"));
+        ui->labelSubtitleAmount->setText(tr("Enter amount of XBIT to mint into zXBIT"));
     }else{
-        btnText = tr("Convert back to PIV");
+        btnText = tr("Convert back to XBIT");
         ui->btnCoinControl->setVisible(false);
-        ui->labelSubtitleAmount->setText(tr("Enter amount of zPIV to convert back into PIV"));
+        ui->labelSubtitleAmount->setText(tr("Enter amount of zXBIT to convert back into XBIT"));
     }
     ui->pushButtonSave->setText(btnText);
 }
@@ -221,14 +221,14 @@ void PrivacyWidget::showList(){
     ui->listView->setVisible(true);
 }
 
-void PrivacyWidget::onTotalZpivClicked(){
+void PrivacyWidget::onTotalZxbitClicked(){
     bool isVisible = ui->layoutDenom->isVisible();
     if(!isVisible){
         ui->layoutDenom->setVisible(true);
-        ui->btnTotalzPIV->setRightIconClass("btn-dropdown", true);
+        ui->btnTotalzXBIT->setRightIconClass("btn-dropdown", true);
     }else{
         ui->layoutDenom->setVisible(false);
-        ui->btnTotalzPIV->setRightIconClass("ic-arrow", true);
+        ui->btnTotalzXBIT->setRightIconClass("ic-arrow", true);
     }
 }
 
@@ -237,15 +237,15 @@ void PrivacyWidget::onSendClicked(){
         return;
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        warn(tr("Zerocoin"), tr("zPIV is currently undergoing maintenance"));
+        warn(tr("Zerocoin"), tr("zXBIT is currently undergoing maintenance"));
         return;
     }
 
     // Only convert enabled.
     bool isConvert = true;// ui->pushLeft->isChecked();
 
-    if(!GUIUtil::requestUnlock(walletModel, AskPassphraseDialog::Context::Mint_zPIV, true)){
-        inform(tr("You need to unlock the wallet to be able to %1 zPIV").arg(isConvert ? tr("convert") : tr("mint")));
+    if(!GUIUtil::requestUnlock(walletModel, AskPassphraseDialog::Context::Mint_zXBIT, true)){
+        inform(tr("You need to unlock the wallet to be able to %1 zXBIT").arg(isConvert ? tr("convert") : tr("mint")));
         return;
     }
 
@@ -276,7 +276,7 @@ void PrivacyWidget::mint(CAmount value){
         inform(tr(strError.data()));
     }else{
         // Mint succeed
-        inform(tr("zPIV minted successfully"));
+        inform(tr("zXBIT minted successfully"));
         // clear
         ui->lineEditAmount->clear();
     }
@@ -286,7 +286,7 @@ void PrivacyWidget::spend(CAmount value){
     CZerocoinSpendReceipt receipt;
     std::vector<CZerocoinMint> selectedMints;
 
-    if(!walletModel->convertBackZpiv(
+    if(!walletModel->convertBackZxbit(
             value,
             selectedMints,
             receipt
@@ -294,7 +294,7 @@ void PrivacyWidget::spend(CAmount value){
         inform(receipt.GetStatusMessage().data());
     }else{
         // Spend succeed
-        inform(tr("zPIV converted back to PIV"));
+        inform(tr("zXBIT converted back to XBIT"));
         // clear
         ui->lineEditAmount->clear();
     }
@@ -313,7 +313,7 @@ void PrivacyWidget::onCoinControlClicked(){
             coinControlDialog->exec();
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
         } else {
-            inform(tr("You don't have any PIV to select."));
+            inform(tr("You don't have any XBIT to select."));
         }
     }
 }
@@ -334,7 +334,7 @@ void PrivacyWidget::onRescanMintsClicked(){
 }
 
 void PrivacyWidget::onResetZeroClicked(){
-    if (ask(tr("Reset Spent zPIV"),
+    if (ask(tr("Reset Spent zXBIT"),
         tr("Your zerocoin spends are going to be scanned from the blockchain from scratch"))
     ){
         std::string strResetMintResult = walletModel->resetSpentZerocoin();
@@ -394,7 +394,7 @@ void PrivacyWidget::updateDenomsSupply(){
 
         strDenomStats = strUnconfirmed + QString::number(mapDenomBalances.at(denom)) + " x " +
                         QString::number(nCoins) + " = <b>" +
-                        QString::number(nSumPerCoin) + " zPIV </b>";
+                        QString::number(nSumPerCoin) + " zXBIT </b>";
 
         switch (nCoins) {
             case libzerocoin::CoinDenomination::ZQ_ONE:
@@ -428,7 +428,7 @@ void PrivacyWidget::updateDenomsSupply(){
     }
 
     CAmount matureZerocoinBalance = walletModel->getZerocoinBalance() - walletModel->getUnconfirmedZerocoinBalance() - walletModel->getImmatureZerocoinBalance();
-    ui->btnTotalzPIV->setTitleText(tr("Total %1").arg(GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true)));
+    ui->btnTotalzXBIT->setTitleText(tr("Total %1").arg(GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true)));
 }
 
 void PrivacyWidget::changeTheme(bool isLightTheme, QString& theme){

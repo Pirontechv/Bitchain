@@ -191,8 +191,8 @@
         <file alias="ic-clear-purple">bitchain/res/img/ic-clear-purple.svg</file>
         <file alias="ic-close-white">bitchain/res/img/ic-close-white.svg</file>
         <file alias="ic-close">bitchain/res/img/ic-close.svg</file>
-        <file alias="ic-coin-piv">bitchain/res/img/ic-coin-piv.svg</file>
-        <file alias="ic-coin-zpiv">bitchain/res/img/ic-coin-zpiv.svg</file>
+        <file alias="ic-coin-xbit">bitchain/res/img/ic-coin-xbit.svg</file>
+        <file alias="ic-coin-zxbit">bitchain/res/img/ic-coin-zxbit.svg</file>
         <file alias="ic-combo-box">bitchain/res/img/ic-combo-box.svg</file>
         <file alias="ic-connect">bitchain/res/img/ic-connect.svg</file>
         <file alias="ic-copy-liliac">bitchain/res/img/ic-copy-liliac.svg</file>

@@ -22,18 +22,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(PIV);
-    unitlist.append(mPIV);
-    unitlist.append(uPIV);
+    unitlist.append(XBIT);
+    unitlist.append(mXBIT);
+    unitlist.append(uXBIT);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case PIV:
-    case mPIV:
-    case uPIV:
+    case XBIT:
+    case mXBIT:
+    case uXBIT:
         return true;
     default:
         return false;
@@ -43,40 +43,40 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case PIV:
+    case XBIT:
         return QString("bitchain");
-    case mPIV:
+    case mXBIT:
         return QString("mbitchain");
-    case uPIV:
+    case uXBIT:
         return QString::fromUtf8("ubitchain");
     default:
         return QString("???");
     }
 }
 
-QString BitcoinUnits::name(int unit, bool isZpiv)
+QString BitcoinUnits::name(int unit, bool isZxbit)
 {
     QString z = "";
-    if(isZpiv) z = "z";
+    if(isZxbit) z = "z";
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case PIV:
-            return z + QString("PIV");
-        case mPIV:
-            return z + QString("mPIV");
-        case uPIV:
-            return z + QString::fromUtf8("μPIV");
+        case XBIT:
+            return z + QString("XBIT");
+        case mXBIT:
+            return z + QString("mXBIT");
+        case uXBIT:
+            return z + QString::fromUtf8("μXBIT");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case PIV:
-            return z + QString("tPIV");
-        case mPIV:
-            return z + QString("mtPIV");
-        case uPIV:
-            return z + QString::fromUtf8("μtPIV");
+        case XBIT:
+            return z + QString("tXBIT");
+        case mXBIT:
+            return z + QString("mtXBIT");
+        case uXBIT:
+            return z + QString::fromUtf8("μtXBIT");
         default:
             return QString("???");
         }
@@ -87,23 +87,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case PIV:
-            return QString("PIV");
-        case mPIV:
-            return QString("Milli-PIV (1 / 1" THIN_SP_UTF8 "000)");
-        case uPIV:
-            return QString("Micro-PIV (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case XBIT:
+            return QString("XBIT");
+        case mXBIT:
+            return QString("Milli-XBIT (1 / 1" THIN_SP_UTF8 "000)");
+        case uXBIT:
+            return QString("Micro-XBIT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case PIV:
-            return QString("TestPIVs");
-        case mPIV:
-            return QString("Milli-TestPIV (1 / 1" THIN_SP_UTF8 "000)");
-        case uPIV:
-            return QString("Micro-TestPIV (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case XBIT:
+            return QString("TestXBITs");
+        case mXBIT:
+            return QString("Milli-TestXBIT (1 / 1" THIN_SP_UTF8 "000)");
+        case uXBIT:
+            return QString("Micro-TestXBIT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -113,11 +113,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case PIV:
+    case XBIT:
         return 100000000;
-    case mPIV:
+    case mXBIT:
         return 100000;
-    case uPIV:
+    case uXBIT:
         return 100;
     default:
         return 100000000;
@@ -127,11 +127,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case PIV:
+    case XBIT:
         return 8;
-    case mPIV:
+    case mXBIT:
         return 5;
-    case uPIV:
+    case uXBIT:
         return 2;
     default:
         return 0;
@@ -213,7 +213,7 @@ QString BitcoinUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bool p
     return QString("<span style='white-space: nowrap;'>%1</span>").arg(str);
 }
 
-QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZPIV)
+QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZXBIT)
 {
     QSettings settings;
     int digits = settings.value("digits").toInt();
@@ -230,12 +230,12 @@ QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussi
         }
     }
 
-    return result + QString(" ") + name(unit, isZPIV);
+    return result + QString(" ") + name(unit, isZXBIT);
 }
 
-QString BitcoinUnits::floorHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZPIV)
+QString BitcoinUnits::floorHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZXBIT)
 {
-    QString str(floorWithUnit(unit, amount, plussign, separators, cleanRemainderZeros, isZPIV));
+    QString str(floorWithUnit(unit, amount, plussign, separators, cleanRemainderZeros, isZXBIT));
     str.replace(QChar(THIN_SP_CP), QString(COMMA_HTML));
     return QString("<span style='white-space: nowrap;'>%1</span>").arg(str);
 }

@@ -7,35 +7,35 @@
 #include "chain.h"
 #include "main.h"
 #include "txdb.h"
-#include "zpiv/deterministicmint.h"
+#include "zxbit/deterministicmint.h"
 #include "wallet/wallet.h"
 
 
-bool CPivStake::SetInput(CTransaction txPrev, unsigned int n)
+bool CXBITStake::SetInput(CTransaction txPrev, unsigned int n)
 {
     this->txFrom = txPrev;
     this->nPosition = n;
     return true;
 }
 
-bool CPivStake::GetTxFrom(CTransaction& tx) const
+bool CXBITStake::GetTxFrom(CTransaction& tx) const
 {
     tx = txFrom;
     return true;
 }
 
-bool CPivStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
+bool CXBITStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 {
     txIn = CTxIn(txFrom.GetHash(), nPosition);
     return true;
 }
 
-CAmount CPivStake::GetValue() const
+CAmount CXBITStake::GetValue() const
 {
     return txFrom.vout[nPosition].nValue;
 }
 
-bool CPivStake::CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmount nTotal)
+bool CXBITStake::CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmount nTotal)
 {
     std::vector<valtype> vSolutions;
     txnouttype whichType;
@@ -83,16 +83,16 @@ bool CPivStake::CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmoun
     return true;
 }
 
-CDataStream CPivStake::GetUniqueness() const
+CDataStream CXBITStake::GetUniqueness() const
 {
-    //The unique identifier for a PIV stake is the outpoint
+    //The unique identifier for a XBIT stake is the outpoint
     CDataStream ss(SER_NETWORK, 0);
     ss << nPosition << txFrom.GetHash();
     return ss;
 }
 
 //The block that the UTXO was added to the chain
-CBlockIndex* CPivStake::GetIndexFrom()
+CBlockIndex* CXBITStake::GetIndexFrom()
 {
     if (pindexFrom)
         return pindexFrom;

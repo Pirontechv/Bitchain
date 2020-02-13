@@ -359,7 +359,7 @@ For Staking</translation>
         <translation>Afslut</translation>
     </message>
     <message>
-        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
+        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XBITs from being stolen by malware infecting your computer.</source>
         <translation>BITCHAIN vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
     </message>
     <message>
@@ -367,8 +367,8 @@ For Staking</translation>
         <translation>Er du sikker på, at du vil kryptere din tegnebog?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE PIV&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XBIT&lt;/b&gt;!</source>
+        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE XBIT&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -526,8 +526,8 @@ For Staking</translation>
         <translation>Tryk på Knappen</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>0.00 XBIT</source>
+        <translation>0.00 XBIT</translation>
     </message>
     <message>
         <source>0</source>
@@ -702,8 +702,8 @@ For Staking</translation>
         <translation>Denne tekstmarkør bliver rød, hvis en modtageradresse modtager et beløb mindre end %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Kan variere +/- %1 opiv pr input.</translation>
+        <source>Can vary +/- %1 uxbit per input.</source>
+        <translation>Kan variere +/- %1 oxbit pr input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -719,7 +719,7 @@ For Staking</translation>
     </message>
 </context>
 <context>
-    <name>CoinControlPivWidget</name>
+    <name>CoinControlXBITWidget</name>
     <message>
         <source>Dialog</source>
         <translation>Dialog</translation>
@@ -733,8 +733,8 @@ For Staking</translation>
         <translation>Tryk på Knappen</translation>
     </message>
     <message>
-        <source>PIV:</source>
-        <translation>PIV:</translation>
+        <source>XBIT:</source>
+        <translation>XBIT:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -866,12 +866,12 @@ For Staking</translation>
         <translation>Opbevarings statistik </translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>XBIT</source>
+        <translation>XBIT</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zXBIT</source>
+        <translation>zXBIT</translation>
     </message>
     <message>
         <source>Days</source>
@@ -890,8 +890,8 @@ For Staking</translation>
         <translation>Du kan se din konto historik</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>Mængden af PIV og zPIV opbevaret</translation>
+        <source>Amount of XBIT and zXBIT staked.</source>
+        <translation>Mængden af XBIT og zXBIT opbevaret</translation>
     </message>
     <message>
         <source>All</source>
@@ -930,8 +930,8 @@ For Staking</translation>
         <translation>Ingen transaktioner endnu</translation>
     </message>
     <message>
-        <source>How to get PIV or zPIV</source>
-        <translation>Hvordan man får PIV eller zPIV</translation>
+        <source>How to get XBIT or zXBIT</source>
+        <translation>Hvordan man får XBIT eller zXBIT</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1503,28 +1503,28 @@ https://www.transifex.com/bitchain-project/bitchain-project-translations</transl
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Aktivér automatisk mintning af PIV-enheder til zPIV</translation>
+        <source>Enable automatic minting of XBIT units to zXBIT</source>
+        <translation>Aktivér automatisk mintning af XBIT-enheder til zXBIT</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Aktivér zPIV Automint</translation>
+        <source>Enable zXBIT Automint</source>
+        <translation>Aktivér zXBIT Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentdelen af indkommende PIV, som automatisk konverteres til zPIV via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming XBIT which get automatically converted to zXBIT via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentdelen af indkommende XBIT, som automatisk konverteres til zXBIT via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Procentdel af automatiseret zPIV</translation>
+        <source>Percentage of autominted zXBIT</source>
+        <translation>Procentdel af automatiseret zXBIT</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Vent med automatisk konvertering til Zerocoin, indtil nok PIV til denne betegnelse er tilgængelig</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough XBIT for this denomination is available</source>
+        <translation>Vent med automatisk konvertering til Zerocoin, indtil nok XBIT til denne betegnelse er tilgængelig</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Foretrukket Automint zPIV Denomination</translation>
+        <source>Preferred Automint zXBIT Denomination</source>
+        <translation>Foretrukket Automint zXBIT Denomination</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2131,8 +2131,8 @@ Adresse: %4
         <translation>Brugerdefineret Backup-sti:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Brugerdefineret zPIV Backup-sti:</translation>
+        <source>Custom zXBIT Backup Path:</source>
+        <translation>Brugerdefineret zXBIT Backup-sti:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2399,8 +2399,8 @@ Adresse: %4
         <translation>Beløb</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>XBIT</source>
+        <translation>XBIT</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2491,12 +2491,12 @@ Adresse: %4
         <translation>Tilbring Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV er i øjeblikket under opretholdelse.</translation>
+        <source>zXBIT is currently undergoing maintenance.</source>
+        <translation>zXBIT er i øjeblikket under opretholdelse.</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zPIV kræver et sikkerhedsniveau på 100 til succes.</translation>
+        <source>Version 1 zXBIT require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zXBIT kræver et sikkerhedsniveau på 100 til succes.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3334,12 +3334,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Modtaget via tilsløring</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>XBIT Stake</source>
+        <translation>XBIT Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>zXBIT Stake</source>
+        <translation>zXBIT Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -3358,24 +3358,24 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Opret tilsløret designering</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>Konverteret PIV til zPIV</translation>
+        <source>Converted XBIT to zXBIT</source>
+        <translation>Konverteret XBIT til zXBIT</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Brugt zPiv</translation>
+        <source>Spent zXBIT</source>
+        <translation>Brugt zXBIT</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Modtaget Piv fra zPiv</translation>
+        <source>Received XBIT from zXBIT</source>
+        <translation>Modtaget XBIT fra zXBIT</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Minted Change som zPIV fra zPIV Spend</translation>
+        <source>Minted Change as zXBIT from zXBIT Spend</source>
+        <translation>Minted Change som zXBIT fra zXBIT Spend</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>Konverteret PIV til zPIV</translation>
+        <source>Converted zXBIT to XBIT</source>
+        <translation>Konverteret XBIT til zXBIT</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3483,8 +3483,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Send mønter</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1PIV.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 XBIT.</source>
+        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1XBIT.</translation>
     </message>
 </context>
 <context>
@@ -3530,10 +3530,10 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZXBITControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Vælg zPIV for at bruge</translation>
+        <source>Select zXBIT to Spend</source>
+        <translation>Vælg zXBIT for at bruge</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -3544,8 +3544,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Tryk på Knappen</translation>
     </message>
     <message>
-        <source>zPiv</source>
-        <translation>zPiv</translation>
+        <source>zXBIT</source>
+        <translation>zXBIT</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -3620,16 +3620,16 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 &lt;http://www.opensource.org/licenses/mit-license.php&gt;. </translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zPiv-mintning (0-1, standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zXBIT minting (0-1, default: %u)</source>
+        <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zXBIT-mintning (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Aktiver eller deaktiver staking-funktionalitet for PIV-indgange (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for XBIT inputs (0-1, default: %u)</source>
+        <translation>Aktiver eller deaktiver staking-funktionalitet for XBIT-indgange (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Aktiver eller deaktiver staking-funktionalitet for zPIV-indgange (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for zXBIT inputs (0-1, default: %u)</source>
+        <translation>Aktiver eller deaktiver staking-funktionalitet for zXBIT-indgange (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3664,12 +3664,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebyrer (in PIV/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebyrer (in XBIT/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebyrer (in PIV/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebyrer (in XBIT/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3772,12 +3772,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret designeret indestående for at gennemføre denne transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 PIV.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 XBIT.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 XBIT.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 PIV.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 XBIT.</source>
+        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 XBIT.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4052,8 +4052,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Læsning af blokken mislykkedes</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebyr (i PIV/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
+        <source>Fee (in XBIT/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebyr (i XBIT/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -4152,8 +4152,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Procentdel af automatisk mintede Zerocoin (10-100, standard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Reindex PIV og zPIV pengemængde statistikker</translation>
+        <source>Reindex the XBIT and zXBIT money supply statistics</source>
+        <translation>Reindex XBIT og zXBIT pengemængde statistikker</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4228,8 +4228,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Foretrukken Betegnelse for automatisk mintede Zerocoin (1/5/10/50/100/500/1000/5000), 0 uden præference. standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver zPIV-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
+        <source>Specify custom backup path to add a copy of any automatic zXBIT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver zXBIT-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4632,8 +4632,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Synkroniserer sporks...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Syncing zPIV wallet ..</translation>
+        <source>Syncing zXBIT wallet...</source>
+        <translation>Syncing zXBIT wallet ..</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4740,8 +4740,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Brugernavn til JSON-RPC forbindelser</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Værdien er under den mindste tilgængelige værdi (= 1) for zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of zXBIT</source>
+        <translation>Værdien er under den mindste tilgængelige værdi (= 1) for zXBIT</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

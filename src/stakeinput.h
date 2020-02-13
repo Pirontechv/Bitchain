@@ -25,19 +25,19 @@ public:
     virtual bool GetTxFrom(CTransaction& tx) const = 0;
     virtual CAmount GetValue() const = 0;
     virtual bool CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmount nTotal) = 0;
-    virtual bool IsZPIV() const = 0;
+    virtual bool IsZXBIT() const = 0;
     virtual CDataStream GetUniqueness() const = 0;
 
 };
 
-class CPivStake : public CStakeInput
+class CXBITStake : public CStakeInput
 {
 private:
     CTransaction txFrom;
     unsigned int nPosition;
 
 public:
-    CPivStake(){}
+    CXBITStake(){}
 
     bool SetInput(CTransaction txPrev, unsigned int n);
 
@@ -47,7 +47,7 @@ public:
     CDataStream GetUniqueness() const override;
     bool CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut = 0) override;
     bool CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmount nTotal) override;
-    bool IsZPIV() const override { return false; }
+    bool IsZXBIT() const override { return false; }
 };
 
 

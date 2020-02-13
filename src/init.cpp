@@ -42,7 +42,7 @@
 #include "util.h"
 #include "utilmoneystr.h"
 #include "validationinterface.h"
-#include "zpivchain.h"
+#include "zxbitchain.h"
 
 #ifdef ENABLE_WALLET
 #include "wallet/db.h"
@@ -73,7 +73,7 @@
 
 #ifdef ENABLE_WALLET
 CWallet* pwalletMain = NULL;
-CzPIVWallet* zwalletMain = NULL;
+CzXBITWallet* zwalletMain = NULL;
 int nWalletBackups = 10;
 #endif
 volatile bool fFeeEstimatesInitialized = false;
@@ -403,7 +403,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-pid=<file>", strprintf(_("Specify pid file (default: %s)"), "bitchaind.pid"));
 #endif
     strUsage += HelpMessageOpt("-reindex", _("Rebuild block chain index from current blk000??.dat files") + " " + _("on startup"));
-    strUsage += HelpMessageOpt("-reindexmoneysupply", _("Reindex the PIV and zPIV money supply statistics") + " " + _("on startup"));
+    strUsage += HelpMessageOpt("-reindexmoneysupply", _("Reindex the XBIT and zXBIT money supply statistics") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-resync", _("Delete blockchain folders and resync from scratch") + " " + _("on startup"));
 #if !defined(WIN32)
     strUsage += HelpMessageOpt("-sysperms", _("Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)"));
@@ -458,9 +458,9 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-disablewallet", _("Do not load the wallet and disable wallet RPC calls"));
     strUsage += HelpMessageOpt("-keypool=<n>", strprintf(_("Set key pool size to <n> (default: %u)"), 100));
     if (GetBoolArg("-help-debug", false))
-        strUsage += HelpMessageOpt("-mintxfee=<amt>", strprintf(_("Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)"),
+        strUsage += HelpMessageOpt("-mintxfee=<amt>", strprintf(_("Fees (in XBIT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)"),
             FormatMoney(CWallet::minTxFee.GetFeePerK())));
-    strUsage += HelpMessageOpt("-paytxfee=<amt>", strprintf(_("Fee (in PIV/kB) to add to transactions you send (default: %s)"), FormatMoney(payTxFee.GetFeePerK())));
+    strUsage += HelpMessageOpt("-paytxfee=<amt>", strprintf(_("Fee (in XBIT/kB) to add to transactions you send (default: %s)"), FormatMoney(payTxFee.GetFeePerK())));
     strUsage += HelpMessageOpt("-rescan", _("Rescan the block chain for missing wallet transactions") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-salvagewallet", _("Attempt to recover private keys from a corrupt wallet.dat") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-sendfreetransactions", strprintf(_("Send transactions as zero-fee transactions if possible (default: %u)"), 0));
@@ -524,7 +524,7 @@ std::string HelpMessage(HelpMessageMode mode)
         strUsage += HelpMessageOpt("-maxsigcachesize=<n>", strprintf(_("Limit size of signature cache to <n> entries (default: %u)"), 50000));
     }
     strUsage += HelpMessageOpt("-maxtipage=<n>", strprintf("Maximum tip age in seconds to consider node in initial block download (default: %u)", DEFAULT_MAX_TIP_AGE));
-    strUsage += HelpMessageOpt("-minrelaytxfee=<amt>", strprintf(_("Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)"), FormatMoney(::minRelayTxFee.GetFeePerK())));
+    strUsage += HelpMessageOpt("-minrelaytxfee=<amt>", strprintf(_("Fees (in XBIT/Kb) smaller than this are considered zero fee for relaying (default: %s)"), FormatMoney(::minRelayTxFee.GetFeePerK())));
     strUsage += HelpMessageOpt("-printtoconsole", strprintf(_("Send trace/debug info to console instead of debug.log file (default: %u)"), 0));
     if (GetBoolArg("-help-debug", false)) {
         strUsage += HelpMessageOpt("-printpriority", strprintf(_("Log transaction priority and fee per kB when mining blocks (default: %u)"), 0));
@@ -541,8 +541,8 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageGroup(_("Staking options:"));
     strUsage += HelpMessageOpt("-staking=<n>", strprintf(_("Enable staking functionality (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-coldstaking=<n>", strprintf(_("Enable cold staking functionality (0-1, default: %u). Disabled if staking=0"), 1));
-    strUsage += HelpMessageOpt("-pivstake=<n>", strprintf(_("Enable or disable staking functionality for PIV inputs (0-1, default: %u)"), 1));
-    strUsage += HelpMessageOpt("-zpivstake=<n>", strprintf(_("Enable or disable staking functionality for zPIV inputs (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-xbitstake=<n>", strprintf(_("Enable or disable staking functionality for XBIT inputs (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-zxbitstake=<n>", strprintf(_("Enable or disable staking functionality for zXBIT inputs (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-reservebalance=<amt>", _("Keep the specified amount available for spending at all times (default: 0)"));
     if (GetBoolArg("-help-debug", false)) {
         strUsage += HelpMessageOpt("-printstakemodifier", _("Display the stake modifier calculations in the debug.log file."));
@@ -1503,16 +1503,16 @@ bool AppInit2()
 
                     // Supply needs to be exactly GetSupplyBeforeFakeSerial + GetWrapppedSerialInflationAmount
                     CBlockIndex* pblockindex = chainActive[Params().Zerocoin_Block_EndFakeSerial() + 1];
-                    CAmount zpivSupplyCheckpoint = Params().GetSupplyBeforeFakeSerial() + GetWrapppedSerialInflationAmount();
+                    CAmount zxbitSupplyCheckpoint = Params().GetSupplyBeforeFakeSerial() + GetWrapppedSerialInflationAmount();
 
-                    if (pblockindex->GetZerocoinSupply() < zpivSupplyCheckpoint) {
+                    if (pblockindex->GetZerocoinSupply() < zxbitSupplyCheckpoint) {
                         // Trigger reindex due wrapping serials
-                        LogPrintf("Current GetZerocoinSupply: %d vs %d\n", pblockindex->GetZerocoinSupply()/COIN , zpivSupplyCheckpoint/COIN);
+                        LogPrintf("Current GetZerocoinSupply: %d vs %d\n", pblockindex->GetZerocoinSupply()/COIN , zxbitSupplyCheckpoint/COIN);
                         reindexDueWrappedSerials = true;
-                    } else if (pblockindex->GetZerocoinSupply() > zpivSupplyCheckpoint) {
-                        // Trigger global zPIV reindex
+                    } else if (pblockindex->GetZerocoinSupply() > zxbitSupplyCheckpoint) {
+                        // Trigger global zXBIT reindex
                         reindexZerocoin = true;
-                        LogPrintf("Current GetZerocoinSupply: %d vs %d\n", pblockindex->GetZerocoinSupply()/COIN , zpivSupplyCheckpoint/COIN);
+                        LogPrintf("Current GetZerocoinSupply: %d vs %d\n", pblockindex->GetZerocoinSupply()/COIN , zxbitSupplyCheckpoint/COIN);
                     }
 
                 }
@@ -1524,11 +1524,11 @@ bool AppInit2()
                 // Recalculate money supply for blocks that are impacted by accounting issue after zerocoin activation
                 if (GetBoolArg("-reindexmoneysupply", false) || reindexZerocoin) {
                     if (chainHeight > Params().Zerocoin_StartHeight()) {
-                        RecalculateZPIVMinted();
-                        RecalculateZPIVSpent();
+                        RecalculateZXBITMinted();
+                        RecalculateZXBITSpent();
                     }
                     // Recalculate from the zerocoin activation or from scratch.
-                    RecalculatePIVSupply(reindexZerocoin ? Params().Zerocoin_StartHeight() : 1);
+                    RecalculateXBITSupply(reindexZerocoin ? Params().Zerocoin_StartHeight() : 1);
                 }
 
 
@@ -1680,7 +1680,7 @@ bool AppInit2()
 
         LogPrintf("Init errors: %s\n", strErrors.str());
         LogPrintf("Wallet completed loading in %15dms\n", GetTimeMillis() - nWalletStartTime);
-        zwalletMain = new CzPIVWallet(pwalletMain->strWalletFile);
+        zwalletMain = new CzXBITWallet(pwalletMain->strWalletFile);
         pwalletMain->setZWallet(zwalletMain);
 
         RegisterValidationInterface(pwalletMain);
@@ -1730,11 +1730,11 @@ bool AppInit2()
         }
         fVerifyingBlocks = false;
 
-        //Inititalize zPIVWallet
-        uiInterface.InitMessage(_("Syncing zPIV wallet..."));
+        //Inititalize zXBITWallet
+        uiInterface.InitMessage(_("Syncing zXBIT wallet..."));
 
         //Load zerocoin mint hashes to memory
-        pwalletMain->zpivTracker->Init();
+        pwalletMain->zxbitTracker->Init();
         zwalletMain->LoadMintPoolFromDB();
         zwalletMain->SyncWithChain();
     }  // (!fDisableWallet)
@@ -1890,8 +1890,8 @@ bool AppInit2()
        is convertable to another.
 
        For example:
-       1PIV+1000 == (.1PIV+100)*10
-       10PIV+10000 == (1PIV+1000)*10
+       1XBIT+1000 == (.1XBIT+100)*10
+       10XBIT+10000 == (1XBIT+1000)*10
     */
     obfuScationDenominations.push_back((10000 * COIN) + 10000000);
     obfuScationDenominations.push_back((1000 * COIN) + 1000000);

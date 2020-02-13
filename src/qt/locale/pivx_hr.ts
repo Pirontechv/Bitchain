@@ -342,16 +342,16 @@
         <translation>PONIŠTI</translation>
     </message>
     <message>
-        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>BITCHAIN se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše PIV od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XBITs from being stolen by malware infecting your computer.</source>
+        <translation>BITCHAIN se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše XBIT od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite vašu zaporku, vi ćete &lt;b&gt;IZGUBITI ĆE TE SAV VAŠ PIV&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XBIT&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite vašu zaporku, vi ćete &lt;b&gt;IZGUBITI ĆE TE SAV VAŠ XBIT&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -485,8 +485,8 @@
         <translation>PritisniTipku</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>0.00 XBIT</source>
+        <translation>0.00 XBIT</translation>
     </message>
     <message>
         <source>0</source>
@@ -626,7 +626,7 @@
     </message>
 </context>
 <context>
-    <name>CoinControlPivWidget</name>
+    <name>CoinControlXBITWidget</name>
     <message>
         <source>Transaction Details</source>
         <translation>Detalji o transakciji</translation>
@@ -777,12 +777,12 @@
         <translation>TekstualnaOznaka</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>XBIT</source>
+        <translation>XBIT</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zXBIT</source>
+        <translation>zXBIT</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -829,8 +829,8 @@
         <translation>Još nema transakcija</translation>
     </message>
     <message>
-        <source>How to get PIV or zPIV</source>
-        <translation>Kako dobiti PIV ili zPIV</translation>
+        <source>How to get XBIT or zXBIT</source>
+        <translation>Kako dobiti XBIT ili zXBIT</translation>
     </message>
     <message>
         <source>Loading chart..</source>
@@ -1638,8 +1638,8 @@
         <translation>Iznos</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>XBIT</source>
+        <translation>XBIT</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2367,32 +2367,32 @@
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>480.0685 PIV</source>
-        <translation>480.0685 PIV</translation>
+        <source>480.0685 XBIT</source>
+        <translation>480.0685 XBIT</translation>
     </message>
     <message>
-        <source>1,000 zPIV</source>
-        <translation>1,000 zPIV</translation>
+        <source>1,000 zXBIT</source>
+        <translation>1,000 zXBIT</translation>
     </message>
     <message>
         <source>Available</source>
         <translation>Dostupno</translation>
     </message>
     <message>
-        <source>6.943 PIV</source>
-        <translation>6.943 PIV</translation>
+        <source>6.943 XBIT</source>
+        <translation>6.943 XBIT</translation>
     </message>
     <message>
-        <source>10 PIV</source>
-        <translation>10 PIV</translation>
+        <source>10 XBIT</source>
+        <translation>10 XBIT</translation>
     </message>
     <message>
-        <source>60 zPIV</source>
-        <translation>60 zPIV</translation>
+        <source>60 zXBIT</source>
+        <translation>60 zXBIT</translation>
     </message>
     <message>
-        <source>10 zPIV</source>
-        <translation>10 zPIV</translation>
+        <source>10 zXBIT</source>
+        <translation>10 zXBIT</translation>
     </message>
     <message>
         <source>Error generating address</source>
@@ -2499,8 +2499,8 @@
         <translation>Naknada:</translation>
     </message>
     <message>
-        <source>0.0001 PIV</source>
-        <translation>0.0001 PIV</translation>
+        <source>0.0001 XBIT</source>
+        <translation>0.0001 XBIT</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2522,8 +2522,8 @@
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>+0.000585 PIV</source>
-        <translation>+0.000585 PIV</translation>
+        <source>+0.000585 XBIT</source>
+        <translation>+0.000585 XBIT</translation>
     </message>
 </context>
 <context>
@@ -2560,7 +2560,7 @@
     </message>
     </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZXBITControlDialog</name>
     <message>
         <source>PushButton</source>
         <translation>PritisniTipku</translation>
@@ -2597,8 +2597,8 @@
         <translation>Nedovoljno sredstava.</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
-        <translation>Preračunavanje ponude PIV-a...</translation>
+        <source>Recalculating XBIT supply...</source>
+        <translation>Preračunavanje ponude XBIT-a...</translation>
     </message>
     <message>
         <source>Loading addresses...</source>

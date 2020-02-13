@@ -111,11 +111,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie PIV überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie XBIT überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie PIV empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie XBIT empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -131,7 +131,7 @@
     </message>
     <message>
         <source>These are your BITCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre BITCHAIN-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie PIV überweisen.</translation>
+        <translation>Dies sind ihre BITCHAIN-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie XBIT überweisen.</translation>
     </message>
     <message>
         <source>These are your BITCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -375,16 +375,16 @@ for staking</source>
         <translation>ABBRECHEN</translation>
     </message>
     <message>
-        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendung wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte bedenken Sie, dass auch die Verschlüsselung nicht sicher vor Diebstahl ihrer PIVs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XBITs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendung wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte bedenken Sie, dass auch die Verschlüsselung nicht sicher vor Diebstahl ihrer XBITs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Sind Sie sich sicher, dass Sie Ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie Ihre Wallet verschlüsseln und Ihre Passphrase verlieren, &lt;b&gt;verlieren Sie alle ihre PIVs&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XBIT&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie Ihre Wallet verschlüsseln und Ihre Passphrase verlieren, &lt;b&gt;verlieren Sie alle ihre XBITs&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -542,8 +542,8 @@ for staking</source>
         <translation>Druckknopf</translation>
     </message>
     <message>
-        <source>0.00 PIV</source>
-        <translation>0.00 PIV</translation>
+        <source>0.00 XBIT</source>
+        <translation>0.00 XBIT</translation>
     </message>
     <message>
         <source>0</source>
@@ -718,8 +718,8 @@ for staking</source>
         <translation>Diese Bezeichnung wird rot, wenn ein Empfänger einen Betrag erhält, der kleiner ist als %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Kann um +/- %1 upiv pro Eingang variieren.</translation>
+        <source>Can vary +/- %1 uxbit per input.</source>
+        <translation>Kann um +/- %1 uxbit pro Eingang variieren.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -735,7 +735,7 @@ for staking</source>
     </message>
 </context>
 <context>
-    <name>CoinControlPivWidget</name>
+    <name>CoinControlXBITWidget</name>
     <message>
         <source>Dialog</source>
         <translation>Dialog</translation>
@@ -749,8 +749,8 @@ for staking</source>
         <translation>Druckknopf</translation>
     </message>
     <message>
-        <source>PIV:</source>
-        <translation>PIV:</translation>
+        <source>XBIT:</source>
+        <translation>XBIT:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -918,12 +918,12 @@ for staking</source>
         <translation>Staking Statistiken</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>XBIT</source>
+        <translation>XBIT</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zXBIT</source>
+        <translation>zXBIT</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -950,8 +950,8 @@ for staking</source>
         <translation>Der Link zum Verlauf des Accounts</translation>
     </message>
     <message>
-        <source>Amount of PIV and zPIV staked.</source>
-        <translation>Wieviele PIV und z PIV am staken sind.</translation>
+        <source>Amount of XBIT and zXBIT staked.</source>
+        <translation>Wieviele XBIT und z XBIT am staken sind.</translation>
     </message>
     <message>
         <source>All</source>
@@ -990,8 +990,8 @@ for staking</source>
         <translation>Keine Transaktionen</translation>
     </message>
     <message>
-        <source>How to get PIV or zPIV</source>
-        <translation>Wie bekommt man PIV oder zPIV</translation>
+        <source>How to get XBIT or zXBIT</source>
+        <translation>Wie bekommt man XBIT oder zXBIT</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1059,7 +1059,7 @@ Die staking Aktivität wird automatisch gestartet, sobald die Wallet genügend K
     </message>
     <message>
         <source>This will unlock your wallet fully, so that anyone with access to it can spend until the wallet is closed or locked again.</source>
-        <translation>Diese Option schaltet ihre Wallet ganz frei. Jeder der Zugriff hat, kann PIV ausgeben bis die Wallet wieder geschlossen oder gesperrt wird.</translation>
+        <translation>Diese Option schaltet ihre Wallet ganz frei. Jeder der Zugriff hat, kann XBIT ausgeben bis die Wallet wieder geschlossen oder gesperrt wird.</translation>
     </message>
     <message>
         <source>5000</source>
@@ -1432,8 +1432,8 @@ Die staking Aktivität wird automatisch gestartet, sobald die Wallet genügend K
         <translation>Erstelle einen neuen Master Node Controller</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a BITCHAIN Masternode you must dedicate 10.000 PIV (the unit of BITCHAIN) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Um einen BITCHAIN Masternode zu erstellen benötigen Sie 10'000 PIV (die Einheit von BITCHAIN), welche sie dem Netzwerk zur Verfügung stellen (Diese Münzen gehören Ihnen und werden Ihren Besitz nie verlassen). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Sie können den Node zu jeder Zeit deaktivieren und somit die Münzen freischalten.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a BITCHAIN Masternode you must dedicate 10.000 XBIT (the unit of BITCHAIN) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Um einen BITCHAIN Masternode zu erstellen benötigen Sie 10'000 XBIT (die Einheit von BITCHAIN), welche sie dem Netzwerk zur Verfügung stellen (Diese Münzen gehören Ihnen und werden Ihren Besitz nie verlassen). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Sie können den Node zu jeder Zeit deaktivieren und somit die Münzen freischalten.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
@@ -1444,8 +1444,8 @@ Die staking Aktivität wird automatisch gestartet, sobald die Wallet genügend K
         <translation>Geben Sie dem Master Node einen Namen</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 PIV will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Eine Transaktion von 10'000 PIV wird gemacht&lt;/p&gt;&lt;p&gt;auf eine leere Adresse in Ihrer Wallet.&lt;/p&gt;&lt;p&gt;Die Adresse wird beschriftet mit dem Namen des Masternodes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 XBIT will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Eine Transaktion von 10'000 XBIT wird gemacht&lt;/p&gt;&lt;p&gt;auf eine leere Adresse in Ihrer Wallet.&lt;/p&gt;&lt;p&gt;Die Adresse wird beschriftet mit dem Namen des Masternodes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Master Node’s IP and port</source>
@@ -1656,8 +1656,8 @@ Sind sie sicher?</translation>
         <translation>masternode.conf File existiert nicht</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 PIV required.</source>
-        <translation>Nicht genügend Guthaben um einen Masternode zu erstellen, 10'000 PIV werden benötigt.</translation>
+        <source>Not enough balance to create a masternode, 10,000 XBIT required.</source>
+        <translation>Nicht genügend Guthaben um einen Masternode zu erstellen, 10'000 XBIT werden benötigt.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -1860,36 +1860,36 @@ https://www.transifex.com/bitchain-project/bitchain-project-translations</transl
         <translation>Port mit &amp;UPnP mappen</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Aktivieren Sie die automatische Prägung von PIV-Einheiten zu zPIV</translation>
+        <source>Enable automatic minting of XBIT units to zXBIT</source>
+        <translation>Aktivieren Sie die automatische Prägung von XBIT-Einheiten zu zXBIT</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Aktivieren Sie zPIV Automint</translation>
+        <source>Enable zXBIT Automint</source>
+        <translation>Aktivieren Sie zXBIT Automint</translation>
     </message>
     <message>
-        <source>Enable automatic zPIV minting from specific addresses</source>
-        <translation>Automatisches zPIV Minting von spezifischen Adressen erlauben</translation>
+        <source>Enable automatic zXBIT minting from specific addresses</source>
+        <translation>Automatisches zXBIT Minting von spezifischen Adressen erlauben</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint Adressen aktivieren</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Anteil des eingehenden PIV, welcher automatisch zu zPIV via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
+        <source>Percentage of incoming XBIT which get automatically converted to zXBIT via Zerocoin Protocol (min: 10%)</source>
+        <translation>Anteil des eingehenden XBIT, welcher automatisch zu zXBIT via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Prozentsatz der automatisierten zPIV</translation>
+        <source>Percentage of autominted zXBIT</source>
+        <translation>Prozentsatz der automatisierten zXBIT</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend PIV für diese Stückelung verfügbar ist</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough XBIT for this denomination is available</source>
+        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend XBIT für diese Stückelung verfügbar ist</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Bevorzugte automatisierte zPIV Stückelung </translation>
+        <source>Preferred Automint zXBIT Denomination</source>
+        <translation>Bevorzugte automatisierte zXBIT Stückelung </translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2250,24 +2250,24 @@ Adresse: %4</translation>
         <translation>Keine Transaktionen</translation>
     </message>
     <message>
-        <source>Mint zPIV</source>
-        <translation>zPIV prägen</translation>
+        <source>Mint zXBIT</source>
+        <translation>zXBIT prägen</translation>
     </message>
     <message>
-        <source>Enter amount of PIV to mint into zPIV</source>
-        <translation>Gebe eine Anzahl PIV ein, um sie in zPIV zu wechseln</translation>
+        <source>Enter amount of XBIT to mint into zXBIT</source>
+        <translation>Gebe eine Anzahl XBIT ein, um sie in zXBIT zu wechseln</translation>
     </message>
     <message>
-        <source>Convert back to PIV</source>
-        <translation>Konvertiere zPIV zurück zu PIV</translation>
+        <source>Convert back to XBIT</source>
+        <translation>Konvertiere zXBIT zurück zu XBIT</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance</source>
-        <translation>zPIV wird momentan überarbeitet</translation>
+        <source>zXBIT is currently undergoing maintenance</source>
+        <translation>zXBIT wird momentan überarbeitet</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2583,8 +2583,8 @@ Adresse: %4</translation>
         <translation>Benutzerdefinierter Sicherungspfad:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Benutzerdefinierter zPIV Sicherungspfad:</translation>
+        <source>Custom zXBIT Backup Path:</source>
+        <translation>Benutzerdefinierter zXBIT Sicherungspfad:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2829,8 +2829,8 @@ Adresse: %4</translation>
         <translation>Empfangen</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive PIV.</source>
-        <translation>QR-Code scannen oder Adresse kopieren um PIV zu erhalten.</translation>
+        <source>Scan the QR code or copy the address to receive XBIT.</source>
+        <translation>QR-Code scannen oder Adresse kopieren um XBIT zu erhalten.</translation>
     </message>
     <message>
         <source>No address </source>
@@ -2927,8 +2927,8 @@ Adresse: %4</translation>
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>PIV</source>
-        <translation>PIV</translation>
+        <source>XBIT</source>
+        <translation>XBIT</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3079,8 +3079,8 @@ Adresse: %4</translation>
         <translation>Schicken</translation>
     </message>
     <message>
-        <source>You can transfer public coins (PIV) or private coins (zPIV)</source>
-        <translation>Sie können öffentliche Coins (PIV) oder private Coins (zPIV) transferieren</translation>
+        <source>You can transfer public coins (XBIT) or private coins (zXBIT)</source>
+        <translation>Sie können öffentliche Coins (XBIT) oder private Coins (zXBIT) transferieren</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3115,12 +3115,12 @@ Adresse: %4</translation>
         <translation>Totalbetrag zum Senden</translation>
     </message>
     <message>
-        <source>Send PIV</source>
-        <translation>Sende PIV</translation>
+        <source>Send XBIT</source>
+        <translation>Sende XBIT</translation>
     </message>
     <message>
-        <source>Send zPIV</source>
-        <translation>Sende zPIV</translation>
+        <source>Send zXBIT</source>
+        <translation>Sende zXBIT</translation>
     </message>
     <message>
         <source>Customize Fee</source>
@@ -3159,12 +3159,12 @@ Adresse: %4</translation>
         <translation>Überweise Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV unterliegt momentan Wartungsarbeiten.</translation>
+        <source>zXBIT is currently undergoing maintenance.</source>
+        <translation>zXBIT unterliegt momentan Wartungsarbeiten.</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zPIV benötigen eine Sicherheitsstufe von 100 um erfolgreich ausgegeben werden zu können.</translation>
+        <source>Version 1 zXBIT require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zXBIT benötigen eine Sicherheitsstufe von 100 um erfolgreich ausgegeben werden zu können.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3369,7 +3369,7 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Fehler beim Hinzufügen des Schlüssels zur Wallet</translation>
     </message>
     <message>
-        <source>Successfully added pivate key to the wallet</source>
+        <source>Successfully added xbitate key to the wallet</source>
         <translation>Privater Schlüssel erfolgreich zur Wallet hinzugefügt</translation>
     </message>
 </context>
@@ -3474,29 +3474,29 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>1) Was ist BITCHAIN?</translation>
     </message>
     <message>
-        <source>2) Why are my PIV unspendable?</source>
-        <translation>2) Wieso kann ich meine PIV nicht ausgeben?</translation>
+        <source>2) Why are my XBIT unspendable?</source>
+        <translation>2) Wieso kann ich meine XBIT nicht ausgeben?</translation>
     </message>
     <message>
-        <source>3) BITCHAIN privacy? What is Zerocoin (zPIV)?</source>
-        <translation>3) BITCHAIN Privatsphäre? Was ist ein Zercoin (zPIV)?</translation>
+        <source>3) BITCHAIN privacy? What is Zerocoin (zXBIT)?</source>
+        <translation>3) BITCHAIN Privatsphäre? Was ist ein Zercoin (zXBIT)?</translation>
     </message>
     <message>
-        <source>4) Why are my zPIV unspendable?</source>
-        <translation>4) Wieso kann ich meine zPIV nicht ausgeben?</translation>
+        <source>4) Why are my zXBIT unspendable?</source>
+        <translation>4) Wieso kann ich meine zXBIT nicht ausgeben?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zPIV automatically?</source>
-        <translation>5) Wieso hat meine Wallet automatisch das Guthaben in zPIV gewechselt?</translation>
+    into zXBIT automatically?</source>
+        <translation>5) Wieso hat meine Wallet automatisch das Guthaben in zXBIT gewechselt?</translation>
     </message>
     <message>
-        <source>6) How do I receive PIV/zPIV?</source>
-        <translation>6) Wie empfange ich PIV/zPIV?</translation>
+        <source>6) How do I receive XBIT/zXBIT?</source>
+        <translation>6) Wie empfange ich XBIT/zXBIT?</translation>
     </message>
     <message>
-        <source>7) How do I stake PIV/zPIV?</source>
-        <translation>7) Wie stake ich PIV/zPIV?</translation>
+        <source>7) How do I stake XBIT/zXBIT?</source>
+        <translation>7) Wie stake ich XBIT/zXBIT?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -3523,40 +3523,40 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my PIV unspendable?</source>
-        <translation>Wieso kann ich meine PIV nicht ausgeben?</translation>
+        <source>Why are my XBIT unspendable?</source>
+        <translation>Wieso kann ich meine XBIT nicht ausgeben?</translation>
     </message>
     <message>
         <source>3</source>
         <translation>3</translation>
     </message>
     <message>
-        <source>BITCHAIN privacy? What is Zerocoin (zPIV)?</source>
-        <translation>BITCHAIN Privatsphäre? Was ist ein Zercoin (zPIV)?</translation>
+        <source>BITCHAIN privacy? What is Zerocoin (zXBIT)?</source>
+        <translation>BITCHAIN Privatsphäre? Was ist ein Zercoin (zXBIT)?</translation>
     </message>
     <message>
         <source>4</source>
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zPIV unspendable?</source>
-        <translation>Wieso kann ich meine zPIV nicht ausgeben?</translation>
+        <source>Why are my zXBIT unspendable?</source>
+        <translation>Wieso kann ich meine zXBIT nicht ausgeben?</translation>
     </message>
     <message>
         <source>5</source>
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zPIV automatically?</source>
-        <translation>Wieso hat meine Wallet automatisch das Guthaben in zPIV gewechselt?</translation>
+        <source>Why did my wallet convert the balance into zXBIT automatically?</source>
+        <translation>Wieso hat meine Wallet automatisch das Guthaben in zXBIT gewechselt?</translation>
     </message>
     <message>
-        <source>How do I receive PIV/zPIV?</source>
-        <translation>Wie empfange ich PIV/zPIV?</translation>
+        <source>How do I receive XBIT/zXBIT?</source>
+        <translation>Wie empfange ich XBIT/zXBIT?</translation>
     </message>
     <message>
-        <source>How do I stake PIV/zPIV?</source>
-        <translation>Wie stake ich PIV/zPIV?</translation>
+        <source>How do I stake XBIT/zXBIT?</source>
+        <translation>Wie stake ich XBIT/zXBIT?</translation>
     </message>
     <message>
         <source>Where I should go if I need support?</source>
@@ -4306,12 +4306,12 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>über/durch Verschleierung empfangen</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>XBIT Stake</source>
+        <translation>XBIT Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>zXBIT Stake</source>
+        <translation>zXBIT Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4330,24 +4330,24 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Verschleierung Erzeugung der Stückelung</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>Umgewandeltes PIV zu zPIV</translation>
+        <source>Converted XBIT to zXBIT</source>
+        <translation>Umgewandeltes XBIT zu zXBIT</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Ausgegebene zPIV</translation>
+        <source>Spent zXBIT</source>
+        <translation>Ausgegebene zXBIT</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Empfangene PIV von zPIV</translation>
+        <source>Received XBIT from zXBIT</source>
+        <translation>Empfangene XBIT von zXBIT</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Geprägtes zPIV Wechselgeld aus zPIV Überweisung</translation>
+        <source>Minted Change as zXBIT from zXBIT Spend</source>
+        <translation>Geprägtes zXBIT Wechselgeld aus zXBIT Überweisung</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>Umgewandeltes zPIV zu PIV</translation>
+        <source>Converted zXBIT to XBIT</source>
+        <translation>Umgewandeltes zXBIT zu XBIT</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4460,11 +4460,11 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>PIVs überweisen</translation>
+        <translation>XBITs überweisen</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>Swift Transaktionen unterstützen das senden solch hoher Beträge noch nicht. Transaktionen sind momentan auf %1 PIV begrenzt.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 XBIT.</source>
+        <translation>Swift Transaktionen unterstützen das senden solch hoher Beträge noch nicht. Transaktionen sind momentan auf %1 XBIT begrenzt.</translation>
     </message>
 </context>
 <context>
@@ -4534,10 +4534,10 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZXBITControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Wählen Sie die zPIV aus, die Sie ausgeben möchten</translation>
+        <source>Select zXBIT to Spend</source>
+        <translation>Wählen Sie die zXBIT aus, die Sie ausgeben möchten</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -4548,8 +4548,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Druckknopf</translation>
     </message>
     <message>
-        <source>zPiv</source>
-        <translation>zPIV</translation>
+        <source>zXBIT</source>
+        <translation>zXBIT</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -4623,16 +4623,16 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Veröffentlicht unter der MIT-Software-Lizenz, siehe die beigelegte Datei COPYING oder &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Aktiviere nach jeder zPIV-Prägung ausgelöste automatische Wallet-Backups (0-1, Standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zXBIT minting (0-1, default: %u)</source>
+        <translation>Aktiviere nach jeder zXBIT-Prägung ausgelöste automatische Wallet-Backups (0-1, Standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für PIV Eingänge (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for XBIT inputs (0-1, default: %u)</source>
+        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für XBIT Eingänge (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für zPIV Eingänge (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zXBIT inputs (0-1, default: %u)</source>
+        <translation>Aktiviere oder deaktiviere Staking-Funktionalität für zXBIT Eingänge (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4667,12 +4667,12 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Befehl ausführen, wenn sich der beste Block ändert (%s in cmd wird durch Blockhash ersetzt)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebühren (in PIV/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebühren (in XBIT/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebühren (in PIV/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebühren (in XBIT/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4775,12 +4775,12 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Nicht genügend gestückeltes, verschleiertes Guthaben für diese Transaktion gefunden.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Nicht genügend verschleiertes, nicht gestückeltes Guthaben für diese Transaktion gefunden, die nicht gleich 10000 PIV entsprechen.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 XBIT.</source>
+        <translation>Nicht genügend verschleiertes, nicht gestückeltes Guthaben für diese Transaktion gefunden, die nicht gleich 10000 XBIT entsprechen.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Nicht genügend Guthaben für diese Transaktion gefunden, die nicht gleich 10000 PIV entsprechen.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 XBIT.</source>
+        <translation>Nicht genügend Guthaben für diese Transaktion gefunden, die nicht gleich 10000 XBIT entsprechen.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5055,8 +5055,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Block konnte nicht gelesen werden</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebühr (in PIV/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
+        <source>Fee (in XBIT/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebühr (in XBIT/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5155,8 +5155,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Prozent automatisch geprägter Zerocoins (1-100, Standard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Die Geldmengenstatistik PIV und zPIV neu indizieren</translation>
+        <source>Reindex the XBIT and zXBIT money supply statistics</source>
+        <translation>Die Geldmengenstatistik XBIT und zXBIT neu indizieren</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5231,8 +5231,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Bervorzugte Stückelung für automatisch geprägte Zerocoins (1/5/10/50/100/500/1000/5000), 0 falls keine bestimmte Stückelung präferiert wird. Standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Benutzerdefinierten Sicherungspfad festlegen, in den Kopien von allen automatischen zPIV-Sicherungen abgelegt werden. Wenn ein Verzeichnis ausgewählt ist, wird jede Sicherung als Datei mit Zeitstempel erstellt. Wenn eine Datei ausgewählt ist, wird diese Datei bei jeder Sicherung überschrieben. Wenn der Sicherungspfad auch festgelegt ist, werden 4 Sicherungen erstellt.</translation>
+        <source>Specify custom backup path to add a copy of any automatic zXBIT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Benutzerdefinierten Sicherungspfad festlegen, in den Kopien von allen automatischen zXBIT-Sicherungen abgelegt werden. Wenn ein Verzeichnis ausgewählt ist, wird jede Sicherung als Datei mit Zeitstempel erstellt. Wenn eine Datei ausgewählt ist, wird diese Datei bei jeder Sicherung überschrieben. Wenn der Sicherungspfad auch festgelegt ist, werden 4 Sicherungen erstellt.</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5635,8 +5635,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Synchronisiere Sporks....</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Synchronisiere zPIV Wallet... </translation>
+        <source>Syncing zXBIT wallet...</source>
+        <translation>Synchronisiere zXBIT Wallet... </translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5743,8 +5743,8 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
         <translation>Benutzername für JSON-RPC-Verbindungen</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Der Betrag ist unterhalb des kleinsten Wertes (=1) an zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of zXBIT</source>
+        <translation>Der Betrag ist unterhalb des kleinsten Wertes (=1) an zXBIT</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

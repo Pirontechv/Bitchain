@@ -2,7 +2,7 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zpiv/zpos.h"
+#include "zxbit/zpos.h"
 
 
 /*
@@ -12,7 +12,7 @@
  */
 
 
-CLegacyZPivStake::CLegacyZPivStake(const libzerocoin::CoinSpend& spend)
+CLegacyZXBITStake::CLegacyZXBITStake(const libzerocoin::CoinSpend& spend)
 {
     this->nChecksum = spend.getAccumulatorChecksum();
     this->denom = spend.getDenomination();
@@ -20,7 +20,7 @@ CLegacyZPivStake::CLegacyZPivStake(const libzerocoin::CoinSpend& spend)
     this->hashSerial = Hash(nSerial.begin(), nSerial.end());
 }
 
-CBlockIndex* CLegacyZPivStake::GetIndexFrom()
+CBlockIndex* CLegacyZXBITStake::GetIndexFrom()
 {
     // First look in the legacy database
     int nHeightChecksum = 0;
@@ -48,12 +48,12 @@ CBlockIndex* CLegacyZPivStake::GetIndexFrom()
     return nullptr;
 }
 
-CAmount CLegacyZPivStake::GetValue() const
+CAmount CLegacyZXBITStake::GetValue() const
 {
     return denom * COIN;
 }
 
-CDataStream CLegacyZPivStake::GetUniqueness() const
+CDataStream CLegacyZXBITStake::GetUniqueness() const
 {
     CDataStream ss(SER_GETHASH, 0);
     ss << hashSerial;

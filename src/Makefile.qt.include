@@ -21,7 +21,7 @@ QT_FORMS_UI = \
   qt/forms/optionsdialog.ui \
   qt/forms/rpcconsole.ui \
   qt/bitchain/forms/loadingdialog.ui \
-  qt/forms/zpivcontroldialog.ui \
+  qt/forms/zxbitcontroldialog.ui \
   qt/bitchain/forms/snackbar.ui \
   qt/bitchain/forms/navmenuwidget.ui \
   qt/bitchain/forms/lockunlock.ui \
@@ -31,7 +31,7 @@ QT_FORMS_UI = \
   qt/bitchain/forms/topbar.ui \
   qt/bitchain/forms/txrow.ui \
   qt/bitchain/forms/dashboardwidget.ui \
-  qt/bitchain/forms/coincontrolpivwidget.ui \
+  qt/bitchain/forms/coincontrolxbitwidget.ui \
   qt/bitchain/forms/addresslabelrow.ui \
   qt/bitchain/forms/contactdropdownrow.ui \
   qt/bitchain/forms/mninfodialog.ui \
@@ -112,7 +112,7 @@ QT_MOC_CPP = \
   qt/moc_utilitydialog.cpp \
   qt/moc_walletmodel.cpp \
   qt/bitchain/moc_loadingdialog.cpp \
-  qt/moc_zpivcontroldialog.cpp \
+  qt/moc_zxbitcontroldialog.cpp \
   qt/bitchain/moc_pwidget.cpp \
   qt/bitchain/moc_snackbar.cpp \
   qt/bitchain/moc_navmenuwidget.cpp \
@@ -125,7 +125,7 @@ QT_MOC_CPP = \
   qt/bitchain/moc_topbar.cpp \
   qt/bitchain/moc_txrow.cpp \
   qt/bitchain/moc_dashboardwidget.cpp \
-  qt/bitchain/moc_coincontrolpivwidget.cpp \
+  qt/bitchain/moc_coincontrolxbitwidget.cpp \
   qt/bitchain/moc_addresslabelrow.cpp \
   qt/bitchain/moc_contactdropdownrow.cpp \
   qt/bitchain/moc_mninfodialog.cpp \
@@ -238,7 +238,7 @@ BITCOIN_QT_H = \
   qt/bitchain/pfborderimage.h \
   qt/bitchain/loadingdialog.h \
   qt/winshutdownmonitor.h \
-  qt/zpivcontroldialog.h \
+  qt/zxbitcontroldialog.h \
   qt/bitchain/pwidget.h \
   qt/bitchain/guitransactionsutils.h \
   qt/bitchain/snackbar.h \
@@ -256,7 +256,7 @@ BITCOIN_QT_H = \
   qt/bitchain/addressholder.h \
   qt/bitchain/addressfilterproxymodel.h \
   qt/bitchain/dashboardwidget.h \
-  qt/bitchain/coincontrolpivwidget.h \
+  qt/bitchain/coincontrolxbitwidget.h \
   qt/bitchain/addresslabelrow.h \
   qt/bitchain/contactdropdownrow.h \
   qt/bitchain/mninfodialog.h \
@@ -469,15 +469,15 @@ RES_ICONS = \
   qt/bitchain/res/img/ic-radio-liliac-on.svg \
   qt/bitchain/res/img/img-empty-staking-off.svg \
   qt/bitchain/res/img/ic-arrow-drop-down.svg \
-  qt/bitchain/res/img/ic-coin-piv.svg \
+  qt/bitchain/res/img/ic-coin-xbit.svg \
   qt/bitchain/res/img/ic-receive-off.svg \
   qt/bitchain/res/img/img-empty-staking-on.svg \
   qt/bitchain/res/img/ic-arrow-drop-up-white.svg \
-  qt/bitchain/res/img/ic-coin-zpiv.png \
+  qt/bitchain/res/img/ic-coin-zxbit.png \
   qt/bitchain/res/img/ic-receive-on.svg \
   qt/bitchain/res/img/img-empty-transactions.svg \
   qt/bitchain/res/img/ic-arrow-drop-up.svg \
-  qt/bitchain/res/img/ic-coin-zpiv.svg \
+  qt/bitchain/res/img/ic-coin-zxbit.svg \
   qt/bitchain/res/img/ic-received.svg \
   qt/bitchain/res/img/img-logo-bitchain.png \
   qt/bitchain/res/img/ic-arrow-drop-white-down.svg \
@@ -625,7 +625,7 @@ BITCOIN_QT_WALLET_CPP = \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
   qt/bitchain/loadingdialog.cpp \
-  qt/zpivcontroldialog.cpp \
+  qt/zxbitcontroldialog.cpp \
   qt/bitchain/pwidget.cpp \
   qt/bitchain/guitransactionsutils.cpp \
   qt/bitchain/snackbar.cpp \
@@ -642,7 +642,7 @@ BITCOIN_QT_WALLET_CPP = \
   qt/bitchain/addressholder.cpp \
   qt/bitchain/addressfilterproxymodel.cpp \
   qt/bitchain/dashboardwidget.cpp \
-  qt/bitchain/coincontrolpivwidget.cpp \
+  qt/bitchain/coincontrolxbitwidget.cpp \
   qt/bitchain/addresslabelrow.cpp \
   qt/bitchain/contactdropdownrow.cpp \
   qt/bitchain/contactsdropdown.cpp \

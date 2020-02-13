@@ -60,14 +60,14 @@ QT_TRANSLATE_NOOP("bitchain-core", ""
 QT_TRANSLATE_NOOP("bitchain-core", ""
 "Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("bitchain-core", ""
-"Enable automatic wallet backups triggered after each zPIV minting (0-1, "
+"Enable automatic wallet backups triggered after each zXBIT minting (0-1, "
 "default: %u)"),
 QT_TRANSLATE_NOOP("bitchain-core", ""
 "Enable cold staking functionality (0-1, default: %u). Disabled if staking=0"),
 QT_TRANSLATE_NOOP("bitchain-core", ""
-"Enable or disable staking functionality for PIV inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for XBIT inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("bitchain-core", ""
-"Enable or disable staking functionality for zPIV inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for zXBIT inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("bitchain-core", ""
 "Enable spork administration functionality with the appropriate private key."),
 QT_TRANSLATE_NOOP("bitchain-core", ""
@@ -104,10 +104,10 @@ QT_TRANSLATE_NOOP("bitchain-core", ""
 QT_TRANSLATE_NOOP("bitchain-core", ""
 "Failed to find coin set amongst held coins with less than maxNumber of Spends"),
 QT_TRANSLATE_NOOP("bitchain-core", ""
-"Fees (in PIV/Kb) smaller than this are considered zero fee for relaying "
+"Fees (in XBIT/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
 QT_TRANSLATE_NOOP("bitchain-core", ""
-"Fees (in PIV/Kb) smaller than this are considered zero fee for transaction "
+"Fees (in XBIT/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
 QT_TRANSLATE_NOOP("bitchain-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
@@ -180,7 +180,7 @@ QT_TRANSLATE_NOOP("bitchain-core", ""
 "Show N confirmations for a successfully locked transaction (0-9999, default: "
 "%u)"),
 QT_TRANSLATE_NOOP("bitchain-core", ""
-"Specify custom backup path to add a copy of any automatic zPIV backup. If "
+"Specify custom backup path to add a copy of any automatic zXBIT backup. If "
 "set as dir, every backup generates a timestamped file. If set as file, will "
 "rewrite to that file every backup. If backuppath is set as well, 4 backups "
 "will happen"),
@@ -214,10 +214,10 @@ QT_TRANSLATE_NOOP("bitchain-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("bitchain-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 PIV."),
+"transaction that are not equal 10000 XBIT."),
 QT_TRANSLATE_NOOP("bitchain-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
-"PIV."),
+"XBIT."),
 QT_TRANSLATE_NOOP("bitchain-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -302,7 +302,7 @@ QT_TRANSLATE_NOOP("bitchain-core", "Do not load the wallet and disable wallet RP
 QT_TRANSLATE_NOOP("bitchain-core", "Do you want to rebuild the block database now?"),
 QT_TRANSLATE_NOOP("bitchain-core", "Done loading"),
 QT_TRANSLATE_NOOP("bitchain-core", "Enable automatic Zerocoin minting (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("bitchain-core", "Enable precomputation of zPIV spends and stakes (0-1, default %u)"),
+QT_TRANSLATE_NOOP("bitchain-core", "Enable precomputation of zXBIT spends and stakes (0-1, default %u)"),
 QT_TRANSLATE_NOOP("bitchain-core", "Enable publish hash block in <address>"),
 QT_TRANSLATE_NOOP("bitchain-core", "Enable publish hash transaction (locked via SwiftX) in <address>"),
 QT_TRANSLATE_NOOP("bitchain-core", "Enable publish hash transaction in <address>"),
@@ -337,7 +337,7 @@ QT_TRANSLATE_NOOP("bitchain-core", "Failed to read block"),
 QT_TRANSLATE_NOOP("bitchain-core", "Failed to select a zerocoin"),
 QT_TRANSLATE_NOOP("bitchain-core", "Failed to wipe zerocoinDB"),
 QT_TRANSLATE_NOOP("bitchain-core", "Failed to write coin serial number into wallet"),
-QT_TRANSLATE_NOOP("bitchain-core", "Fee (in PIV/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("bitchain-core", "Fee (in XBIT/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("bitchain-core", "Force safe mode (default: %u)"),
 QT_TRANSLATE_NOOP("bitchain-core", "Generate coins (default: %u)"),
 QT_TRANSLATE_NOOP("bitchain-core", "How many blocks to check at startup (default: %u, 0 = all)"),
@@ -401,11 +401,11 @@ QT_TRANSLATE_NOOP("bitchain-core", "RPC server options:"),
 QT_TRANSLATE_NOOP("bitchain-core", "Randomly drop 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("bitchain-core", "Randomly fuzz 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("bitchain-core", "Rebuild block chain index from current blk000??.dat files"),
-QT_TRANSLATE_NOOP("bitchain-core", "Recalculating PIV supply..."),
-QT_TRANSLATE_NOOP("bitchain-core", "Recalculating minted ZPIV..."),
-QT_TRANSLATE_NOOP("bitchain-core", "Recalculating spent ZPIV..."),
+QT_TRANSLATE_NOOP("bitchain-core", "Recalculating XBIT supply..."),
+QT_TRANSLATE_NOOP("bitchain-core", "Recalculating minted ZXBIT..."),
+QT_TRANSLATE_NOOP("bitchain-core", "Recalculating spent ZXBIT..."),
 QT_TRANSLATE_NOOP("bitchain-core", "Receive and display P2P network alerts (default: %u)"),
-QT_TRANSLATE_NOOP("bitchain-core", "Reindex the PIV and zPIV money supply statistics"),
+QT_TRANSLATE_NOOP("bitchain-core", "Reindex the XBIT and zXBIT money supply statistics"),
 QT_TRANSLATE_NOOP("bitchain-core", "Reindex the accumulator database"),
 QT_TRANSLATE_NOOP("bitchain-core", "Reindexing zerocoin database..."),
 QT_TRANSLATE_NOOP("bitchain-core", "Reindexing zerocoin failed"),
@@ -453,7 +453,7 @@ QT_TRANSLATE_NOOP("bitchain-core", "Synchronizing budgets..."),
 QT_TRANSLATE_NOOP("bitchain-core", "Synchronizing masternode winners..."),
 QT_TRANSLATE_NOOP("bitchain-core", "Synchronizing masternodes..."),
 QT_TRANSLATE_NOOP("bitchain-core", "Synchronizing sporks..."),
-QT_TRANSLATE_NOOP("bitchain-core", "Syncing zPIV wallet..."),
+QT_TRANSLATE_NOOP("bitchain-core", "Syncing zXBIT wallet..."),
 QT_TRANSLATE_NOOP("bitchain-core", "The coin spend has been used"),
 QT_TRANSLATE_NOOP("bitchain-core", "The transaction did not verify"),
 QT_TRANSLATE_NOOP("bitchain-core", "This help message"),
@@ -485,7 +485,7 @@ QT_TRANSLATE_NOOP("bitchain-core", "Use block spam filter (default: %u)"),
 QT_TRANSLATE_NOOP("bitchain-core", "Use the test network"),
 QT_TRANSLATE_NOOP("bitchain-core", "User Agent comment (%s) contains unsafe characters."),
 QT_TRANSLATE_NOOP("bitchain-core", "Username for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("bitchain-core", "Value is below the smallest available denomination (= 1) of zPIV"),
+QT_TRANSLATE_NOOP("bitchain-core", "Value is below the smallest available denomination (= 1) of zXBIT"),
 QT_TRANSLATE_NOOP("bitchain-core", "Verifying blocks..."),
 QT_TRANSLATE_NOOP("bitchain-core", "Verifying wallet..."),
 QT_TRANSLATE_NOOP("bitchain-core", "Wallet %s resides outside data directory %s"),

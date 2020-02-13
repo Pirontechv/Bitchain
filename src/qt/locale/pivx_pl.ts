@@ -327,16 +327,16 @@ Użyj hasła składającego się z dziesięciu lub więcej losowych znaków lub 
         <translation>ANULUJ</translation>
     </message>
     <message>
-        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>BITCHAIN zamknie się teraz, aby zakończyć proces szyfrowania. Pamiętaj, że zaszyfrowanie portfela nie chroni w pełni Twoich PIV przed kradzieżą przez złośliwe oprogramowanie infekujące Twój komputer.</translation>
+        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XBITs from being stolen by malware infecting your computer.</source>
+        <translation>BITCHAIN zamknie się teraz, aby zakończyć proces szyfrowania. Pamiętaj, że zaszyfrowanie portfela nie chroni w pełni Twoich XBIT przed kradzieżą przez złośliwe oprogramowanie infekujące Twój komputer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Czy na pewno chcesz zaszyfrować swój portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zaszyfrujesz portfel i stracisz do niego hasło , &lt;b&gt;UTRACISZ WSZYSTKIE PIV&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XBIT&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zaszyfrujesz portfel i stracisz do niego hasło , &lt;b&gt;UTRACISZ WSZYSTKIE XBIT&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -650,8 +650,8 @@ Użyj hasła składającego się z dziesięciu lub więcej losowych znaków lub 
         <translation>Ta etykieta zmienia kolor na czerwony, jeśli odbiorca otrzymuje mniej niż %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Zmienia się +/- %1 upiv</translation>
+        <source>Can vary +/- %1 uxbit per input.</source>
+        <translation>Zmienia się +/- %1 uxbit</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -667,7 +667,7 @@ Użyj hasła składającego się z dziesięciu lub więcej losowych znaków lub 
     </message>
 </context>
 <context>
-    <name>CoinControlPivWidget</name>
+    <name>CoinControlXBITWidget</name>
     <message>
         <source>Dialog</source>
         <translation>Dialog</translation>
@@ -782,8 +782,8 @@ Użyj hasła składającego się z dziesięciu lub więcej losowych znaków lub 
         <translation>TekstZakładka</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zXBIT</source>
+        <translation>zXBIT</translation>
     </message>
     <message>
         <source>All</source>
@@ -1365,36 +1365,36 @@ https://www.transifex.com/bitchain-project/bitchain-project-translations </trans
         <translation>Mapuj port za pomocą &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Włącz automatyczny minting PIV do zPIV</translation>
+        <source>Enable automatic minting of XBIT units to zXBIT</source>
+        <translation>Włącz automatyczny minting XBIT do zXBIT</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Włącz zPIV Automint</translation>
+        <source>Enable zXBIT Automint</source>
+        <translation>Włącz zXBIT Automint</translation>
     </message>
     <message>
-        <source>Enable automatic zPIV minting from specific addresses</source>
-        <translation>Włącz automatyczne wybijanie zPIV-ów z określonych adresów</translation>
+        <source>Enable automatic zXBIT minting from specific addresses</source>
+        <translation>Włącz automatyczne wybijanie zXBIT-ów z określonych adresów</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Włącz adresy Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procent PIV, które są automatycznie konwertowane na zPIV za pomocą protokołu Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming XBIT which get automatically converted to zXBIT via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procent XBIT, które są automatycznie konwertowane na zXBIT za pomocą protokołu Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Procent automint zPIV</translation>
+        <source>Percentage of autominted zXBIT</source>
+        <translation>Procent automint zXBIT</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Zaczekaj z automatyczną konwersją na Zerocoin, aż będzie dostępna wystarczająca wartość PIV dla tego nominału</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough XBIT for this denomination is available</source>
+        <translation>Zaczekaj z automatyczną konwersją na Zerocoin, aż będzie dostępna wystarczająca wartość XBIT dla tego nominału</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Preferowane nominały Automint zPIV</translation>
+        <source>Preferred Automint zXBIT Denomination</source>
+        <translation>Preferowane nominały Automint zXBIT</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2103,8 +2103,8 @@ Adres: %4
         <translation>Standardowa ścieżka kopii zapasowej:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>standardowa ścieżka kopii zapasowej zPIV:</translation>
+        <source>Custom zXBIT Backup Path:</source>
+        <translation>standardowa ścieżka kopii zapasowej zXBIT:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2459,12 +2459,12 @@ Adres: %4
         <translation>Wydaj Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV jest obecnie w trakcie konserwacji.</translation>
+        <source>zXBIT is currently undergoing maintenance.</source>
+        <translation>zXBIT jest obecnie w trakcie konserwacji.</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>Wersja 1 zPIV wymaga poziomu bezpieczeństwa 100, aby pomyślnie wydać.</translation>
+        <source>Version 1 zXBIT require a security level of 100 to successfully spend.</source>
+        <translation>Wersja 1 zXBIT wymaga poziomu bezpieczeństwa 100, aby pomyślnie wydać.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3311,12 +3311,12 @@ Sprawdź adres i spróbuj ponownie.</translation>
         <translation>Otrzymane przez Zamaskowanie</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>XBIT Stake</source>
+        <translation>XBIT Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>zXBIT Stake</source>
+        <translation>zXBIT Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -3335,24 +3335,24 @@ Sprawdź adres i spróbuj ponownie.</translation>
         <translation>Zamaskowanie Utwórz denominacje</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>przekonwertowany PIV to zPIV</translation>
+        <source>Converted XBIT to zXBIT</source>
+        <translation>przekonwertowany XBIT to zXBIT</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Wydaj zPIV</translation>
+        <source>Spent zXBIT</source>
+        <translation>Wydaj zXBIT</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Otrzymano PIV z zPIV</translation>
+        <source>Received XBIT from zXBIT</source>
+        <translation>Otrzymano XBIT z zXBIT</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Reszta Minted jako zPIV z Wysyłki zPIV</translation>
+        <source>Minted Change as zXBIT from zXBIT Spend</source>
+        <translation>Reszta Minted jako zXBIT z Wysyłki zXBIT</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>przekonwertowany zPIV to PIV</translation>
+        <source>Converted zXBIT to XBIT</source>
+        <translation>przekonwertowany zXBIT to XBIT</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3460,8 +3460,8 @@ Sprawdź adres i spróbuj ponownie.</translation>
         <translation>Wyślij monety</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftX nie obsługuje wysyłania wysokich wartości. Transakcje są obecnie ograniczone do %1 PIV.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 XBIT.</source>
+        <translation>SwiftX nie obsługuje wysyłania wysokich wartości. Transakcje są obecnie ograniczone do %1 XBIT.</translation>
     </message>
 </context>
 <context>
@@ -3503,10 +3503,10 @@ Sprawdź adres i spróbuj ponownie.</translation>
     </message>
 </context>
 <context>
-    <name>ZPivControlDialog</name>
+    <name>ZXBITControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Wybierz zPIV do wydania</translation>
+        <source>Select zXBIT to Spend</source>
+        <translation>Wybierz zXBIT do wydania</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -3592,16 +3592,16 @@ Sprawdź adres i spróbuj ponownie.</translation>
         <translation>Włącz automatyczne wybijanie Zerocoin z określonych adresów (0-1, domyślnie:%u)</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Włącz automatyczne kopie zapasowe portfela uruchamiane po każdym mintingu zPIV (0-1, domyślnie: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zXBIT minting (0-1, default: %u)</source>
+        <translation>Włącz automatyczne kopie zapasowe portfela uruchamiane po każdym mintingu zXBIT (0-1, domyślnie: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Włączanie lub wyłączanie funkcji stake dla przychodzących PIV (0-1, domyślnie:%u)</translation>
+        <source>Enable or disable staking functionality for XBIT inputs (0-1, default: %u)</source>
+        <translation>Włączanie lub wyłączanie funkcji stake dla przychodzących XBIT (0-1, domyślnie:%u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Włączanie lub wyłączanie funkcji staking dla nowych zPIV (0-1, domyślnie: %u)</translation>
+        <source>Enable or disable staking functionality for zXBIT inputs (0-1, default: %u)</source>
+        <translation>Włączanie lub wyłączanie funkcji staking dla nowych zXBIT (0-1, domyślnie: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3636,12 +3636,12 @@ Sprawdź adres i spróbuj ponownie.</translation>
         <translation>Wykonaj polecenie, gdy najlepszy blok zostanie zmieniony ( %s w cmd zostanie zastąpione hash blokiem)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Opłaty za przekazywanie (w PIV/Kb) mniejsze od tej są uznawane za opłaty zerowe (domyślnie: %s)</translation>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Opłaty za przekazywanie (w XBIT/Kb) mniejsze od tej są uznawane za opłaty zerowe (domyślnie: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Opłaty za tworzenie transakcji (w PIV/Kb) mniejsze od tej są uznawane za opłaty zerowe (domyślnie: %s)</translation>
+        <source>Fees (in XBIT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Opłaty za tworzenie transakcji (w XBIT/Kb) mniejsze od tej są uznawane za opłaty zerowe (domyślnie: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3756,12 +3756,12 @@ Sprawdź adres i spróbuj ponownie.</translation>
         <translation>Nie można znaleźć wystarczającej liczby funduszy ukrytych dla tej transakcji.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Nie można zlokalizować wystarczająco dużo zaciemnionych Środków. Ta transakcja nie jest równa 10000 PIV.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 XBIT.</source>
+        <translation>Nie można zlokalizować wystarczająco dużo zaciemnionych Środków. Ta transakcja nie jest równa 10000 XBIT.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Nie można zlokalizować wystarczająco dużo Środków. Ta transakcja nie jest równa 10000 PIV.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 XBIT.</source>
+        <translation>Nie można zlokalizować wystarczająco dużo Środków. Ta transakcja nie jest równa 10000 XBIT.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3964,8 +3964,8 @@ Sprawdź adres i spróbuj ponownie.</translation>
         <translation>Włącz automatyczne Zerocoin minting (0-100, domyślnie: %u)</translation>
     </message>
     <message>
-        <source>Enable precomputation of zPIV spends and stakes (0-1, default %u)</source>
-        <translation>Włącz wstępne obliczanie wydatków i stawek zPIV (0-1, domyślnie %u)</translation>
+        <source>Enable precomputation of zXBIT spends and stakes (0-1, default %u)</source>
+        <translation>Włącz wstępne obliczanie wydatków i stawek zXBIT (0-1, domyślnie %u)</translation>
     </message>
     <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
@@ -4052,8 +4052,8 @@ Sprawdź adres i spróbuj ponownie.</translation>
         <translation>Nie można odczytać bloku</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Opłata (w PIV/kB) dodawana do wysyłanych transakcji (domyślnie: %s)</translation>
+        <source>Fee (in XBIT/kB) to add to transactions you send (default: %s)</source>
+        <translation>Opłata (w XBIT/kB) dodawana do wysyłanych transakcji (domyślnie: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -4152,20 +4152,20 @@ Sprawdź adres i spróbuj ponownie.</translation>
         <translation>Odsetek automatycznych minted Zerocoin (1-100, domyślnie: %u)</translation>
     </message>
     <message>
-        <source>Recalculating PIV supply...</source>
-        <translation>Przeliczanie podaży PIV ...</translation>
+        <source>Recalculating XBIT supply...</source>
+        <translation>Przeliczanie podaży XBIT ...</translation>
     </message>
     <message>
-        <source>Recalculating minted ZPIV...</source>
-        <translation>Przeliczenie wybitego ZPIV ...</translation>
+        <source>Recalculating minted ZXBIT...</source>
+        <translation>Przeliczenie wybitego ZXBIT ...</translation>
     </message>
     <message>
-        <source>Recalculating spent ZPIV...</source>
-        <translation>Przeliczanie wydanego ZPIV ...</translation>
+        <source>Recalculating spent ZXBIT...</source>
+        <translation>Przeliczanie wydanego ZXBIT ...</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Ponownie oblicz statystyki podaży pieniądza PIV i zPIV</translation>
+        <source>Reindex the XBIT and zXBIT money supply statistics</source>
+        <translation>Ponownie oblicz statystyki podaży pieniądza XBIT i zXBIT</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4240,8 +4240,8 @@ Sprawdź adres i spróbuj ponownie.</translation>
         <translation>Preferowana jednostka dla automatycznych minted Zerocoin (1/5/10/50/100/500/1000/5000), 0 bez żadnych preferencji. domyślnie: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Określ standardową ścieżkę kopii zapasowej, aby dodać kopię automatycznej kopii zapasowej zPIV. Jeśli ustawione jako katalog, każda kopia zapasowa generuje plik z sygnaturą czasową. Jeśli ustawione jako plik, będzie przepisywać do tego pliku każdą kopię zapasową. Jeśli ustawiona jest również ścieżka tworzenia kopii zapasowych, zostaną utworzone 4 kopie zapasowe</translation>
+        <source>Specify custom backup path to add a copy of any automatic zXBIT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Określ standardową ścieżkę kopii zapasowej, aby dodać kopię automatycznej kopii zapasowej zXBIT. Jeśli ustawione jako katalog, każda kopia zapasowa generuje plik z sygnaturą czasową. Jeśli ustawione jako plik, będzie przepisywać do tego pliku każdą kopię zapasową. Jeśli ustawiona jest również ścieżka tworzenia kopii zapasowych, zostaną utworzone 4 kopie zapasowe</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4580,8 +4580,8 @@ Sprawdź adres i spróbuj ponownie.</translation>
         <translation>Synchronizowanie sporks...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Synchronizuję portfel zPIV ...</translation>
+        <source>Syncing zXBIT wallet...</source>
+        <translation>Synchronizuję portfel zXBIT ...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4648,8 +4648,8 @@ Sprawdź adres i spróbuj ponownie.</translation>
         <translation>Nazwa użytkownika dla połączeń JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Wartość jest mniejsza od najmniejszej dostępnej (= 1) zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of zXBIT</source>
+        <translation>Wartość jest mniejsza od najmniejszej dostępnej (= 1) zXBIT</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
