@@ -1,14 +1,14 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_ADDRESSHOLDER_H
-#define PIVX_ADDRESSHOLDER_H
+#ifndef BITCHAIN_ADDRESSHOLDER_H
+#define BITCHAIN_ADDRESSHOLDER_H
 
 #include <QWidget>
 #include <QColor>
-#include "qt/pivx/myaddressrow.h"
-#include "qt/pivx/furlistrow.h"
+#include "qt/bitchain/myaddressrow.h"
+#include "qt/bitchain/furlistrow.h"
 #include "guiutil.h"
 
 
@@ -38,4 +38,4 @@ public:
 };
 
 
-#endif //PIVX_ADDRESSHOLDER_H
+#endif //BITCHAIN_ADDRESSHOLDER_H

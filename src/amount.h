@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2017-2019 The PIVX developers
+// Copyright (c) 2017-2019 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,7 +20,7 @@ static const CAmount CENT = 1000000;
 
 /** No amount larger than this (in PIV) is valid in a single UTXO.
  *
- * Note that this constant is *not* the total money supply, which in PIVX
+ * Note that this constant is *not* the total money supply, which in BITCHAIN
  * is not limited to an arbitrary hard cap, but rather a sanity check. As
  * this sanity check is used by consensus-critical validation code, the
  * exact value of the MAX_MONEY_OUT constant is consensus critical; in

@@ -122,12 +122,12 @@
         <translation>Adrese za primanje</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To su vaše PIVX adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your BITCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To su vaše BITCHAIN adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To su vaše PIVX adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
+        <source>These are your BITCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To su vaše BITCHAIN adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -235,8 +235,8 @@
         <translation>npr. Ivan Ivić</translation>
     </message>
     <message>
-        <source>Enter a PIVX address</source>
-        <translation>Unesite PIVX adresu</translation>
+        <source>Enter a BITCHAIN address</source>
+        <translation>Unesite BITCHAIN adresu</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -342,8 +342,8 @@
         <translation>PONIŠTI</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše PIV od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
+        <translation>BITCHAIN se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše PIV od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -1010,12 +1010,12 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN Core</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>O PIVX Core-u</translation>
+        <source>About BITCHAIN Core</source>
+        <translation>O BITCHAIN Core-u</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -1033,8 +1033,8 @@
         <translation>Dobrodošli</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>Dobrodošli u PIVX Core.</translation>
+        <source>Welcome to BITCHAIN Core.</source>
+        <translation>Dobrodošli u BITCHAIN Core.</translation>
     </message>
     <message>
         <source>CANCEL</source>
@@ -1045,8 +1045,8 @@
         <translation>U redu</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1262,8 +1262,8 @@
         <translation>Stručnjak</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>Automatski pokreni PIVX nakon ulogiravanja u računalo.</translation>
+        <source>Automatically start BITCHAIN after logging in to the system.</source>
+        <translation>Automatski pokreni BITCHAIN nakon ulogiravanja u računalo.</translation>
     </message>
     <message>
         <source>&amp;Network</source>
@@ -1299,10 +1299,10 @@
     </message>
     </context>
 <context>
-    <name>PIVXGUI</name>
+    <name>BITCHAINGUI</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1329,8 +1329,8 @@
         <translation>Napusti aplikaciju</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Core klijent</translation>
+        <source>BITCHAIN Core client</source>
+        <translation>BITCHAIN Core klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1415,8 +1415,8 @@
         <translation>Iznos</translation>
     </message>
     <message>
-        <source>Enter a PIVX address (e.g. %1)</source>
-        <translation>Unesi PIVX adresu (npr. %1)</translation>
+        <source>Enter a BITCHAIN address (e.g. %1)</source>
+        <translation>Unesi BITCHAIN adresu (npr. %1)</translation>
     </message>
     <message>
         <source>NETWORK</source>
@@ -1427,8 +1427,8 @@
         <translation>N/A</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN Core</translation>
     </message>
     </context>
 <context>
@@ -1750,8 +1750,8 @@
         <translation>Pošalji</translation>
     </message>
     <message>
-        <source>Enter a PIVX address or contact label</source>
-        <translation>Unesite PIVX adresu ili oznaku kontakta</translation>
+        <source>Enter a BITCHAIN address or contact label</source>
+        <translation>Unesite BITCHAIN adresu ili oznaku kontakta</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -1852,8 +1852,8 @@
         <translation>Dešifriraj adresu</translation>
     </message>
     <message>
-        <source>Enter a PIVX address</source>
-        <translation>Unesite PIVX adresu</translation>
+        <source>Enter a BITCHAIN address</source>
+        <translation>Unesite BITCHAIN adresu</translation>
     </message>
     <message>
         <source>Add address</source>
@@ -2096,8 +2096,8 @@
         <translation>PritisniTipku</translation>
     </message>
     <message>
-        <source>Enter a PIVX address or contact label</source>
-        <translation>Unesite PIVX adresu ili oznaku kontakta</translation>
+        <source>Enter a BITCHAIN address or contact label</source>
+        <translation>Unesite BITCHAIN adresu ili oznaku kontakta</translation>
     </message>
     <message>
         <source>Add address</source>
@@ -2261,8 +2261,8 @@
         <translation>Često postavljena pitanja</translation>
     </message>
     <message>
-        <source>About PIVX</source>
-        <translation>O PIVX-u</translation>
+        <source>About BITCHAIN</source>
+        <translation>O BITCHAIN-u</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -2284,8 +2284,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
-        <translation>PIVX Core se gasi...</translation>
+        <source>BITCHAIN Core is shutting down...</source>
+        <translation>BITCHAIN Core se gasi...</translation>
     </message>
     </context>
 <context>
@@ -2310,15 +2310,15 @@
         <translation>Učitavanje...</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN Core</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2333,8 +2333,8 @@
         <translation>Dash Core developeri</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>PIVX Core developeri</translation>
+        <source>The BITCHAIN Core developers</source>
+        <translation>BITCHAIN Core developeri</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2579,7 +2579,7 @@
     </message>
     </context>
 <context>
-    <name>pivx-core</name>
+    <name>bitchain-core</name>
     <message>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
         <translation>Otkrij svoju IP adresu (zadano: 1 kada sluša i nema -externalip)</translation>

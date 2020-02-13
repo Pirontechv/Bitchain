@@ -1,14 +1,14 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/pwidget.h"
-#include "qt/pivx/qtutils.h"
-#include "qt/pivx/loadingdialog.h"
+#include "qt/bitchain/pwidget.h"
+#include "qt/bitchain/qtutils.h"
+#include "qt/bitchain/loadingdialog.h"
 #include <QRunnable>
 #include <QThreadPool>
 
-PWidget::PWidget(PIVXGUI* _window, QWidget *parent) : QWidget((parent) ? parent : _window), window(_window){init();}
+PWidget::PWidget(BITCHAINGUI* _window, QWidget *parent) : QWidget((parent) ? parent : _window), window(_window){init();}
 PWidget::PWidget(PWidget* parent) : QWidget(parent), window(parent->getWindow()){init();}
 
 void PWidget::init() {

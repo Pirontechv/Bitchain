@@ -76,11 +76,11 @@
         <translation>Ricevanta adresojn</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ĉi tiuj estas viaj PIVX adreso por sendi pagojn. Ĉiam kontroku la kvanto kaj la ricevanta antaŭ ol sendi monerojn.</translation>
+        <source>These are your BITCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ĉi tiuj estas viaj BITCHAIN adreso por sendi pagojn. Ĉiam kontroku la kvanto kaj la ricevanta antaŭ ol sendi monerojn.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your BITCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Ĉi tiuj estas vian adreson por ricevi pagojn. Ĝi rekomendas uzi novajn ricenvantan adreson por ĉiu nova transakcio.</translation>
     </message>
     <message>
@@ -196,8 +196,8 @@
         <translation>Konfirmi monerĉifrado</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn PIVs de esti ŝtelita per malware infektanta vian komputilon.</translation>
+        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
+        <translation>BITCHAIN fermos nun por fini ĉifran procezon. Memoru ke ĉifri vian monujon ne povas plene protekti viajn PIVs de esti ŝtelita per malware infektanta vian komputilon.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -286,8 +286,8 @@
         <translation>Tekstetikedo</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
-        <translation>Ĉiuj transakcio ne estos montri. Peor vidi ĉiuj transakcio bezonas agordi txindekso=1 en la agordo dosiero (pivx.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (bitchain.conf).</source>
+        <translation>Ĉiuj transakcio ne estos montri. Peor vidi ĉiuj transakcio bezonas agordi txindekso=1 en la agordo dosiero (bitchain.conf).</translation>
     </message>
 </context>
 <context>
@@ -660,8 +660,8 @@
         <translation>Redaktu sendantan adreson</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
-        <translation>La enirita "%1" adreso ne estas validan PIVX adreson.</translation>
+        <source>The entered address "%1" is not a valid BITCHAIN address.</source>
+        <translation>La enirita "%1" adreso ne estas validan BITCHAIN adreson.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -724,16 +724,16 @@
         <translation>versio</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX kerno</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN kerno</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bajto)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>Pri PIVX Kerno</translation>
+        <source>About BITCHAIN Core</source>
+        <translation>Pri BITCHAIN Kerno</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -775,24 +775,24 @@
         <translation>Bonvenon</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>Bonvenon al la PIVX Kerno.</translation>
+        <source>Welcome to BITCHAIN Core.</source>
+        <translation>Bonvenon al la BITCHAIN Kerno.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>Ĉar estas la unuan fojon ke la programo estas lanĉita, vi povas elekti kie PIVX kernk storigis sian datumojn. </translation>
+        <source>As this is the first time the program is launched, you can choose where BITCHAIN Core will store its data.</source>
+        <translation>Ĉar estas la unuan fojon ke la programo estas lanĉita, vi povas elekti kie BITCHAIN kernk storigis sian datumojn. </translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX kerno elŝutos kaj konservi kopion de la PIVX blokĉeno. Almenaŭ %1GB datumoj stokitos en ĉi tiun dosierujo, kaj ĝi kresko kun la tempo. Monujo stokitos en ĉi tiun dosierujo.</translation>
+        <source>BITCHAIN Core will download and store a copy of the BITCHAIN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>BITCHAIN kerno elŝutos kaj konservi kopion de la BITCHAIN blokĉeno. Almenaŭ %1GB datumoj stokitos en ĉi tiun dosierujo, kaj ĝi kresko kun la tempo. Monujo stokitos en ĉi tiun dosierujo.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Uzi defaŭltan dosierujon</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX kerno</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN kerno</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -940,8 +940,8 @@
         <translation>&amp;Monujo</translation>
     </message>
     <message>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aŭtomate malfermi PIVX klienton havenon en la enkursigilo. Tio nur laboras kiam via enkursigilo subtenas UPnP kaj estas ebligita.</translation>
+        <source>Automatically open the BITCHAIN client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aŭtomate malfermi BITCHAIN klienton havenon en la enkursigilo. Tio nur laboras kiam via enkursigilo subtenas UPnP kaj estas ebligita.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -952,8 +952,8 @@
         <translation>Sperta</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;Komencu PIVX en sistem-ensaluto</translation>
+        <source>&amp;Start BITCHAIN on system login</source>
+        <translation>&amp;Komencu BITCHAIN en sistem-ensaluto</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
@@ -964,18 +964,18 @@
         <translation>&amp;Reto</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
-        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci PIVX.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting BITCHAIN.</source>
+        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci BITCHAIN.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</source>
+https://www.transifex.com/bitchain-project/bitchain-project-translations</source>
         <translation>Ĉu mankas lingvon aŭ nekompleta tradukado? Helpu la  tradukcio ĉi tie:
-https://www.transifex.com/pivx-project/pivx-project-translations</translation>
+https://www.transifex.com/bitchain-project/bitchain-project-translations</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Konekti al la PIVX reto per SOCKS5 prokurilo.</translation>
+        <source>Connect to the BITCHAIN network through a SOCKS5 proxy.</source>
+        <translation>Konekti al la BITCHAIN reto per SOCKS5 prokurilo.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1027,10 +1027,10 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
 </context>
 <context>
-    <name>PIVXGUI</name>
+    <name>BITCHAINGUI</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX kerno</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN kerno</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1057,8 +1057,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Eliri</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Kerno kliento</translation>
+        <source>BITCHAIN Core client</source>
+        <translation>BITCHAIN Kerno kliento</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1151,8 +1151,8 @@ Adreso: %4
         <translation>NEKONATA</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX kerno</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN kerno</translation>
     </message>
     </context>
 <context>
@@ -1214,8 +1214,8 @@ Adreso: %4
         <translation>Rekonstrui indekson</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Bonvenon al la PIVX RPC konzolo.</translation>
+        <source>Welcome to the BITCHAIN RPC console.</source>
+        <translation>Bonvenon al la BITCHAIN RPC konzolo.</translation>
     </message>
     <message>
         <source>1 &amp;hour</source>
@@ -1435,8 +1435,8 @@ Adreso: %4
         <translation>Tekstetikedo</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Bonvenon al la PIVX RPC konzolo.</translation>
+        <source>Welcome to the BITCHAIN RPC console.</source>
+        <translation>Bonvenon al la BITCHAIN RPC konzolo.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
@@ -1632,8 +1632,8 @@ Adreso: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
-        <translation>PIVX kerno fermanta...</translation>
+        <source>BITCHAIN Core is shutting down...</source>
+        <translation>BITCHAIN kerno fermanta...</translation>
     </message>
     </context>
 <context>
@@ -1650,15 +1650,15 @@ Adreso: %4
         <translation>Formo</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX kerno</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN kerno</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX kerno</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN kerno</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>
@@ -1669,8 +1669,8 @@ Adreso: %4
         <translation>La Dash kerno programistoj</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>La PIVX kerno programistoj</translation>
+        <source>The BITCHAIN Core developers</source>
+        <translation>La BITCHAIN kerno programistoj</translation>
     </message>
     </context>
 <context>
@@ -1835,7 +1835,7 @@ Adreso: %4
     </message>
     </context>
 <context>
-    <name>pivx-core</name>
+    <name>bitchain-core</name>
     <message>
         <source>Connect through SOCKS5 proxy</source>
         <translation>Konekti per SOCKS5 prokurilo</translation>

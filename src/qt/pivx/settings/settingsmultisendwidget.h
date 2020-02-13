@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,10 +7,10 @@
 
 #include <QWidget>
 #include <QAbstractTableModel>
-#include "qt/pivx/pwidget.h"
-#include "qt/pivx/furabstractlistitemdelegate.h"
+#include "qt/bitchain/pwidget.h"
+#include "qt/bitchain/furabstractlistitemdelegate.h"
 
-class PIVXGUI;
+class BITCHAINGUI;
 
 namespace Ui {
 class SettingsMultisendWidget;

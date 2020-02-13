@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,10 +8,10 @@
 #include <QDialog>
 #include <QPixmap>
 #include "walletmodel.h"
-#include "qt/pivx/snackbar.h"
+#include "qt/bitchain/snackbar.h"
 
 class WalletModel;
-class PIVXGUI;
+class BITCHAINGUI;
 
 namespace Ui {
 class RequestDialog;

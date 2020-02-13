@@ -1,13 +1,13 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/topbar.h"
-#include "qt/pivx/forms/ui_topbar.h"
+#include "qt/bitchain/topbar.h"
+#include "qt/bitchain/forms/ui_topbar.h"
 #include <QPixmap>
-#include "qt/pivx/lockunlock.h"
-#include "qt/pivx/qtutils.h"
-#include "qt/pivx/receivedialog.h"
+#include "qt/bitchain/lockunlock.h"
+#include "qt/bitchain/qtutils.h"
+#include "qt/bitchain/receivedialog.h"
 #include "askpassphrasedialog.h"
 
 #include "bitcoinunits.h"
@@ -22,7 +22,7 @@
 #include "guiinterface.h"
 
 
-TopBar::TopBar(PIVXGUI* _mainWindow, QWidget *parent) :
+TopBar::TopBar(BITCHAINGUI* _mainWindow, QWidget *parent) :
     PWidget(_mainWindow, parent),
     ui(new Ui::TopBar)
 {
@@ -475,7 +475,7 @@ void TopBar::loadWalletModel(){
             SLOT(updateBalances(CAmount, CAmount, CAmount, CAmount, CAmount, CAmount, CAmount, CAmount, CAmount, CAmount, CAmount)));
     connect(walletModel->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
     connect(walletModel, &WalletModel::encryptionStatusChanged, this, &TopBar::refreshStatus);
-    // update the display unit, to not use the default ("PIVX")
+    // update the display unit, to not use the default ("BITCHAIN")
     updateDisplayUnit();
 
     refreshStatus();

@@ -1,10 +1,10 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/expandablebutton.h"
-#include "qt/pivx/forms/ui_expandablebutton.h"
-#include "qt/pivx/qtutils.h"
+#include "qt/bitchain/expandablebutton.h"
+#include "qt/bitchain/forms/ui_expandablebutton.h"
+#include "qt/bitchain/qtutils.h"
 #include <QParallelAnimationGroup>
 #include <QPropertyAnimation>
 #include <QStyle>

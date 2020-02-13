@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_CORE_NEW_GUI_ADDRESSFILTERPROXYMODEL_H
-#define PIVX_CORE_NEW_GUI_ADDRESSFILTERPROXYMODEL_H
+#ifndef BITCHAIN_CORE_NEW_GUI_ADDRESSFILTERPROXYMODEL_H
+#define BITCHAIN_CORE_NEW_GUI_ADDRESSFILTERPROXYMODEL_H
 
 #include <QSortFilterProxyModel>
 #include "addresstablemodel.h"
@@ -44,4 +44,4 @@ private:
 };
 
 
-#endif //PIVX_CORE_NEW_GUI_ADDRESSFILTERPROXYMODEL_H
+#endif //BITCHAIN_CORE_NEW_GUI_ADDRESSFILTERPROXYMODEL_H

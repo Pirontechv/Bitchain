@@ -1,9 +1,9 @@
-// Copyright (c) 2018-2020 The PIVX developers
+// Copyright (c) 2018-2020 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_ZPIVTRACKER_H
-#define PIVX_ZPIVTRACKER_H
+#ifndef BITCHAIN_ZPIVTRACKER_H
+#define BITCHAIN_ZPIVTRACKER_H
 
 #include "zerocoin.h"
 #include "sync.h"
@@ -50,4 +50,4 @@ public:
     void Clear();
 };
 
-#endif //PIVX_ZPIVTRACKER_H
+#endif //BITCHAIN_ZPIVTRACKER_H

@@ -1,9 +1,9 @@
-// Copyright (c) 2020 The PIVX developers
+// Copyright (c) 2020 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_LEGACY_ZPOS_H
-#define PIVX_LEGACY_ZPOS_H
+#ifndef BITCHAIN_LEGACY_ZPOS_H
+#define BITCHAIN_LEGACY_ZPOS_H
 
 #include "stakeinput.h"
 #include "main.h"
@@ -29,4 +29,4 @@ public:
     bool GetTxFrom(CTransaction& tx) const override { return false; /* not available */ }
 };
 
-#endif //PIVX_LEGACY_ZPOS_H
+#endif //BITCHAIN_LEGACY_ZPOS_H

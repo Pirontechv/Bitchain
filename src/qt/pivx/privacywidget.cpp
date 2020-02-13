@@ -1,13 +1,13 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/privacywidget.h"
-#include "qt/pivx/forms/ui_privacywidget.h"
-#include "qt/pivx/qtutils.h"
+#include "qt/bitchain/privacywidget.h"
+#include "qt/bitchain/forms/ui_privacywidget.h"
+#include "qt/bitchain/qtutils.h"
 #include "guiutil.h"
-#include "qt/pivx/denomgenerationdialog.h"
-#include "qt/pivx/txviewholder.h"
+#include "qt/bitchain/denomgenerationdialog.h"
+#include "qt/bitchain/txviewholder.h"
 #include "walletmodel.h"
 #include "optionsmodel.h"
 #include "coincontroldialog.h"
@@ -16,7 +16,7 @@
 #define DECORATION_SIZE 65
 #define NUM_ITEMS 3
 
-PrivacyWidget::PrivacyWidget(PIVXGUI* parent) :
+PrivacyWidget::PrivacyWidget(BITCHAINGUI* parent) :
     PWidget(parent),
     ui(new Ui::PrivacyWidget)
 {

@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,19 +6,19 @@
 #define SETTINGSWIDGET_H
 
 #include <QWidget>
-#include "qt/pivx/pwidget.h"
-#include "qt/pivx/settings/settingsbackupwallet.h"
-#include "qt/pivx/settings/settingsbittoolwidget.h"
-#include "qt/pivx/settings/settingssignmessagewidgets.h"
-#include "qt/pivx/settings/settingswalletrepairwidget.h"
-#include "qt/pivx/settings/settingswalletoptionswidget.h"
-#include "qt/pivx/settings/settingsmainoptionswidget.h"
-#include "qt/pivx/settings/settingsdisplayoptionswidget.h"
-#include "qt/pivx/settings/settingsmultisendwidget.h"
-#include "qt/pivx/settings/settingsinformationwidget.h"
-#include "qt/pivx/settings/settingsconsolewidget.h"
+#include "qt/bitchain/pwidget.h"
+#include "qt/bitchain/settings/settingsbackupwallet.h"
+#include "qt/bitchain/settings/settingsbittoolwidget.h"
+#include "qt/bitchain/settings/settingssignmessagewidgets.h"
+#include "qt/bitchain/settings/settingswalletrepairwidget.h"
+#include "qt/bitchain/settings/settingswalletoptionswidget.h"
+#include "qt/bitchain/settings/settingsmainoptionswidget.h"
+#include "qt/bitchain/settings/settingsdisplayoptionswidget.h"
+#include "qt/bitchain/settings/settingsmultisendwidget.h"
+#include "qt/bitchain/settings/settingsinformationwidget.h"
+#include "qt/bitchain/settings/settingsconsolewidget.h"
 
-class PIVXGUI;
+class BITCHAINGUI;
 
 QT_BEGIN_NAMESPACE
 class QDataWidgetMapper;
@@ -33,7 +33,7 @@ class SettingsWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsWidget(PIVXGUI* parent);
+    explicit SettingsWidget(BITCHAINGUI* parent);
     ~SettingsWidget();
 
     void loadClientModel() override;

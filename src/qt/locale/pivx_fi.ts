@@ -76,12 +76,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun PIVX osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your BITCHAIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun BITCHAIN osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun PIVX osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your BITCHAIN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun BITCHAIN osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -196,8 +196,8 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella PIVien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>BITCHAIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
+        <translation>BITCHAIN sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella PIVien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -560,8 +560,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Ydin</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -579,12 +579,12 @@
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>Tervetuloa PIVX Ytimeen.</translation>
+        <source>Welcome to BITCHAIN Core.</source>
+        <translation>Tervetuloa BITCHAIN Ytimeen.</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Ydin</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -740,12 +740,12 @@
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä PIVX kun kirjaudut sisään.</translation>
+        <source>Automatically start BITCHAIN after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä BITCHAIN kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;Aloita PIVX järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start BITCHAIN on system login</source>
+        <translation>&amp;Aloita BITCHAIN järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -764,12 +764,12 @@
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting BITCHAIN.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä PIVX verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the BITCHAIN network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä BITCHAIN verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -869,10 +869,10 @@
     </message>
     </context>
 <context>
-    <name>PIVXGUI</name>
+    <name>BITCHAINGUI</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Ydin</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN Ydin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -899,8 +899,8 @@
         <translation>Lopeta ohjelma</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Ydin asiakasohjelma</translation>
+        <source>BITCHAIN Core client</source>
+        <translation>BITCHAIN Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Error</source>
@@ -965,8 +965,8 @@
         <translation>Määrä</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Ydin</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN Ydin</translation>
     </message>
     </context>
 <context>
@@ -1008,8 +1008,8 @@
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa PIVX debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the BITCHAIN debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa BITCHAIN debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1120,8 +1120,8 @@
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Tervetuloa PIVX RPC konsoliin.</translation>
+        <source>Welcome to the BITCHAIN RPC console.</source>
+        <translation>Tervetuloa BITCHAIN RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1333,8 +1333,8 @@
         <translation>TekstiNimike</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Tervetuloa PIVX RPC konsoliin.</translation>
+        <source>Welcome to the BITCHAIN RPC console.</source>
+        <translation>Tervetuloa BITCHAIN RPC konsoliin.</translation>
     </message>
     </context>
 <context>
@@ -1582,8 +1582,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
-        <translation>PIVX core sammuu...</translation>
+        <source>BITCHAIN Core is shutting down...</source>
+        <translation>BITCHAIN core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1604,15 +1604,15 @@
         <translation>Lomake</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Ydin</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN Ydin</translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Ydin</translation>
+        <source>BITCHAIN Core</source>
+        <translation>BITCHAIN Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1627,8 +1627,8 @@
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The PIVX Core developers</source>
-        <translation>PIVX core kehittäjät</translation>
+        <source>The BITCHAIN Core developers</source>
+        <translation>BITCHAIN core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -1841,7 +1841,7 @@
     </message>
     </context>
 <context>
-    <name>pivx-core</name>
+    <name>bitchain-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
@@ -1887,8 +1887,8 @@
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version PIVX Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of BITCHAIN Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version BITCHAIN Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

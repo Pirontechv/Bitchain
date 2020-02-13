@@ -157,7 +157,7 @@
     <name>OptionsDialog</name>
     </context>
 <context>
-    <name>PIVXGUI</name>
+    <name>BITCHAINGUI</name>
     </context>
 <context>
     <name>PWidget</name>
@@ -289,7 +289,7 @@
     <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>pivx-core</name>
+    <name>bitchain-core</name>
     </context>
 <context>
     <name>send</name>

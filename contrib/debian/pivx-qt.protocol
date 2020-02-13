@@ -1,6 +1,6 @@
 [Protocol]
-exec=pivx-qt '%u'
-protocol=pivx
+exec=bitchain-qt '%u'
+protocol=bitchain
 input=none
 output=none
 helper=true

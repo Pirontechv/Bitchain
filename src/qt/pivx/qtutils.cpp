@@ -1,10 +1,10 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/qtutils.h"
+#include "qt/bitchain/qtutils.h"
 
-#include "qt/pivx/snackbar.h"
+#include "qt/bitchain/snackbar.h"
 #include "qrencode.h"
 #include "guiconstants.h"
 
@@ -35,7 +35,7 @@ bool openDialog(QDialog *widget, QWidget *gui){
     return widget->exec();
 }
 
-void closeDialog(QDialog *widget, PIVXGUI *gui){
+void closeDialog(QDialog *widget, BITCHAINGUI *gui){
     widget->setWindowFlags(Qt::CustomizeWindowHint);
     widget->setAttribute(Qt::WA_TranslucentBackground, true);
     QPropertyAnimation* animation = new QPropertyAnimation(widget, "pos");
@@ -54,7 +54,7 @@ void openDialogFullScreen(QWidget *parent, QWidget * dialog){
     dialog->resize(parent->width(),parent->height());
 }
 
-bool openDialogWithOpaqueBackgroundY(QDialog *widget, PIVXGUI *gui, double posX, int posY){
+bool openDialogWithOpaqueBackgroundY(QDialog *widget, BITCHAINGUI *gui, double posX, int posY){
     widget->setWindowFlags(Qt::CustomizeWindowHint);
     widget->setAttribute(Qt::WA_TranslucentBackground, true);
     QPropertyAnimation* animation = new QPropertyAnimation(widget, "pos");
@@ -70,11 +70,11 @@ bool openDialogWithOpaqueBackgroundY(QDialog *widget, PIVXGUI *gui, double posX,
     return res;
 }
 
-bool openDialogWithOpaqueBackground(QDialog *widget, PIVXGUI *gui, double posX){
+bool openDialogWithOpaqueBackground(QDialog *widget, BITCHAINGUI *gui, double posX){
     return openDialogWithOpaqueBackgroundY(widget, gui, posX, 5);
 }
 
-bool openDialogWithOpaqueBackgroundFullScreen(QDialog *widget, PIVXGUI *gui){
+bool openDialogWithOpaqueBackgroundFullScreen(QDialog *widget, BITCHAINGUI *gui){
     widget->setWindowFlags(Qt::CustomizeWindowHint);
     widget->setAttribute(Qt::WA_TranslucentBackground, true);
 

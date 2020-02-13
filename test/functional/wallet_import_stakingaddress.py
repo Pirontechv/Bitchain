@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2020 The PIVX developers
+# Copyright (c) 2020 The BITCHAIN developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,14 +11,14 @@ Node1 imports and rescans. The test checks that cold utxos and staking balance i
 
 from time import sleep
 
-from test_framework.test_framework import PivxTestFramework
+from test_framework.test_framework import BitchainTestFramework
 from test_framework.util import (
     assert_equal,
     DecimalAmt,
     sync_blocks,
 )
 
-class ImportStakingTest(PivxTestFramework):
+class ImportStakingTest(BitchainTestFramework):
 
     def set_test_params(self):
         self.num_nodes = 2

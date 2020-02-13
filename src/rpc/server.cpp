@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2020 The PIVX developers
+// Copyright (c) 2015-2020 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -265,11 +265,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw std::runtime_error(
             "stop\n"
-            "\nStop PIVX server.");
+            "\nStop BITCHAIN server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "PIVX server stopping";
+    return "BITCHAIN server stopping";
 }
 
 
@@ -359,35 +359,35 @@ static const CRPCCommand vRPCCommands[] =
         { "hidden",             "waitforblock",           &waitforblock,           true,  true,  false  },
         { "hidden",             "waitforblockheight",     &waitforblockheight,     true,  true,  false  },
 
-        /* PIVX features */
-        {"pivx", "listmasternodes", &listmasternodes, true, true, false},
-        {"pivx", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"pivx", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"pivx", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"pivx", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"pivx", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"pivx", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"pivx", "masternodedebug", &masternodedebug, true, true, false},
-        {"pivx", "startmasternode", &startmasternode, true, true, false},
-        {"pivx", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"pivx", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"pivx", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"pivx", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"pivx", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"pivx", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"pivx", "preparebudget", &preparebudget, true, true, false},
-        {"pivx", "submitbudget", &submitbudget, true, true, false},
-        {"pivx", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"pivx", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"pivx", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"pivx", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"pivx", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"pivx", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"pivx", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"pivx", "checkbudgets", &checkbudgets, true, true, false},
-        {"pivx", "mnsync", &mnsync, true, true, false},
-        {"pivx", "spork", &spork, true, true, false},
-        {"pivx", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* BITCHAIN features */
+        {"bitchain", "listmasternodes", &listmasternodes, true, true, false},
+        {"bitchain", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"bitchain", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"bitchain", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"bitchain", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"bitchain", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"bitchain", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"bitchain", "masternodedebug", &masternodedebug, true, true, false},
+        {"bitchain", "startmasternode", &startmasternode, true, true, false},
+        {"bitchain", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"bitchain", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"bitchain", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"bitchain", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"bitchain", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"bitchain", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"bitchain", "preparebudget", &preparebudget, true, true, false},
+        {"bitchain", "submitbudget", &submitbudget, true, true, false},
+        {"bitchain", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"bitchain", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"bitchain", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"bitchain", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"bitchain", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"bitchain", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"bitchain", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"bitchain", "checkbudgets", &checkbudgets, true, true, false},
+        {"bitchain", "mnsync", &mnsync, true, true, false},
+        {"bitchain", "spork", &spork, true, true, false},
+        {"bitchain", "getpoolinfo", &getpoolinfo, true, true, false},
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -634,7 +634,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(std::string methodname, std::string args)
 {
-    return "> pivx-cli " + methodname + " " + args + "\n";
+    return "> bitchain-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(std::string methodname, std::string args)

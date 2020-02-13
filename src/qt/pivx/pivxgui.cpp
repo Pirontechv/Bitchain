@@ -1,8 +1,8 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/pivxgui.h"
+#include "qt/bitchain/bitchaingui.h"
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -14,9 +14,9 @@
 #include "networkstyle.h"
 #include "notificator.h"
 #include "guiinterface.h"
-#include "qt/pivx/qtutils.h"
-#include "qt/pivx/defaultdialog.h"
-#include "qt/pivx/settings/settingsfaqwidget.h"
+#include "qt/bitchain/qtutils.h"
+#include "qt/bitchain/defaultdialog.h"
+#include "qt/bitchain/settings/settingsfaqwidget.h"
 
 #include <QDesktopWidget>
 #include <QHBoxLayout>
@@ -35,9 +35,9 @@
 #define BASE_WINDOW_MIN_WIDTH 1100
 
 
-const QString PIVXGUI::DEFAULT_WALLET = "~Default";
+const QString BITCHAINGUI::DEFAULT_WALLET = "~Default";
 
-PIVXGUI::PIVXGUI(const NetworkStyle* networkStyle, QWidget* parent) :
+BITCHAINGUI::BITCHAINGUI(const NetworkStyle* networkStyle, QWidget* parent) :
         QMainWindow(parent),
         clientModel(0){
 
@@ -65,7 +65,7 @@ PIVXGUI::PIVXGUI(const NetworkStyle* networkStyle, QWidget* parent) :
 
     QString windowTitle = QString::fromStdString(GetArg("-windowtitle", ""));
     if (windowTitle.isEmpty()) {
-        windowTitle = tr("PIVX Core") + " - ";
+        windowTitle = tr("BITCHAIN Core") + " - ";
         windowTitle += ((enableWallet) ? tr("Wallet") : tr("Node"));
     }
     windowTitle += " " + networkStyle->getTitleAddText();
@@ -171,7 +171,7 @@ PIVXGUI::PIVXGUI(const NetworkStyle* networkStyle, QWidget* parent) :
 
 }
 
-void PIVXGUI::createActions(const NetworkStyle* networkStyle){
+void BITCHAINGUI::createActions(const NetworkStyle* networkStyle){
     toggleHideAction = new QAction(networkStyle->getAppIcon(), tr("&Show / Hide"), this);
     toggleHideAction->setStatusTip(tr("Show or hide the main Window"));
 
@@ -187,7 +187,7 @@ void PIVXGUI::createActions(const NetworkStyle* networkStyle){
 /**
  * Here add every event connection
  */
-void PIVXGUI::connectActions() {
+void BITCHAINGUI::connectActions() {
     QShortcut *consoleShort = new QShortcut(this);
     consoleShort->setKey(QKeySequence(SHORT_KEY + Qt::Key_C));
     connect(consoleShort, &QShortcut::activated, [this](){
@@ -195,26 +195,26 @@ void PIVXGUI::connectActions() {
         settingsWidget->showDebugConsole();
         goToSettings();
     });
-    connect(topBar, &TopBar::showHide, this, &PIVXGUI::showHide);
-    connect(topBar, &TopBar::themeChanged, this, &PIVXGUI::changeTheme);
+    connect(topBar, &TopBar::showHide, this, &BITCHAINGUI::showHide);
+    connect(topBar, &TopBar::themeChanged, this, &BITCHAINGUI::changeTheme);
     connect(topBar, &TopBar::onShowHideColdStakingChanged, navMenu, &NavMenuWidget::onShowHideColdStakingChanged);
-    connect(settingsWidget, &SettingsWidget::showHide, this, &PIVXGUI::showHide);
-    connect(sendWidget, &SendWidget::showHide, this, &PIVXGUI::showHide);
-    connect(receiveWidget, &ReceiveWidget::showHide, this, &PIVXGUI::showHide);
-    connect(addressesWidget, &AddressesWidget::showHide, this, &PIVXGUI::showHide);
-    connect(privacyWidget, &PrivacyWidget::showHide, this, &PIVXGUI::showHide);
-    connect(masterNodesWidget, &MasterNodesWidget::showHide, this, &PIVXGUI::showHide);
-    connect(masterNodesWidget, &MasterNodesWidget::execDialog, this, &PIVXGUI::execDialog);
-    connect(coldStakingWidget, &ColdStakingWidget::showHide, this, &PIVXGUI::showHide);
-    connect(coldStakingWidget, &ColdStakingWidget::execDialog, this, &PIVXGUI::execDialog);
-    connect(settingsWidget, &SettingsWidget::execDialog, this, &PIVXGUI::execDialog);
+    connect(settingsWidget, &SettingsWidget::showHide, this, &BITCHAINGUI::showHide);
+    connect(sendWidget, &SendWidget::showHide, this, &BITCHAINGUI::showHide);
+    connect(receiveWidget, &ReceiveWidget::showHide, this, &BITCHAINGUI::showHide);
+    connect(addressesWidget, &AddressesWidget::showHide, this, &BITCHAINGUI::showHide);
+    connect(privacyWidget, &PrivacyWidget::showHide, this, &BITCHAINGUI::showHide);
+    connect(masterNodesWidget, &MasterNodesWidget::showHide, this, &BITCHAINGUI::showHide);
+    connect(masterNodesWidget, &MasterNodesWidget::execDialog, this, &BITCHAINGUI::execDialog);
+    connect(coldStakingWidget, &ColdStakingWidget::showHide, this, &BITCHAINGUI::showHide);
+    connect(coldStakingWidget, &ColdStakingWidget::execDialog, this, &BITCHAINGUI::execDialog);
+    connect(settingsWidget, &SettingsWidget::execDialog, this, &BITCHAINGUI::execDialog);
 }
 
 
-void PIVXGUI::createTrayIcon(const NetworkStyle* networkStyle) {
+void BITCHAINGUI::createTrayIcon(const NetworkStyle* networkStyle) {
 #ifndef Q_OS_MAC
     trayIcon = new QSystemTrayIcon(this);
-    QString toolTip = tr("PIVX Core client") + " " + networkStyle->getTitleAddText();
+    QString toolTip = tr("BITCHAIN Core client") + " " + networkStyle->getTitleAddText();
     trayIcon->setToolTip(toolTip);
     trayIcon->setIcon(networkStyle->getAppIcon());
     trayIcon->hide();
@@ -223,7 +223,7 @@ void PIVXGUI::createTrayIcon(const NetworkStyle* networkStyle) {
 }
 
 //
-PIVXGUI::~PIVXGUI() {
+BITCHAINGUI::~BITCHAINGUI() {
     // Unsubscribe from notifications from core
     unsubscribeFromCoreSignals();
 
@@ -237,13 +237,13 @@ PIVXGUI::~PIVXGUI() {
 
 
 /** Get restart command-line parameters and request restart */
-void PIVXGUI::handleRestart(QStringList args){
+void BITCHAINGUI::handleRestart(QStringList args){
     if (!ShutdownRequested())
         Q_EMIT requestedRestart(args);
 }
 
 
-void PIVXGUI::setClientModel(ClientModel* clientModel) {
+void BITCHAINGUI::setClientModel(ClientModel* clientModel) {
     this->clientModel = clientModel;
     if(this->clientModel) {
 
@@ -281,7 +281,7 @@ void PIVXGUI::setClientModel(ClientModel* clientModel) {
     }
 }
 
-void PIVXGUI::createTrayIconMenu() {
+void BITCHAINGUI::createTrayIconMenu() {
 #ifndef Q_OS_MAC
     // return if trayIcon is unset (only on non-Mac OSes)
     if (!trayIcon)
@@ -310,7 +310,7 @@ void PIVXGUI::createTrayIconMenu() {
 }
 
 #ifndef Q_OS_MAC
-void PIVXGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
+void BITCHAINGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
 {
     if (reason == QSystemTrayIcon::Trigger) {
         // Click on system tray icon triggers show/hide of the main window
@@ -319,7 +319,7 @@ void PIVXGUI::trayIconActivated(QSystemTrayIcon::ActivationReason reason)
 }
 #endif
 
-void PIVXGUI::changeEvent(QEvent* e)
+void BITCHAINGUI::changeEvent(QEvent* e)
 {
     QMainWindow::changeEvent(e);
 #ifndef Q_OS_MAC // Ignored on Mac
@@ -335,7 +335,7 @@ void PIVXGUI::changeEvent(QEvent* e)
 #endif
 }
 
-void PIVXGUI::closeEvent(QCloseEvent* event)
+void BITCHAINGUI::closeEvent(QCloseEvent* event)
 {
 #ifndef Q_OS_MAC // Ignored on Mac
     if (clientModel && clientModel->getOptionsModel()) {
@@ -348,7 +348,7 @@ void PIVXGUI::closeEvent(QCloseEvent* event)
 }
 
 
-void PIVXGUI::messageInfo(const QString& text){
+void BITCHAINGUI::messageInfo(const QString& text){
     if(!this->snackBar) this->snackBar = new SnackBar(this, this);
     this->snackBar->setText(text);
     this->snackBar->resize(this->width(), snackBar->height());
@@ -356,8 +356,8 @@ void PIVXGUI::messageInfo(const QString& text){
 }
 
 
-void PIVXGUI::message(const QString& title, const QString& message, unsigned int style, bool* ret) {
-    QString strTitle =  tr("PIVX Core"); // default title
+void BITCHAINGUI::message(const QString& title, const QString& message, unsigned int style, bool* ret) {
+    QString strTitle =  tr("BITCHAIN Core"); // default title
     // Default to information icon
     int nNotifyIcon = Notificator::Information;
 
@@ -407,14 +407,14 @@ void PIVXGUI::message(const QString& title, const QString& message, unsigned int
     } else if(style & CClientUIInterface::MSG_INFORMATION_SNACK){
         messageInfo(message);
     }else {
-        // Append title to "PIVX - "
+        // Append title to "BITCHAIN - "
         if (!msgType.isEmpty())
             strTitle += " - " + msgType;
         notificator->notify((Notificator::Class) nNotifyIcon, strTitle, message);
     }
 }
 
-bool PIVXGUI::openStandardDialog(QString title, QString body, QString okBtn, QString cancelBtn){
+bool BITCHAINGUI::openStandardDialog(QString title, QString body, QString okBtn, QString cancelBtn){
     DefaultDialog *dialog;
     if (isVisible()) {
         showHide(true);
@@ -425,7 +425,7 @@ bool PIVXGUI::openStandardDialog(QString title, QString body, QString okBtn, QSt
     } else {
         dialog = new DefaultDialog();
         dialog->setText(title, body, okBtn);
-        dialog->setWindowTitle(tr("PIVX Core"));
+        dialog->setWindowTitle(tr("BITCHAIN Core"));
         dialog->adjustSize();
         dialog->raise();
         dialog->exec();
@@ -436,7 +436,7 @@ bool PIVXGUI::openStandardDialog(QString title, QString body, QString okBtn, QSt
 }
 
 
-void PIVXGUI::showNormalIfMinimized(bool fToggleHidden) {
+void BITCHAINGUI::showNormalIfMinimized(bool fToggleHidden) {
     if (!clientModel)
         return;
     // activateWindow() (sometimes) helps with keyboard focus on Windows
@@ -453,11 +453,11 @@ void PIVXGUI::showNormalIfMinimized(bool fToggleHidden) {
         hide();
 }
 
-void PIVXGUI::toggleHidden() {
+void BITCHAINGUI::toggleHidden() {
     showNormalIfMinimized(true);
 }
 
-void PIVXGUI::detectShutdown() {
+void BITCHAINGUI::detectShutdown() {
     if (ShutdownRequested()) {
         if (rpcConsole)
             rpcConsole->hide();
@@ -465,49 +465,49 @@ void PIVXGUI::detectShutdown() {
     }
 }
 
-void PIVXGUI::goToDashboard(){
+void BITCHAINGUI::goToDashboard(){
     if(stackedContainer->currentWidget() != dashboard){
         stackedContainer->setCurrentWidget(dashboard);
         topBar->showBottom();
     }
 }
 
-void PIVXGUI::goToSend(){
+void BITCHAINGUI::goToSend(){
     showTop(sendWidget);
 }
 
-void PIVXGUI::goToAddresses(){
+void BITCHAINGUI::goToAddresses(){
     showTop(addressesWidget);
 }
 
-void PIVXGUI::goToPrivacy(){
+void BITCHAINGUI::goToPrivacy(){
     showTop(privacyWidget);
 }
 
-void PIVXGUI::goToMasterNodes(){
+void BITCHAINGUI::goToMasterNodes(){
     showTop(masterNodesWidget);
 }
 
-void PIVXGUI::goToColdStaking(){
+void BITCHAINGUI::goToColdStaking(){
     showTop(coldStakingWidget);
 }
 
-void PIVXGUI::goToSettings(){
+void BITCHAINGUI::goToSettings(){
     showTop(settingsWidget);
 }
 
-void PIVXGUI::goToReceive(){
+void BITCHAINGUI::goToReceive(){
     showTop(receiveWidget);
 }
 
-void PIVXGUI::showTop(QWidget* view){
+void BITCHAINGUI::showTop(QWidget* view){
     if(stackedContainer->currentWidget() != view){
         stackedContainer->setCurrentWidget(view);
         topBar->showTop();
     }
 }
 
-void PIVXGUI::changeTheme(bool isLightTheme){
+void BITCHAINGUI::changeTheme(bool isLightTheme){
 
     QString css = GUIUtil::loadStyleSheet();
     this->setStyleSheet(css);
@@ -519,7 +519,7 @@ void PIVXGUI::changeTheme(bool isLightTheme){
     updateStyle(this);
 }
 
-void PIVXGUI::resizeEvent(QResizeEvent* event){
+void BITCHAINGUI::resizeEvent(QResizeEvent* event){
     // Parent..
     QMainWindow::resizeEvent(event);
     // background
@@ -528,11 +528,11 @@ void PIVXGUI::resizeEvent(QResizeEvent* event){
     Q_EMIT windowResizeEvent(event);
 }
 
-bool PIVXGUI::execDialog(QDialog *dialog, int xDiv, int yDiv){
+bool BITCHAINGUI::execDialog(QDialog *dialog, int xDiv, int yDiv){
     return openDialogWithOpaqueBackgroundY(dialog, this);
 }
 
-void PIVXGUI::showHide(bool show){
+void BITCHAINGUI::showHide(bool show){
     if(!op) op = new QLabel(this);
     if(!show){
         op->setVisible(false);
@@ -559,11 +559,11 @@ void PIVXGUI::showHide(bool show){
     }
 }
 
-int PIVXGUI::getNavWidth(){
+int BITCHAINGUI::getNavWidth(){
     return this->navMenu->width();
 }
 
-void PIVXGUI::openFAQ(int section){
+void BITCHAINGUI::openFAQ(int section){
     showHide(true);
     SettingsFaqWidget* dialog = new SettingsFaqWidget(this);
     if (section > 0) dialog->setSection(section);
@@ -573,7 +573,7 @@ void PIVXGUI::openFAQ(int section){
 
 
 #ifdef ENABLE_WALLET
-bool PIVXGUI::addWallet(const QString& name, WalletModel* walletModel)
+bool BITCHAINGUI::addWallet(const QString& name, WalletModel* walletModel)
 {
     // Single wallet supported for now..
     if(!stackedContainer || !clientModel || !walletModel)
@@ -592,14 +592,14 @@ bool PIVXGUI::addWallet(const QString& name, WalletModel* walletModel)
     settingsWidget->setWalletModel(walletModel);
 
     // Connect actions..
-    connect(privacyWidget, &PrivacyWidget::message, this, &PIVXGUI::message);
-    connect(masterNodesWidget, &MasterNodesWidget::message, this, &PIVXGUI::message);
-    connect(coldStakingWidget, &MasterNodesWidget::message, this, &PIVXGUI::message);
-    connect(topBar, &TopBar::message, this, &PIVXGUI::message);
-    connect(sendWidget, &SendWidget::message,this, &PIVXGUI::message);
-    connect(receiveWidget, &ReceiveWidget::message,this, &PIVXGUI::message);
-    connect(addressesWidget, &AddressesWidget::message,this, &PIVXGUI::message);
-    connect(settingsWidget, &SettingsWidget::message, this, &PIVXGUI::message);
+    connect(privacyWidget, &PrivacyWidget::message, this, &BITCHAINGUI::message);
+    connect(masterNodesWidget, &MasterNodesWidget::message, this, &BITCHAINGUI::message);
+    connect(coldStakingWidget, &MasterNodesWidget::message, this, &BITCHAINGUI::message);
+    connect(topBar, &TopBar::message, this, &BITCHAINGUI::message);
+    connect(sendWidget, &SendWidget::message,this, &BITCHAINGUI::message);
+    connect(receiveWidget, &ReceiveWidget::message,this, &BITCHAINGUI::message);
+    connect(addressesWidget, &AddressesWidget::message,this, &BITCHAINGUI::message);
+    connect(settingsWidget, &SettingsWidget::message, this, &BITCHAINGUI::message);
 
     // Pass through transaction notifications
     connect(dashboard, SIGNAL(incomingTransaction(QString, int, CAmount, QString, QString)), this, SLOT(incomingTransaction(QString, int, CAmount, QString, QString)));
@@ -607,16 +607,16 @@ bool PIVXGUI::addWallet(const QString& name, WalletModel* walletModel)
     return true;
 }
 
-bool PIVXGUI::setCurrentWallet(const QString& name) {
+bool BITCHAINGUI::setCurrentWallet(const QString& name) {
     // Single wallet supported.
     return true;
 }
 
-void PIVXGUI::removeAllWallets() {
+void BITCHAINGUI::removeAllWallets() {
     // Single wallet supported.
 }
 
-void PIVXGUI::incomingTransaction(const QString& date, int unit, const CAmount& amount, const QString& type, const QString& address) {
+void BITCHAINGUI::incomingTransaction(const QString& date, int unit, const CAmount& amount, const QString& type, const QString& address) {
     // Only send notifications when not disabled
     if(!bdisableSystemnotifications){
         // On new transaction, make an info balloon
@@ -638,7 +638,7 @@ void PIVXGUI::incomingTransaction(const QString& date, int unit, const CAmount& 
 #endif // ENABLE_WALLET
 
 
-static bool ThreadSafeMessageBox(PIVXGUI* gui, const std::string& message, const std::string& caption, unsigned int style)
+static bool ThreadSafeMessageBox(BITCHAINGUI* gui, const std::string& message, const std::string& caption, unsigned int style)
 {
     bool modal = (style & CClientUIInterface::MODAL);
     // The SECURE flag has no effect in the Qt GUI.
@@ -657,13 +657,13 @@ static bool ThreadSafeMessageBox(PIVXGUI* gui, const std::string& message, const
 }
 
 
-void PIVXGUI::subscribeToCoreSignals()
+void BITCHAINGUI::subscribeToCoreSignals()
 {
     // Connect signals to client
     uiInterface.ThreadSafeMessageBox.connect(boost::bind(ThreadSafeMessageBox, this, _1, _2, _3));
 }
 
-void PIVXGUI::unsubscribeFromCoreSignals()
+void BITCHAINGUI::unsubscribeFromCoreSignals()
 {
     // Disconnect signals from client
     uiInterface.ThreadSafeMessageBox.disconnect(boost::bind(ThreadSafeMessageBox, this, _1, _2, _3));

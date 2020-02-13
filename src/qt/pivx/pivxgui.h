@@ -1,12 +1,12 @@
-// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2019 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_CORE_NEW_GUI_PIVXGUI_H
-#define PIVX_CORE_NEW_GUI_PIVXGUI_H
+#ifndef BITCHAIN_CORE_NEW_GUI_BITCHAINGUI_H
+#define BITCHAIN_CORE_NEW_GUI_BITCHAINGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/pivx-config.h"
+#include "config/bitchain-config.h"
 #endif
 
 #include <QMainWindow>
@@ -14,17 +14,17 @@
 #include <QSystemTrayIcon>
 #include <QLabel>
 
-#include "qt/pivx/navmenuwidget.h"
-#include "qt/pivx/topbar.h"
-#include "qt/pivx/dashboardwidget.h"
-#include "qt/pivx/send.h"
-#include "qt/pivx/receivewidget.h"
-#include "qt/pivx/addresseswidget.h"
-#include "qt/pivx/privacywidget.h"
-#include "qt/pivx/coldstakingwidget.h"
-#include "qt/pivx/masternodeswidget.h"
-#include "qt/pivx/snackbar.h"
-#include "qt/pivx/settings/settingswidget.h"
+#include "qt/bitchain/navmenuwidget.h"
+#include "qt/bitchain/topbar.h"
+#include "qt/bitchain/dashboardwidget.h"
+#include "qt/bitchain/send.h"
+#include "qt/bitchain/receivewidget.h"
+#include "qt/bitchain/addresseswidget.h"
+#include "qt/bitchain/privacywidget.h"
+#include "qt/bitchain/coldstakingwidget.h"
+#include "qt/bitchain/masternodeswidget.h"
+#include "qt/bitchain/snackbar.h"
+#include "qt/bitchain/settings/settingswidget.h"
 #include "qt/rpcconsole.h"
 
 
@@ -35,18 +35,18 @@ class WalletModel;
 
 
 /**
-  PIVX GUI main class. This class represents the main window of the PIVX UI. It communicates with both the client and
+  BITCHAIN GUI main class. This class represents the main window of the BITCHAIN UI. It communicates with both the client and
   wallet models to give the user an up-to-date view of the current core state.
 */
-class PIVXGUI : public QMainWindow
+class BITCHAINGUI : public QMainWindow
 {
     Q_OBJECT
 
 public:
     static const QString DEFAULT_WALLET;
 
-    explicit PIVXGUI(const NetworkStyle* networkStyle, QWidget* parent = 0);
-    ~PIVXGUI();
+    explicit BITCHAINGUI(const NetworkStyle* networkStyle, QWidget* parent = 0);
+    ~BITCHAINGUI();
 
     /** Set the client model.
         The client model represents the part of the core that communicates with the P2P network, and is wallet-agnostic.
@@ -186,4 +186,4 @@ Q_SIGNALS:
 };
 
 
-#endif //PIVX_CORE_NEW_GUI_PIVXGUI_H
+#endif //BITCHAIN_CORE_NEW_GUI_BITCHAINGUI_H

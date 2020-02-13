@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,14 +6,14 @@
 #define MASTERNODESWIDGET_H
 
 #include <QWidget>
-#include "qt/pivx/pwidget.h"
-#include "qt/pivx/furabstractlistitemdelegate.h"
-#include "qt/pivx/mnmodel.h"
-#include "qt/pivx/tooltipmenu.h"
+#include "qt/bitchain/pwidget.h"
+#include "qt/bitchain/furabstractlistitemdelegate.h"
+#include "qt/bitchain/mnmodel.h"
+#include "qt/bitchain/tooltipmenu.h"
 #include <QTimer>
 #include <atomic>
 
-class PIVXGUI;
+class BITCHAINGUI;
 
 namespace Ui {
 class MasterNodesWidget;
@@ -29,7 +29,7 @@ class MasterNodesWidget : public PWidget
 
 public:
 
-    explicit MasterNodesWidget(PIVXGUI *parent = nullptr);
+    explicit MasterNodesWidget(BITCHAINGUI *parent = nullptr);
     ~MasterNodesWidget();
 
     void loadWalletModel() override;

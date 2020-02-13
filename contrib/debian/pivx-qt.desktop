@@ -1,13 +1,13 @@
 [Desktop Entry]
 Version=1.0
-Name=PIVX Core
-Comment=PIVX P2P Cryptocurrency
-Comment[fr]=PIVX, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=PIVX, eşten eşe kriptografik sanal para birimi
-Exec=pivx-qt %u
+Name=BITCHAIN Core
+Comment=BITCHAIN P2P Cryptocurrency
+Comment[fr]=BITCHAIN, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BITCHAIN, eşten eşe kriptografik sanal para birimi
+Exec=bitchain-qt %u
 Terminal=false
 Type=Application
-Icon=pivx128
-MimeType=x-scheme-handler/pivx;
+Icon=bitchain128
+MimeType=x-scheme-handler/bitchain;
 Categories=Office;Finance;
-StartupWMClass=Pivx-qt
+StartupWMClass=Bitchain-qt

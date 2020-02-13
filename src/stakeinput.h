@@ -1,9 +1,9 @@
-// Copyright (c) 2017-2019 The PIVX developers
+// Copyright (c) 2017-2019 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef PIVX_STAKEINPUT_H
-#define PIVX_STAKEINPUT_H
+#ifndef BITCHAIN_STAKEINPUT_H
+#define BITCHAIN_STAKEINPUT_H
 
 #include "chain.h"
 #include "streams.h"
@@ -51,4 +51,4 @@ public:
 };
 
 
-#endif //PIVX_STAKEINPUT_H
+#endif //BITCHAIN_STAKEINPUT_H

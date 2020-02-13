@@ -1,16 +1,16 @@
-// Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2019-2020 The BITCHAIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/pivx/send.h"
-#include "qt/pivx/forms/ui_send.h"
-#include "qt/pivx/addnewcontactdialog.h"
-#include "qt/pivx/qtutils.h"
-#include "qt/pivx/sendchangeaddressdialog.h"
-#include "qt/pivx/optionbutton.h"
-#include "qt/pivx/sendconfirmdialog.h"
-#include "qt/pivx/myaddressrow.h"
-#include "qt/pivx/guitransactionsutils.h"
+#include "qt/bitchain/send.h"
+#include "qt/bitchain/forms/ui_send.h"
+#include "qt/bitchain/addnewcontactdialog.h"
+#include "qt/bitchain/qtutils.h"
+#include "qt/bitchain/sendchangeaddressdialog.h"
+#include "qt/bitchain/optionbutton.h"
+#include "qt/bitchain/sendconfirmdialog.h"
+#include "qt/bitchain/myaddressrow.h"
+#include "qt/bitchain/guitransactionsutils.h"
 #include "clientmodel.h"
 #include "optionsmodel.h"
 #include "addresstablemodel.h"
@@ -20,7 +20,7 @@
 #include "openuridialog.h"
 #include "zpivcontroldialog.h"
 
-SendWidget::SendWidget(PIVXGUI* parent) :
+SendWidget::SendWidget(BITCHAINGUI* parent) :
     PWidget(parent),
     ui(new Ui::send),
     coinIcon(new QPushButton()),
@@ -60,7 +60,7 @@ SendWidget::SendWidget(PIVXGUI* parent) :
     setCssProperty(ui->labelSubtitle2, "text-subtitle");
 
     /* Address */
-    ui->labelSubtitleAddress->setText(tr("PIVX address or contact label"));
+    ui->labelSubtitleAddress->setText(tr("BITCHAIN address or contact label"));
     setCssProperty(ui->labelSubtitleAddress, "text-title");
 
 
