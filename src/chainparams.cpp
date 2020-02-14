@@ -144,7 +144,7 @@ public:
         pchMessageStart[1] = 0xa2;
         pchMessageStart[2] = 0x23;
         pchMessageStart[3] = 0xb4;
-        vAlertPubKey = ParseHex("0000098d3ba6ba6e7423fa5cbd6a89e0a9a5348f88d332b44a5cb1a8b7ed2c1eaa335fc8dc4f012cb8241cc0bdafd6ca70c5f5448916e4e6f511bcd746ed57dc50");
+        vAlertPubKey = ParseHex("");
         nDefaultPort = 51224;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // BITCHAIN starting difficulty is 1 / 2^12
         bnProofOfStakeLimit = ~uint256(0) >> 24;
@@ -229,14 +229,14 @@ public:
         genesis.nNonce = 2402015;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
-        assert(genesis.hashMerkleRoot == uint256("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
+        assert(hashGenesisBlock == uint256("0x0"));
+        assert(genesis.hashMerkleRoot == uint256("0x0"));
 
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "bitchain.seed.fuzzbawls.pw"));     // Primary DNS Seeder from Fuzzbawls
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "bitchain.seed2.fuzzbawls.pw"));    // Secondary DNS Seeder from Fuzzbawls
-        vSeeds.push_back(CDNSSeedData("warrows.dev", "dnsseed.bitchain.warrows.dev"));    // Primery DNS Seeder from warrows
+        vSeeds.push_back(CDNSSeedData("bitchainproject.com", "seed1.bitchainproject.com"));     // Primary DNS Seeder from Fuzzbawls
+        vSeeds.push_back(CDNSSeedData("bitchainproject.com", "seed1.bitchainproject.com"));    // Secondary DNS Seeder from Fuzzbawls
+        vSeeds.push_back(CDNSSeedData("bitchainproject.com", "seed1.bitchainproject.com"));    // Primery DNS Seeder from warrows
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 85);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
         base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 63);     // starting with 'S'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);
@@ -258,7 +258,7 @@ public:
 
         nPoolMaxTransactions = 3;
         nBudgetCycleBlocks = 43200; //!< Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
-        strSporkPubKey = "040F129DE6546FE405995329A887329BED4321325B1A73B0A257423C05C1FCFE9E40EF0678AEF59036A22C42E61DFD29DF7EFB09F56CC73CADF64E05741880E3E7";
+        strSporkPubKey = "";
         strSporkPubKeyOld = "0499A7AF4806FC6DE640D23BC5936C29B77ADF2174B4F45492727F897AE63CF8D27B2F05040606E0D14B547916379FA10716E344E745F880EDC037307186AA25B7";
         strObfuscationPoolDummyAddress = "D87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
@@ -301,11 +301,11 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0x45;
-        pchMessageStart[1] = 0x76;
-        pchMessageStart[2] = 0x65;
-        pchMessageStart[3] = 0xba;
-        vAlertPubKey = ParseHex("000010e83b2703ccf322f7dbd62dd5855ac7c10bd055814ce121ba32607d573b8810c02c0582aed05b4deb9c4b77b26d92428c61256cd42774babea0a073b2ed0c9");
+        pchMessageStart[0] = 0x2e;
+        pchMessageStart[1] = 0xa1;
+        pchMessageStart[2] = 0x31;
+        pchMessageStart[3] = 0xcb;
+        vAlertPubKey = ParseHex("");
         nDefaultPort = 51221;
         nEnforceBlockUpgradeMajority = 4320; // 75%
         nRejectBlockOutdatedMajority = 5472; // 95%
@@ -357,9 +357,9 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "bitchain-testnet.seed.fuzzbawls.pw"));
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "bitchain-testnet.seed2.fuzzbawls.pw"));
-        vSeeds.push_back(CDNSSeedData("warrows.dev", "testnet.dnsseed.bitchain.warrows.dev"));
+        vSeeds.push_back(CDNSSeedData("bitchainproject.com", "testnet1.bitchainproject.com"));
+        vSeeds.push_back(CDNSSeedData("bitchainproject.com", "testnet2.bitchainproject.com"));
+        vSeeds.push_back(CDNSSeedData("bitchainproject.com", "testnet3.bitchainproject.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet bitchain addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet bitchain script addresses start with '8' or '9'
@@ -383,7 +383,7 @@ public:
 
         nPoolMaxTransactions = 2;
         nBudgetCycleBlocks = 144; //!< Ten cycles per day on testnet
-        strSporkPubKey = "04E88BB455E2A04E65FCC41D88CD367E9CCE1F5A409BE94D8C2B4B35D223DED9C8E2F4E061349BA3A38839282508066B6DC4DB72DD432AC4067991E6BF20176127";
+        strSporkPubKey = "";
         strSporkPubKeyOld = "04A8B319388C0F8588D238B9941DC26B26D3F9465266B368A051C5C100F79306A557780101FE2192FE170D7E6DEFDCBEE4C8D533396389C0DAFFDBC842B002243C";
         strObfuscationPoolDummyAddress = "y57cqfGRkekRyDRNeJiLtYVEbvhXrNbmox";
         nStartMasternodePayments = 1420837558; //Fri, 09 Jan 2015 21:05:58 GMT
@@ -409,11 +409,11 @@ public:
     {
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
-        pchMessageStart[0] = 0xa1;
-        pchMessageStart[1] = 0xcf;
-        pchMessageStart[2] = 0x7e;
-        pchMessageStart[3] = 0xac;
-        nDefaultPort = 51476;
+        pchMessageStart[0] = 0xca;
+        pchMessageStart[1] = 0x21;
+        pchMessageStart[2] = 0x2b;
+        pchMessageStart[3] = 0xa4;
+        nDefaultPort = 51226;
         nSubsidyHalvingInterval = 150;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
@@ -421,7 +421,7 @@ public:
         nMinerThreads = 1;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nLastPOWBlock = 250;
-        nMaturity = 100;
+        nMaturity = 15;
         nStakeMinAge = 0;
         nStakeMinDepth = 0;
         nMasternodeCountDrift = 4;
@@ -454,10 +454,10 @@ public:
 
         //! Modify the regtest genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1454124731;
-        genesis.nNonce = 2402015;
+        genesis.nNonce = 0;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
+        assert(hashGenesisBlock == uint256("0x0"));
         //assert(hashGenesisBlock == uint256("0x4f023a2120d9127b21bbad01724fdb79b519f593f2a85b60d3d79160ec5f29df"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.

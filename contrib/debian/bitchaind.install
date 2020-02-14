@@ -1,3 +1,3 @@
-usr/local/bin/pivxd usr/bin
-usr/local/bin/pivx-cli usr/bin
-debian/examples/pivx.conf etc/pivx
+usr/local/bin/bitchaind usr/bin
+usr/local/bin/bitchain-cli usr/bin
+debian/examples/bitchain.conf etc/bitchain

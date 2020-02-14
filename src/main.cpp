@@ -947,13 +947,8 @@ bool ContextualCheckZerocoinSpend(const CTransaction& tx, const libzerocoin::Coi
 
 bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const libzerocoin::CoinSpend* spend, int nHeight, const uint256& hashBlock)
 {
-<<<<<<< HEAD
     //Check to see if the zXBIT is properly signed
-    if (pindex->nHeight >= Params().Zerocoin_Block_V2_Start()) {
-=======
-    //Check to see if the zPIV is properly signed
     if (nHeight >= Params().Zerocoin_Block_V2_Start()) {
->>>>>>> 5bd387e18d4a354a6821b80f48b0b9fdf0a18bc8
         try {
             if (!spend->HasValidSignature())
                 return error("%s: V2 zXBIT spend does not have a valid signature\n", __func__);
@@ -979,13 +974,8 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const lib
     //Reject serial's that are not in the acceptable value range
     if (!spend->HasValidSerial(Params().Zerocoin_Params(fUseV1Params)))  {
         // Up until this block our chain was not checking serials correctly..
-<<<<<<< HEAD
-        if (!isBlockBetweenFakeSerialAttackRange(pindex->nHeight))
-            return error("%s : zXBIT spend with serial %s from tx %s is not in valid range\n", __func__,
-=======
         if (!isBlockBetweenFakeSerialAttackRange(nHeight))
-            return error("%s : zPIV spend with serial %s from tx %s is not in valid range\n", __func__,
->>>>>>> 5bd387e18d4a354a6821b80f48b0b9fdf0a18bc8
+            return error("%s : zXBIT spend with serial %s from tx %s is not in valid range\n", __func__,
                      spend->getCoinSerialNumber().GetHex(), tx.GetHash().GetHex());
         else
             LogPrintf("%s:: HasValidSerial :: Invalid serial detected within range in block %d\n", __func__, nHeight);
@@ -1225,63 +1215,24 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
 
             //Check for double spending of serial #'s
             for (const CTxIn& txIn : tx.vin) {
-<<<<<<< HEAD
-                // Only allow for zc spends inputs
-                bool isPublicSpend = txIn.IsZerocoinPublicSpend();
-                bool isPrivZerocoinSpend = txIn.IsZerocoinSpend();
-                if (!isPrivZerocoinSpend && !isPublicSpend) {
-                    return state.Invalid(error("%s: failed for tx %s, every input must be a zcspend or zcpublicspend",
-                            __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zxbit");
-                }
-
-                // Check enforcement
-                if (!CheckPublicCoinSpendEnforced(chainActive.Height(), isPublicSpend)){
-                    return state.Invalid(error("%s: CheckPublicCoinSpendEnforced failed for tx %s",
-                            __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zxbit");
-=======
                 // Only allow for public zc spends inputs
                 if (!txIn.IsZerocoinPublicSpend())
                     return state.Invalid(error("%s: failed for tx %s, every input must be a zcpublicspend",
-                            __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zpiv");
+                            __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zxbit");
 
                 libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
                 PublicCoinSpend publicSpend(params);
-                if (!ZPIVModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
+                if (!ZXBITModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
                     return false;
->>>>>>> 5bd387e18d4a354a6821b80f48b0b9fdf0a18bc8
                 }
                 if (!ContextualCheckZerocoinSpend(tx, &publicSpend, chainHeight, 0))
                     return state.Invalid(error("%s: ContextualCheckZerocoinSpend failed for tx %s",
-                            __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zpiv");
+                            __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zxbit");
 
-<<<<<<< HEAD
-                if (isPublicSpend) {
-                    libzerocoin::ZerocoinParams* params = Params().Zerocoin_Params(false);
-                    PublicCoinSpend publicSpend(params);
-                    if (!ZXBITModule::ParseZerocoinPublicSpend(txIn, tx, state, publicSpend)){
-                        return false;
-                    }
-                    if (!ContextualCheckZerocoinSpend(tx, &publicSpend, chainActive.Tip(), 0))
-                        return state.Invalid(error("%s: ContextualCheckZerocoinSpend failed for tx %s",
-                                __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zxbit");
-
-                    // Check that the version matches the one enforced with SPORK_18
-                    if (!CheckPublicCoinSpendVersion(publicSpend.getVersion())) {
-                        return state.Invalid(error("%s : Public Zerocoin spend version %d not accepted. must be version %d.",
-                                __func__, publicSpend.getVersion(), CurrentPublicCoinSpendVersion()), REJECT_INVALID, "bad-txns-invalid-zxbit");
-                    }
-
-                } else {
-                    libzerocoin::CoinSpend spend = TxInToZerocoinSpend(txIn);
-                    if (!ContextualCheckZerocoinSpend(tx, &spend, chainActive.Tip(), 0))
-                        return state.Invalid(error("%s: ContextualCheckZerocoinSpend failed for tx %s",
-                                __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zxbit");
-=======
                 // Check that the version matches the one enforced with SPORK_18
                 if (!CheckPublicCoinSpendVersion(publicSpend.getVersion())) {
                     return state.Invalid(error("%s : Public Zerocoin spend version %d not accepted. must be version %d.",
-                            __func__, publicSpend.getVersion(), CurrentPublicCoinSpendVersion()), REJECT_INVALID, "bad-txns-invalid-zpiv");
->>>>>>> 5bd387e18d4a354a6821b80f48b0b9fdf0a18bc8
+                            __func__, publicSpend.getVersion(), CurrentPublicCoinSpendVersion()), REJECT_INVALID, "bad-txns-invalid-zxbit");
                 }
 
             }
@@ -1311,26 +1262,10 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 }
             }
 
-<<<<<<< HEAD
-            // Check that zXBIT mints (if included) are not already known
-            for (auto& out : tx.vout) {
-                if (!out.IsZerocoinMint())
-                    continue;
-
-                libzerocoin::PublicCoin coin(Params().Zerocoin_Params(false));
-                if (!TxOutToPublicCoin(out, coin, state))
-                    return state.Invalid(error("%s: failed final check of zerocoinmint for tx %s",
-                            __func__, tx.GetHash().GetHex()));
-
-                if (!ContextualCheckZerocoinMint(tx, coin, chainActive.Tip()))
-                    return state.Invalid(error("%s: zerocoin mint failed contextual check", __func__));
-            }
-=======
-            // Reject legacy zPIV mints
+            // Reject legacy zXBIT mints
             if (!Params().IsRegTestNet() && tx.HasZerocoinMintOutputs())
-                return state.Invalid(error("%s : tried to include zPIV mint output in tx %s",
+                return state.Invalid(error("%s : tried to include zXBIT mint output in tx %s",
                         __func__, tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-outputs");
->>>>>>> 5bd387e18d4a354a6821b80f48b0b9fdf0a18bc8
 
             // are the actual inputs available?
             if (!view.HaveInputs(tx))
@@ -2752,23 +2687,14 @@ void AddWrappedSerialsInflation()
 void RecalculateZXBITMinted()
 {
     CBlockIndex *pindex = chainActive[Params().Zerocoin_StartHeight()];
-<<<<<<< HEAD
-    uiInterface.ShowProgress(_("Recalculating minted ZXBIT..."), 0);
-=======
     const int chainHeight = chainActive.Height();
-    uiInterface.ShowProgress(_("Recalculating minted ZPIV..."), 0);
->>>>>>> 5bd387e18d4a354a6821b80f48b0b9fdf0a18bc8
+    uiInterface.ShowProgress(_("Recalculating minted ZXBIT..."), 0);
     while (true) {
         // Log Message and feedback message every 1000 blocks
         if (pindex->nHeight % 1000 == 0) {
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
-<<<<<<< HEAD
-            int percent = std::max(1, std::min(99, (int)((double)(pindex->nHeight - Params().Zerocoin_StartHeight()) * 100 / (chainActive.Height() - Params().Zerocoin_StartHeight()))));
-            uiInterface.ShowProgress(_("Recalculating minted ZXBIT..."), percent);
-=======
             int percent = std::max(1, std::min(99, (int)((double)(pindex->nHeight - Params().Zerocoin_StartHeight()) * 100 / (chainHeight - Params().Zerocoin_StartHeight()))));
-            uiInterface.ShowProgress(_("Recalculating minted ZPIV..."), percent);
->>>>>>> 5bd387e18d4a354a6821b80f48b0b9fdf0a18bc8
+            uiInterface.ShowProgress(_("Recalculating minted ZXBIT..."), percent);
         }
 
         //overwrite possibly wrong vMintsInBlock data
@@ -2794,22 +2720,13 @@ void RecalculateZXBITMinted()
 void RecalculateZXBITSpent()
 {
     CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
-<<<<<<< HEAD
+    const int chainHeight = chainActive.Height();
     uiInterface.ShowProgress(_("Recalculating spent ZXBIT..."), 0);
     while (true) {
         if (pindex->nHeight % 1000 == 0) {
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
-            int percent = std::max(1, std::min(99, (int)((double)(pindex->nHeight - Params().Zerocoin_StartHeight()) * 100 / (chainActive.Height() - Params().Zerocoin_StartHeight()))));
-            uiInterface.ShowProgress(_("Recalculating spent ZXBIT..."), percent);
-=======
-    const int chainHeight = chainActive.Height();
-    uiInterface.ShowProgress(_("Recalculating spent ZPIV..."), 0);
-    while (true) {
-        if (pindex->nHeight % 1000 == 0) {
-            LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
             int percent = std::max(1, std::min(99, (int)((double)(pindex->nHeight - Params().Zerocoin_StartHeight()) * 100 / (chainHeight - Params().Zerocoin_StartHeight()))));
-            uiInterface.ShowProgress(_("Recalculating spent ZPIV..."), percent);
->>>>>>> 5bd387e18d4a354a6821b80f48b0b9fdf0a18bc8
+            uiInterface.ShowProgress(_("Recalculating spent ZXBIT..."), percent);
         }
 
         //Rewrite zXBIT supply
@@ -2863,13 +2780,8 @@ bool RecalculateXBITSupply(int nHeightStart)
     while (true) {
         if (pindex->nHeight % 1000 == 0) {
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
-<<<<<<< HEAD
-            int percent = std::max(1, std::min(99, (int)((double)((pindex->nHeight - nHeightStart) * 100) / (chainActive.Height() - nHeightStart))));
-            uiInterface.ShowProgress(_("Recalculating XBIT supply..."), percent);
-=======
             int percent = std::max(1, std::min(99, (int)((double)((pindex->nHeight - nHeightStart) * 100) / (chainHeight - nHeightStart))));
-            uiInterface.ShowProgress(_("Recalculating PIV supply..."), percent);
->>>>>>> 5bd387e18d4a354a6821b80f48b0b9fdf0a18bc8
+            uiInterface.ShowProgress(_("Recalculating XBIT supply..."), percent);
         }
 
         CBlock block;
@@ -3145,25 +3057,6 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 }
             }
 
-<<<<<<< HEAD
-            // Check that zXBIT mints are not already known
-            if (tx.HasZerocoinMintOutputs()) {
-                for (auto& out : tx.vout) {
-                    if (!out.IsZerocoinMint())
-                        continue;
-
-                    libzerocoin::PublicCoin coin(Params().Zerocoin_Params(false));
-                    if (!TxOutToPublicCoin(out, coin, state))
-                        return state.DoS(100, error("%s: failed final check of zerocoinmint for tx %s", __func__, tx.GetHash().GetHex()));
-
-                    if (!ContextualCheckZerocoinMint(tx, coin, pindex))
-                        return state.DoS(100, error("%s: zerocoin mint failed contextual check", __func__));
-
-                    vMints.emplace_back(std::make_pair(coin, tx.GetHash()));
-                }
-            }
-=======
->>>>>>> 5bd387e18d4a354a6821b80f48b0b9fdf0a18bc8
         } else if (!tx.IsCoinBase()) {
             if (!view.HaveInputs(tx))
                 return state.DoS(100, error("ConnectBlock() : inputs missing/spent"),
@@ -3177,26 +3070,6 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 }
             }
 
-<<<<<<< HEAD
-            // Check that zXBIT mints are not already known
-            if (tx.HasZerocoinMintOutputs()) {
-                for (auto& out : tx.vout) {
-                    if (!out.IsZerocoinMint())
-                        continue;
-
-                    libzerocoin::PublicCoin coin(Params().Zerocoin_Params(false));
-                    if (!TxOutToPublicCoin(out, coin, state))
-                        return state.DoS(100, error("%s: failed final check of zerocoinmint for tx %s", __func__, tx.GetHash().GetHex()));
-
-                    if (!ContextualCheckZerocoinMint(tx, coin, pindex))
-                        return state.DoS(100, error("%s: zerocoin mint failed contextual check", __func__));
-
-                    vMints.emplace_back(std::make_pair(coin, tx.GetHash()));
-                }
-            }
-
-=======
->>>>>>> 5bd387e18d4a354a6821b80f48b0b9fdf0a18bc8
             // Add in sigops done by pay-to-script-hash inputs;
             // this is to prevent a "rogue miner" from creating
             // an incredibly-expensive-to-validate block.
@@ -4891,15 +4764,9 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             }
         } else {
             if(!isBlockFromFork)
-<<<<<<< HEAD
                 for (const CTxIn& zXBITInput : zXBITInputs) {
                         libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zXBITInput);
-                        if (!ContextualCheckZerocoinSpend(stakeTxIn, &spend, pindex, 0))
-=======
-                for (const CTxIn& zPivInput : zPIVInputs) {
-                        libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zPivInput);
                         if (!ContextualCheckZerocoinSpend(stakeTxIn, &spend, pindex->nHeight, 0))
->>>>>>> 5bd387e18d4a354a6821b80f48b0b9fdf0a18bc8
                             return state.DoS(100,error("%s: main chain ContextualCheckZerocoinSpend failed for tx %s", __func__,
                                     stakeTxIn.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zxbit");
                 }
@@ -7328,3 +7195,4 @@ public:
         mapOrphanTransactionsByPrev.clear();
     }
 } instance_of_cmaincleanup;
+

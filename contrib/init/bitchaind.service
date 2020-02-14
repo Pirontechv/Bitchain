@@ -5,19 +5,19 @@
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/pivx/pivx.conf
+# /etc/bitchain/bitchain.conf
 
 [Unit]
-Description=PIVX daemon
+Description=BITCHAIN daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/pivxd -daemon -conf=/etc/pivx/pivx.conf -pid=/run/pivxd/pivxd.pid
-# Creates /run/pivxd owned by pivx
-RuntimeDirectory=pivxd
-User=pivx
+ExecStart=/usr/bin/bitchaind -daemon -conf=/etc/bitchain/bitchain.conf -pid=/run/bitchaind/bitchaind.pid
+# Creates /run/bitchaind owned by bitchain
+RuntimeDirectory=bitchaind
+User=bitchain
 Type=forking
-PIDFile=/run/pivxd/pivxd.pid
+PIDFile=/run/bitchaind/bitchaind.pid
 Restart=on-failure
 
 # Hardening measures

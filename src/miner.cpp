@@ -209,34 +209,6 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                 nTotalIn = tx.GetZerocoinSpent();
 
             for (const CTxIn& txin : tx.vin) {
-<<<<<<< HEAD
-                //zerocoinspend has special vin
-                if (hasZerocoinSpends) {
-                    //Give a high priority to zerocoinspends to get into the next block
-                    //Priority = (age^6+100000)*amount - gives higher priority to zxbits that have been in mempool long
-                    //and higher priority to zxbits that are large in value
-                    int64_t nTimeSeen = GetAdjustedTime();
-                    double nConfs = 100000;
-
-                    auto it = mapZerocoinspends.find(txid);
-                    if (it != mapZerocoinspends.end()) {
-                        nTimeSeen = it->second;
-                    } else {
-                        //for some reason not in map, add it
-                        mapZerocoinspends[txid] = nTimeSeen;
-                    }
-
-                    double nTimePriority = std::pow(GetAdjustedTime() - nTimeSeen, 6);
-
-                    // zXBIT spends can have very large priority, use non-overflowing safe functions
-                    dPriority = double_safe_addition(dPriority, (nTimePriority * nConfs));
-                    dPriority = double_safe_multiplication(dPriority, nTotalIn);
-
-                    continue;
-                }
-
-=======
->>>>>>> 5bd387e18d4a354a6821b80f48b0b9fdf0a18bc8
                 // Read prev transaction
                 if (!view.HaveCoins(txin.prevout.hash)) {
                     // This should never happen; all transactions in the memory
@@ -806,3 +778,4 @@ void ThreadStakeMinter()
 }
 
 #endif // ENABLE_WALLET
+

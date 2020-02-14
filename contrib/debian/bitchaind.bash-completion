@@ -1,2 +1,2 @@
-contrib/pivxd.bash-completion	pivxd
-contrib/pivx-cli.bash-completion pivx-cli
+contrib/bitchaind.bash-completion	bitchaind
+contrib/bitchain-cli.bash-completion bitchain-cli

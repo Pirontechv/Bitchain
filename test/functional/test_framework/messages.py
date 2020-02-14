@@ -515,13 +515,8 @@ class CBlockHeader():
         self.calc_sha256()
         return self.sha256
 
-<<<<<<< HEAD
     # BITCHAIN
-    def solve_stake(self, stakeInputs):
-=======
-    # PIVX
     def solve_stake(self, stakeInputs, prevModifier):
->>>>>>> 5bd387e18d4a354a6821b80f48b0b9fdf0a18bc8
         target0 = uint256_from_compact(self.nBits)
         loop = True
         while loop:
