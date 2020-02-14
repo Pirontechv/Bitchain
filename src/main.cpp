@@ -4331,10 +4331,10 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
 
     if (block.nBits != nBitsRequired) {
         // Bitchain Specific reference to the block with the wrong threshold was used.
-        if ((block.nTime == (uint32_t) Params().BitchainBadBlockTime()) && (block.nBits == (uint32_t) Params().BitchainBadBlocknBits())) {
+       // if ((block.nTime == (uint32_t) Params().BitchainBadBlockTime()) && (block.nBits == (uint32_t) Params().BitchainBadBlocknBits())) {
             // accept BITCHAIN block minted with incorrect proof of work threshold
-            return true;
-        }
+         //   return true;
+       // }
 
         return error("%s : incorrect proof of work at %d", __func__, pindexPrev->nHeight + 1);
     }
