@@ -4225,14 +4225,14 @@ Tu cartera BITCHAIN también necesita estar completamente sincronizada para que 
                            zXBIT is an optional privacy-centric method of coin mixing on the
                            BITCHAIN blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt;
+                           &lt;a style='color: #8cff88' href='https://BITCHAIN.org/zxbit/'&gt;
                            "BITCHAIN Zerocoin (zXBIT) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt; 
 zXBIT es un método opcional centrado en la privacidad de monedas en la Blockchain BITCHAIN. Básicamente, todas sus transacciones no pueden ser rastreadas en ningún explorador de bloques. Puedes leer más sobre los aspectos técnicos en el
- &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt;
+ &lt;a style='color: #8cff88' href='https://BITCHAIN.org/zxbit/'&gt;
 "Documentación Técnica de BITCHAIN Zerocoin (zXBIT) ". &lt;/a&gt;.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -4277,7 +4277,7 @@ zXBIT es un método opcional centrado en la privacidad de monedas en la Blockcha
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zXBIT in the
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt; "BITCHAIN Zerocoin (zXBIT) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #8cff88' href='https://BITCHAIN.org/zxbit/'&gt; "BITCHAIN Zerocoin (zXBIT) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zXBIT, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4294,7 +4294,7 @@ tu archivo bitchain.conf y agregar &lt;i&gt; enablezeromint=0&lt;/i&gt; Sin las 
 luego reinicia tu billetera para deshabilitar la impresión automática.&lt;/p&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
 Puedes leer más sobre zXBIT en el
-&lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt; "Documentación Técnica de BITCHAIN Zerocoin (zXBIT)" &lt;/a&gt;.
+&lt;a style='color: #8cff88' href='https://BITCHAIN.org/zxbit/'&gt; "Documentación Técnica de BITCHAIN Zerocoin (zXBIT)" &lt;/a&gt;.
 Si deseas conservar y hacer stake tu zXBIT, lee la sección "¿Cómo puedo hacer stake?"de las preguntas frecuentes a continuación.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
@@ -4397,20 +4397,20 @@ El stake debe estar ahora habilitado.
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #b088ff' href='https://Discord.BITCHAIN.com'&gt;
+                           &lt;a style='color: #8cff88' href='https://Discord.BITCHAIN.com'&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.FreshDesk.com'&gt;
+                           &lt;a style='color: #8cff88' href='https://BITCHAIN.FreshDesk.com'&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 Tenemos canales de ayuda en la mayoría de nuestros grupos de chat oficiales, por ejemplo
-&lt;a style='color: #b088ff' href='https://Discord.BITCHAIN.com'&gt;
+&lt;a style='color: #8cff88' href='https://Discord.BITCHAIN.com'&gt;
 #support en nuestro Discord&lt;/a&gt;.
 Si prefieres enviar una solicitud, una puede ser
-&lt;a style='color: #b088ff' href='https://BITCHAIN.FreshDesk.com'&gt;
+&lt;a style='color: #8cff88' href='https://BITCHAIN.FreshDesk.com'&gt;
 nuestro sitio de apoyo Freshdesk&lt;/a&gt;.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
     </message>

@@ -4242,7 +4242,7 @@ bu sayede BITCHAIN sahipleri blok ödülü kazanımına katılabilmektedir
                            zXBIT is an optional privacy-centric method of coin mixing on the
                            BITCHAIN blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt;
+                           &lt;a style='color: #8cff88' href='https://BITCHAIN.org/zxbit/'&gt;
                            "BITCHAIN Zerocoin (zXBIT) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4252,7 +4252,7 @@ bu sayede BITCHAIN sahipleri blok ödülü kazanımına katılabilmektedir
 gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
  hiçbir tarayıcı tarafından takip edilemez. Teknik detayları
  hakkında daha çok bilgi almak için
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt;
+                           &lt;a style='color: #8cff88' href='https://BITCHAIN.org/zxbit/'&gt;
                            "BITCHAIN Zerocoin (zXBIT) Teknik Makalesi"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -4302,7 +4302,7 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zXBIT in the
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt; "BITCHAIN Zerocoin (zXBIT) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #8cff88' href='https://BITCHAIN.org/zxbit/'&gt; "BITCHAIN Zerocoin (zXBIT) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zXBIT, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4312,7 +4312,7 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
                            BITCHAIN cüzdanınız ağa destek olmak için varsayılan olarak tüm XBIT bakiyenizin 10% 'unu zXBIT'e dönüştürecektir. Getirdiği gizlilik avantajını istemiyor veya zXBIT stakelemek istemiyorsanız cüzdanınızın otomint özelliğini Ayarlar-&gt;Seçenekler içindeki “zXBIT Otomint etkin” seçeneğini değiştirerek devredışı bırakabilirsiniz. BITCHAINQT veya GUI kullanmıyorsanız, bitchain.conf dosyası içine  &lt;i&gt;enablezeromint=0&lt;/i&gt; ifadesini tırnak işareti olmadan girerek devredışı bırakabilirsiniz. &lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Teknik detayları hakkında daha çok bilgi almak için
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt; "BITCHAIN Zerocoin (zXBIT) Teknik Makalesi"&lt;/a&gt;.
+                           &lt;a style='color: #8cff88' href='https://BITCHAIN.org/zxbit/'&gt; "BITCHAIN Zerocoin (zXBIT) Teknik Makalesi"&lt;/a&gt;.
                            zXBIT'lerinizi tutmak ve stakelemek istiyorsanız, lütfen SSS kısmındaki "Nasıl Stake yaparım"
 kısmını okuyunuz.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4423,20 +4423,20 @@ zXBIT Protokolü ile anonimleştirilmiş olacaktır.
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #b088ff' href='https://Discord.BITCHAIN.com'&gt;
+                           &lt;a style='color: #8cff88' href='https://Discord.BITCHAIN.com'&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.FreshDesk.com'&gt;
+                           &lt;a style='color: #8cff88' href='https://BITCHAIN.FreshDesk.com'&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            Resmi chat gruplarımızın çoğunun içinde destek kanalları bulunmaktadır, örneğin
-                           &lt;a style='color: #b088ff' href='https://Discord.BITCHAIN.com'&gt;
+                           &lt;a style='color: #8cff88' href='https://Discord.BITCHAIN.com'&gt;
                            Discord içinnde #support &lt;/a&gt;.
                            Bir destek talebi açmak isterseniz,bunu
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.FreshDesk.com'&gt;
+                           &lt;a style='color: #8cff88' href='https://BITCHAIN.FreshDesk.com'&gt;
                            Freshdesk destek sitesinden yapabilirsiniz&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>

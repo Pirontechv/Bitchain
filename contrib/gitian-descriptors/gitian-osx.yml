@@ -1,5 +1,5 @@
 ---
-name: "bitchain-osx-4.0"
+name: "bitchain-osx-1.0"
 enable_cache: true
 distro: "ubuntu"
 suites:

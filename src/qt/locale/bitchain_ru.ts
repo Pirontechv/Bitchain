@@ -4238,7 +4238,7 @@ BITCHAIN использует консенсус PoS (Proof of Stake), позв�
                            zXBIT is an optional privacy-centric method of coin mixing on the
                            BITCHAIN blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt;
+                           &lt;a style='color: #8cff88' href='https://BITCHAIN.org/zxbit/'&gt;
                            "BITCHAIN Zerocoin (zXBIT) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4247,7 +4247,7 @@ BITCHAIN использует консенсус PoS (Proof of Stake), позв�
 zXBIT - это необязательная конфиденциальность, которая возможна при микшировании монет
 в блокчейне BITCHAIN. По сути,ни одна транзакция не может быть отслежена
 ни в одном из обозревателей блоков. Вы можете прочитать больше о технических характеристиках в
-&lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt;
+&lt;a style='color: #8cff88' href='https://BITCHAIN.org/zxbit/'&gt;
 "Техническом документе BITCHAIN Zerocoin (zXBIT)"&lt;/a&gt;.
  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
     </message>
@@ -4295,7 +4295,7 @@ zXBIT - это необязательная конфиденциальность
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zXBIT in the
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt; "BITCHAIN Zerocoin (zXBIT) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #8cff88' href='https://BITCHAIN.org/zxbit/'&gt; "BITCHAIN Zerocoin (zXBIT) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zXBIT, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4310,7 +4310,7 @@ zXBIT - это необязательная конфиденциальность
 Если вы не используете BITCHAIN-QT или GUI, вы можете просто открыть
 свой файл bitchain.conf и добавить &lt;i&gt;enablezeromint=0&lt;/i&gt; без кавычек и
 перезапустите свой кошелек для отключения  автоматической чеканки. &lt;/p&gt; &lt;/p&gt;&lt;p align="justify"&gt; Вы можете прочитать больше о zXBIT в
-&lt;a style='color: #b088ff' href='https://BITCHAIN.org/zxbit/'&gt;
+&lt;a style='color: #8cff88' href='https://BITCHAIN.org/zxbit/'&gt;
  "Технический документ BITCHAIN Zerocoin (zXBIT)"&lt;/a&gt;.
 Если вы хотите продолжать стекинг zXBIT, ознакомьтесь с разделом" Как осуществить стекинг"
 в разделе часто задаваемых вопросов ниже.
@@ -4403,20 +4403,20 @@ zXBIT можно потратить и отправить на любой адр
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #b088ff' href='https://Discord.BITCHAIN.com'&gt;
+                           &lt;a style='color: #8cff88' href='https://Discord.BITCHAIN.com'&gt;
                            #support in our Discord&lt;/a&gt;.
                            If you prefer to submit a ticket, One can be
-                           &lt;a style='color: #b088ff' href='https://BITCHAIN.FreshDesk.com'&gt;
+                           &lt;a style='color: #8cff88' href='https://BITCHAIN.FreshDesk.com'&gt;
                            our Freshdesk support site&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 У нас есть каналы поддержки в большинстве наших официальных групп, например
-&lt;a style='color: #b088ff' href='https://Discord.BITCHAIN.com'&gt;
+&lt;a style='color: #8cff88' href='https://Discord.BITCHAIN.com'&gt;
 #support в нашем Discord&lt;/a&gt;.
 Если вы хотите задать вопрос, одним из способов это сделать может послужить
-&lt;a style='color: #b088ff' href='https://BITCHAIN.FreshDesk.com'&gt;
+&lt;a style='color: #8cff88' href='https://BITCHAIN.FreshDesk.com'&gt;
 наш сайт поддержки Freshdesk&lt;/a&gt;.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
