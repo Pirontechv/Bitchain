@@ -636,8 +636,8 @@ void DashboardWidget::onChartRefreshed() {
     // init sets
     set0 = new QBarSet("XBIT");
     set1 = new QBarSet("zXBIT");
-    set0->setColor(QColor(92,75,125));
-    set1->setColor(QColor(176,136,255));
+    set0->setColor(QColor(75,125,92));
+    set1->setColor(QColor(136,255,176));
 
     if(!series) {
         series = new QBarSeries();

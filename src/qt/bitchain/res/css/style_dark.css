@@ -2161,7 +2161,7 @@ QComboBox QAbstractItemView::item {
     outline: 0px;
 }
 QComboBox QAbstractItemView::item:selected {
-    background-color: #d8d5e0;
+    background-color: #d5e0d5;
     padding:10px 20px;
     font-size:16px;
     margin:0px;

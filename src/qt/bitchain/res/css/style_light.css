@@ -367,7 +367,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 
 *[cssClass="text-title-topbar"] {
-    color:#a3a3a4;
+    color:#a3a4a3;
     font-size:16px;
     font-weight: ligther;
 }
@@ -466,7 +466,6 @@ QPushButton[cssClass="btn-check-mint"] {
     border-bottom:2px solid #8cff88;
     border-radius:2px;
 }
-
 
 QPushButton[cssClass="btn-check-mint-inactive"] {
     qproperty-icon: url("://ic-check-mint-off") ;
@@ -1720,10 +1719,10 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 
 *[cssClass="text-stake-xbit-disable"] {
-    color:#d7d5da;
+    color:#d5dad5;
     font-size:16px;
     padding:10px;
-    border-bottom: 5px solid #bbb8c0;
+    border-bottom: 5px solid #b8c0b8;
 }
 
 *[cssClass="text-stake-zxbit"] {
@@ -1734,10 +1733,10 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 
 *[cssClass="text-stake-zxbit-disable"] {
-    color:#d7d5da;
+    color:#d5dad5;
     font-size:16px;
     padding:10px;
-    border-bottom: 5px solid #d7d5da;
+    border-bottom: 5px solid #d5dad5;
 }
 
 *[cssClass="legend-chart"] {
@@ -1774,7 +1773,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 
 
 *[cssClass="container-chart"] {
-    background-color:#e8e7ee;
+    background-color:#e7eee7;
 }
 
 QPushButton[cssClass="btn-chart-arrow"] {
@@ -2164,7 +2163,7 @@ QComboBox QAbstractItemView::item {
     outline: 0px;
 }
 QComboBox QAbstractItemView::item:selected {
-    background-color: #d8d5e0;
+    background-color: #d5e0d5;
     padding:10px 20px;
     font-size:16px;
     margin:0px;
